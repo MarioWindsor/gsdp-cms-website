@@ -63,16 +63,16 @@ collections:
         name: "quick_links"
         file: "_data/quick_links.yml"
         fields:
-          - { label: "Greyscale Stories", name: "stories", widget: "string" }
-          - { label: "Greyscale Stories URL", name: "stories_url", widget: "string" }
-          - { label: "About Us", name: "about_us", widget: "string" }
-          - { label: "About Us URL", name: "about_us_url", widget: "string" }
-          - { label: "For Home Owners", name: "owners", widget: "string" }
-          - { label: "For Home Owners URL", name: "owners_url", widget: "string" }
-          - { label: "For Builders", name: "builders", widget: "string" }
-          - { label: "For Builders URL", name: "builders_url", widget: "string" }
-          - { label: "For Students", name: "students", widget: "string" }
-          - { label: "For Students URL", name: "students_url", widget: "string" }
+          - { label: "Title", name: "stories", widget: "string" }
+          - { label: "URL", name: "stories_url", widget: "string" }
+          - { label: "Title", name: "about_us", widget: "string" }
+          - { label: "URL", name: "about_us_url", widget: "string" }
+          - { label: "Title", name: "owners", widget: "string" }
+          - { label: "URL", name: "owners_url", widget: "string" }
+          - { label: "Title", name: "builders", widget: "string" }
+          - { label: "URL", name: "builders_url", widget: "string" }
+          - { label: "Title", name: "students", widget: "string" }
+          - { label: "URL", name: "students_url", widget: "string" }
 
   # Settings Collection
   - name: "settings"
@@ -84,13 +84,13 @@ collections:
         name: "nav_links"
         file: "_data/navigation.yml"
         fields:
-          - { label: "Everything", name: "everything", widget: "string" }
-          - { label: "Everything URL", name: "everything_url", widget: "string" }
-          - { label: "Services", name: "services", widget: "string" }
-          - { label: "Services URL", name: "services_url", widget: "string" }
-          - { label: "Project", name: "project", widget: "string" }
-          - { label: "Project URL", name: "project_url", widget: "string" }
-          - { label: "About", name: "about", widget: "string" }
-          - { label: "About URL", name: "about_url", widget: "string" }
-          - { label: "Phone Number", name: "ph_number", widget: "string" }
-          - { label: "Phone Number URL", name: "ph_number_url", widget: "string" }
+          - { label: "Nav Title", name: "everything", widget: "string" }
+          - { label: "URL", name: "everything_url", widget: "string" }
+          - { label: "Nav Title", name: "services", widget: "string" }
+          - { label: "URL", name: "services_url", widget: "string" }
+          - { label: "Nav Title", name: "project", widget: "string" }
+          - { label: "URL", name: "project_url", widget: "string" }
+          - { label: "Nav Title", name: "about", widget: "string" }
+          - { label: "URL", name: "about_url", widget: "string" }
+          - { label: "Nav Title", name: "ph_number", widget: "string" }
+          - { label: "URL", name: "ph_number_url", widget: "string" }

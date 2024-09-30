@@ -6,11 +6,12 @@
                 <img class="block" src="/media/logo.jfif" alt="Logo" height="96" width="340px">
             </div>
             <div class="columns large-7 large-offset-1 inline-middle">
-                <a class="first-nav strong space-75-right" href="#everything">Everything</a>
-                <a class="mid-nav strong space-75" href="#services">Services</a>
-                <a class="mid-nav strong space-75" href="#project">Project</a>
-                <a class="mid-nav strong space-75" href="#about">About</a>
-                <a class="strong space-50 text-black" href="tel:+91-80415-10310">+91 8041510310</a>
+                {% assign nav = site.settings.nav_links %}
+                <a class="first-nav strong space-75-right" href="{{ nav.everything_url }}">{{ nav.everything }}</a>
+                <a class="mid-nav strong space-75" href="{{ nav.services_url }}">{{ nav.services }}</a>
+                <a class="mid-nav strong space-75" href="{{ nav.project_url }}">{{ nav.project }}</a>
+                <a class="mid-nav strong space-75" href="{{ nav.about_url }}">{{ nav.about }}</a>
+                <a class="strong space-50 text-black" href="{{ nav.ph_number_url }}">{{ nav.ph_number }}</a>
             </div>
         </div>
     </div>
