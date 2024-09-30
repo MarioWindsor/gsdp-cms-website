@@ -1,10 +1,10 @@
 backend:
   # Use netlify identity as backend
   branch: main # Branch to update (optional; defaults to main)
-  name: github
+  name: git-gateway
   repo: aryansrivastav1/gsdp-cms-website
-media_folder: "/media/uploads"
-public_folder: "/media/uploads"
+media_folder: "/media/"
+public_folder: "/media/"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
@@ -33,54 +33,46 @@ collections:
   # Sidebar Collection
   - name: "sidebar"
     label: "Sidebar"
-    folder: "sidebar"
+    editor:
+      preview: false
     files:
-      - label: "Sidebar Head"
+      - label: "Introduction"
         name: "side_head"
-        file: "sidebar/sidebar_head.md"
+        file: "_data/sidebar_head.yml"
         fields:
           - { label: "Heading", name: "heading", widget: "string" }
-          - { label: "Introduction", name: "intro", widget: "string" }
+          - { label: "Content", name: "content", widget: "string" }
       - label: "Contact Details"
         name: "contact_details"
-        file: "sidebar/contact.md"
+        file: "_data/contact.yml"
         fields:
-          - label: "Address"
-            name: "address"
-            widget: "list"
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: "Address", name: "address", widget: "string" }
-              - { label: "Google Maps", name: "map", widget: "string" }
-          - label: "Phone Number"
-            name: "phone"
-            widget: "list"
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: "Primary Number", name: "pri_number", widget: "string" }
-              - { label: "Secondary Number", name: "sec_number", widget: "string" }
-          - label: "Email"
-            name: "email"
-            widget: "list"
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: "Consultation Email", name: "consult_email", widget: "string" }
-              - { label: "Information Email", name: "info_email", widget: "string" }
-              - { label: "With-us Email", name: "withus_email", widget: "string" }
-          - label: "Quick Links"
-            name: "links"
-            widget: "list"
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: "Greyscale Stories", name: "stories", widget: "string" }
-              - { label: "About Us", name: "about_us", widget: "string" }
-              - { label: "For Home Owners", name: "owners", widget: "string" }
-              - { label: "For Builders", name: "builders", widget: "string" }
-              - { label: "For Students", name: "students", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Google Maps", name: "map", widget: "string" }
+          - { label: "Google Maps URL", name: "map_url", widget: "string" }
+          - { label: "Primary Number", name: "pri_number", widget: "string" }
+          - { label: "Primary Number URL", name: "pri_number_url", widget: "string" }
+          - { label: "Secondary Number", name: "sec_number", widget: "string" }
+          - { label: "Secondary Number URL", name: "sec_number_url", widget: "string" }
+          - { label: "Consultation Email", name: "consult_email", widget: "string" }
+          - { label: "Consultation Email URL", name: "consult_email_url", widget: "string" }
+          - { label: "Information Email", name: "info_email", widget: "string" }
+          - { label: "Information Email URL", name: "info_email_url", widget: "string" }
+          - { label: "With-us Email", name: "withus_email", widget: "string" }
+          - { label: "With-us Email URL", name: "withus_email_url", widget: "string" }
+      - label: "Quick Links"
+        name: "quick_links"
+        file: "_data/quick_links.yml"
+        fields:
+          - { label: "Greyscale Stories", name: "stories", widget: "string" }
+          - { label: "Greyscale Stories URL", name: "stories_url", widget: "string" }
+          - { label: "About Us", name: "about_us", widget: "string" }
+          - { label: "About Us URL", name: "about_us_url", widget: "string" }
+          - { label: "For Home Owners", name: "owners", widget: "string" }
+          - { label: "For Home Owners URL", name: "owners_url", widget: "string" }
+          - { label: "For Builders", name: "builders", widget: "string" }
+          - { label: "For Builders URL", name: "builders_url", widget: "string" }
+          - { label: "For Students", name: "students", widget: "string" }
+          - { label: "For Students URL", name: "students_url", widget: "string" }
 
   # Settings Collection
   - name: "settings"
@@ -88,34 +80,17 @@ collections:
     editor:
       preview: false
     files:
-      - label: "Navigation"
-        name: "items"
-        file: "settings/navigation.md"
+      - label: "Navigation Links"
+        name: "nav_links"
+        file: "_data/navigation.yml"
         fields:
-          - label: "Nav Items"
-            name: "items"
-            widget: "list"
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: "Title", name: "text", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
-      - label: "Quick Links"
-        name: "links"
-        file: "src/_data/quicklinks.yaml"
-        fields:
-          - label: "Nav Items"
-            name: "links"
-            widget: "list"
-            collapsed: false
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
-              - { label: "Description", name: "desc", widget: "string" }
-      - label: "Meta Settings"
-        name: "settings"
-        file: "src/_data/settings.yaml"
-        fields:
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Author", name: "author", widget: "string" }
-          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Everything", name: "everything", widget: "string" }
+          - { label: "Everything URL", name: "everything_url", widget: "string" }
+          - { label: "Services", name: "services", widget: "string" }
+          - { label: "Services URL", name: "services_url", widget: "string" }
+          - { label: "Porject", name: "project", widget: "string" }
+          - { label: "Porject URL", name: "project_url", widget: "string" }
+          - { label: "About", name: "about", widget: "string" }
+          - { label: "About URL", name: "about_url", widget: "string" }
+          - { label: "Phone Number", name: "ph_number", widget: "string" }
+          - { label: "Phone Number URL", name: "ph_number_url", widget: "string" }
