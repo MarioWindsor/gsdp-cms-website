@@ -1,3 +1,4 @@
+---
 everything: Everything
 everything_url: "#everything"
 services: Services
@@ -8,3 +9,4 @@ about: About
 about_url: "#about"
 ph_number: +91 8041510310
 ph_number_url: "tel:+91-80415-10310"
+---

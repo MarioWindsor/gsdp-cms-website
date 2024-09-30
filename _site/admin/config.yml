@@ -38,13 +38,13 @@ collections:
     files:
       - label: "Introduction"
         name: "side_head"
-        file: "_data/sidebar_head.yml"
+        file: "_data/sidebar_head.md"
         fields:
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Content", name: "content", widget: "string" }
       - label: "Contact Details"
         name: "contact_details"
-        file: "_data/contact.yml"
+        file: "_data/contact.md"
         fields:
           - { label: "Address", name: "address", widget: "string" }
           - { label: "Google Maps", name: "map", widget: "string" }
@@ -61,7 +61,7 @@ collections:
           - { label: "With-us Email URL", name: "withus_email_url", widget: "string" }
       - label: "Quick Links"
         name: "quick_links"
-        file: "_data/quick_links.yml"
+        file: "_data/quick_links.md"
         fields:
           - { label: "Title", name: "stories", widget: "string" }
           - { label: "URL", name: "stories_url", widget: "string" }
@@ -82,7 +82,7 @@ collections:
     files:
       - label: "Navigation Links"
         name: "nav_links"
-        file: "_data/navigation.yml"
+        file: "_data/navigation.md"
         fields:
           - { label: "Nav Title", name: "everything", widget: "string" }
           - { label: "URL", name: "everything_url", widget: "string" }

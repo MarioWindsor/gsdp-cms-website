@@ -1,3 +1,4 @@
+---
 address: No.9, 39th Cross, 4th 'T' Block, Jayanagar, Bengaluru - 560041.
 map: Open in Google Maps
 map_url: https://www.google.com/
@@ -11,3 +12,4 @@ info_email: info@greyscale.in
 info_email_url: mailto:info@greyscale.in
 withus_email_url: mailto:withus@greyscale.in
 withus_email: withus@greyscale.in
+---

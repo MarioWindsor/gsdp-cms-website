@@ -1,3 +1,4 @@
+---
 stories: Greyscale Stories
 stories_url: "#"
 about_us: About Us
@@ -8,3 +9,4 @@ builders: For Builders
 builders_url: "#"
 students: For Students
 students_url: "#"
+---
