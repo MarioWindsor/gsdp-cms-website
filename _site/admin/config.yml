@@ -88,8 +88,8 @@ collections:
           - { label: "Everything URL", name: "everything_url", widget: "string" }
           - { label: "Services", name: "services", widget: "string" }
           - { label: "Services URL", name: "services_url", widget: "string" }
-          - { label: "Porject", name: "project", widget: "string" }
-          - { label: "Porject URL", name: "project_url", widget: "string" }
+          - { label: "Project", name: "project", widget: "string" }
+          - { label: "Project URL", name: "project_url", widget: "string" }
           - { label: "About", name: "about", widget: "string" }
           - { label: "About URL", name: "about_url", widget: "string" }
           - { label: "Phone Number", name: "ph_number", widget: "string" }
