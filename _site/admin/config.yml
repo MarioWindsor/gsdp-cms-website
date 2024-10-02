@@ -40,8 +40,8 @@ collections:
         name: "side_head"
         file: "_data/sidebar_head.md"
         fields:
-          - { label: "Heading", name: "heading", widget: "string" }
-          - { label: "Content", name: "content", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "string" }
       - label: "Contact Details"
         name: "contact_details"
         file: "_data/contact.md"
