@@ -1,0 +1,95 @@
+/* Home Page */
+header .first-nav {
+  color: #864af8;
+}
+
+header .mid-nav {
+  color: #ff57c6;
+}
+
+/* -- Main Section --  */
+.main-section .sidebar-heading {
+  color: #864af8;
+  font-family: Rajdhani;
+  font-size: 54px;
+  line-height: 54px;
+}
+
+.main-section .sidebar-para {
+  font-size: 23px;
+}
+
+.main-section .form {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #864af8;
+}
+
+.main-section .form-heading {
+  color: #864af8;
+}
+
+.main-section form button {
+  background-color: #864af8;
+  color: #fff;
+  outline: 1px solid #332941;
+}
+
+.main-section .footer-head,
+.main-section .footer-map,
+.main-section .post .meta-purple {
+  color: #864af8;
+}
+
+.main-section span.card-line,
+.main-section .post .meta-pink {
+  color: #ff57c6;
+}
+
+.main-section select {
+  border: 1px solid #000;
+  height: 30px;
+  line-height: 28px;
+}
+
+.main-section .main .demographic .card {
+  min-height: calc(var(--card) * 0.8);
+  position: relative;
+  cursor: pointer;
+  background-blend-mode: multiply;
+}
+
+.main-section .main .demographic .card * {
+  pointer-events: none;
+}
+
+.main-section .main .demographic .card .title {
+  position: absolute;
+  bottom: var(--space-100);
+  left: var(--space-100);
+  height: 0;
+  width: 100%;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
+.main-section .main .demographic .card .fa-icon {
+  position: absolute;
+  bottom: var(--space-100);
+  right: var(--space-100);
+  color: #ff57c6;
+}
+
+.main-section .filter .filter-bar,
+.main-section .post {
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.main-section .post img {
+	border-radius: 10px 10px 0 0;
+}
+
+@media (min-width: 640px) {
+}
+@media (min-width: 1040px) {
+}
+@media (min-width: 1480px) {
+}
