@@ -1,9 +1,0 @@
-{
-    "cSpell.words": [
-        "Greyscale"
-    ],
-    "[liquid]": {
-        "editor.defaultFormatter": "sissel.shopify-liquid",
-        "editor.formatOnSave": false
-    }
-}
