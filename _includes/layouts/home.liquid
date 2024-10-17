@@ -7,17 +7,56 @@
 
 
 
+<!-- Intro Section -->
+<section id="intro-section" class="intro-section" style="background-image: url('media/image.jpg'); background-size: cover;">
+	<div class="row space-200-top-bottom" style="background: rgba(0, 0, 0, 0.7);">
+		<div class="container">
+			<div class="columns small-12 medium-6 large-4">
+				<div class="intro space-25 text-white">
+					<div class="h2 font-h strong space-100-bottom">Architecture that Inspires and Endures</div>
+					<div class="h6 space-100-bottom">Rooted in Human-Centric Design, our unique approach combines functionality with timeless beauty!</div>
+				</div>
+			</div>
+			<div class="columns small-12 medium-6 large-4 large-offset-4">
+				<div class="form fill-violet space-150-left-right space-150-top-bottom radius-50">
+					<form action="" method="post">
+						<div class="form-heading h6 strong text-white">Sign-up for a FREE<br>Online Consultation!</div>
+						<div class="form-fields space-25-top">
+							<label class="block space-25-top" for="fullName">
+								<span class="small strong inline space-min-bottom">Full Name</span>
+								<input class="input-field block" type="text" name="fullName">
+							</label>
+							<label class="block space-25-top" for="email">
+								<span class="small strong inline space-min-bottom">Email ID</span>
+								<input class="input-field block" type="text" name="email">
+							</label>
+							<label class="block space-25-top" for="phone">
+								<span class="small strong inline space-min-bottom">Phone Number <span class="w-400">(Optional: Request a Call-Back)</span></span>
+								<input class="input-field block" type="text" name="phone">
+							</label>
+							<label class="block space-25-top" for="phone">
+								<span class="small strong inline space-min-bottom invisible">Submit</span>
+								<button class="button block strong text-left" type="submit">Send</button>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Intro Section -->
+
+
+
+
+
 <!-- Main Section -->
-<section class="main-section fill-neutral-1">
+<section class="main-section fill-light">
 	<div class="container">
 		<div class="row">
-			<!-- Sidebar -->
-			<div class="sidebar columns large-4 space-250-top-bottom">
-				{% include 'parts/sidebar.liquid' %}
-			</div>
-			<!-- END: Sidebar -->
 			<!-- Main -->
-			<div class="main columns large-7 large-offset-1 space-250-top-bottom">
+			<div class="main columns small-12 large-7 space-250-top-bottom">
 				<div class="demographic row space-200-bottom">
 					<div class="columns small-12 h6 space-50-bottom">Are you looking for...</div>
 					<div class="columns small-12 ">
@@ -48,6 +87,11 @@
 				</div>
 			</div>
 			<!-- END: Main -->
+			<!-- Sidebar -->
+			<div class="sidebar columns small-12 large-4 large-offset-1 space-250-top-bottom">
+				{% include 'parts/sidebar.liquid' %}
+			</div>
+			<!-- END: Sidebar -->
 		</div>
 	</div>
 </section>
@@ -81,4 +125,7 @@
 
 
 
-{% comment %} {% include 'parts/footer.liquid' %} {% endcomment %}
+
+
+{% include 'parts/footer.liquid' %}
+{% include 'parts/foot.liquid' %}

@@ -1,35 +1,42 @@
+
 backend:
-  # Use netlify identity as backend
-  branch: main # Branch to update (optional; defaults to main)
   name: git-gateway
-  repo: aryansrivastav1/gsdp-cms-website
-media_folder: "/media/"
-public_folder: "/media/"
+  branch: main # Branch to update (optional; defaults to main)
+  repo: MarioWindsor/gsdp-cms-website
 
-# Please run "npx netlify-cms-proxy-server" for local backend
+# when using the default proxy server port
 local_backend: true
-# publish_mode: editorial_workflow
-collections:
-  # Post Collection
-  - name: "post"
-    label: "Post"
-    folder: "posts"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
 
+# publish_mode: editorial_workflow
+media_folder: "/media/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/media/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  # Article Collection
+  - name: "article" # Used in routes, e.g., /admin/collections/blog
+    label: "Article" # Used in the UI
+    folder: "_posts/article" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  # Service Collection
+  - name: "service" # Used in routes, e.g., /admin/collections/blog
+    label: "Service" # Used in the UI
+    folder: "_posts/service" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
   # Sidebar Collection
   - name: "sidebar"
     label: "Sidebar"

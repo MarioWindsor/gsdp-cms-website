@@ -79,7 +79,6 @@
 	<link rel="stylesheet" type="text/css" href="css/3_grid.css">
 	<link rel="stylesheet" type="text/css" href="css/4_helper.css">
 	<link rel="stylesheet" type="text/css" href="css/5_stylescape.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<!-- Modules -->
 	<link rel="stylesheet" type="text/css" href="css/modules/video-embed.css">
@@ -99,13 +98,24 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
 	<!-- Icons -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<style>
+	.material-symbols-outlined {
+	  font-variation-settings:
+	  'FILL' 0,
+	  'wght' 400,
+	  'GRAD' 0,
+	  'opsz' 24
+	}
+	</style>
 	<!-- Typing JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Smooth Scroll JS -->
 	<!-- <script src="https://cdn.jsdelivr.net/npm/jump.js/dist/jump.min.js"></script> -->
+
+	<!-- Netlify Identity -->
+	<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body class="body" id="body">
@@ -117,12 +127,17 @@
 	<!-- Navigation -->
 
 	<div id="page-content"><!-- Page Content -->
+
+
+
+
+
 <!-- Header Section -->
 <header>
     <div class="container">
         <div class="row space-100-top-bottom">
             <div class="columns large-4 inline-middle">
-                <img class="block" src="/media/logo.jfif" alt="Logo" height="96" width="340px">
+                <img class="block" src="/media/logo.png" alt="Logo" height="96" width="340px">
             </div>
             <div class="columns large-7 large-offset-1 inline-middle">
                 
@@ -149,65 +164,56 @@
 
 
 
+<!-- Intro Section -->
+<section id="intro-section" class="intro-section" style="background-image: url('media/image.jpg'); background-size: cover;">
+	<div class="row space-200-top-bottom" style="background: rgba(0, 0, 0, 0.7);">
+		<div class="container">
+			<div class="columns small-12 medium-6 large-4">
+				<div class="intro space-25 text-white">
+					<div class="h2 font-h strong space-100-bottom">Architecture that Inspires and Endures</div>
+					<div class="h6 space-100-bottom">Rooted in Human-Centric Design, our unique approach combines functionality with timeless beauty!</div>
+				</div>
+			</div>
+			<div class="columns small-12 medium-6 large-4 large-offset-4">
+				<div class="form fill-violet space-150-left-right space-150-top-bottom radius-50">
+					<form action="" method="post">
+						<div class="form-heading h6 strong text-white">Sign-up for a FREE<br>Online Consultation!</div>
+						<div class="form-fields space-25-top">
+							<label class="block space-25-top" for="fullName">
+								<span class="small strong inline space-min-bottom">Full Name</span>
+								<input class="input-field block" type="text" name="fullName">
+							</label>
+							<label class="block space-25-top" for="email">
+								<span class="small strong inline space-min-bottom">Email ID</span>
+								<input class="input-field block" type="text" name="email">
+							</label>
+							<label class="block space-25-top" for="phone">
+								<span class="small strong inline space-min-bottom">Phone Number <span class="w-400">(Optional: Request a Call-Back)</span></span>
+								<input class="input-field block" type="text" name="phone">
+							</label>
+							<label class="block space-25-top" for="phone">
+								<span class="small strong inline space-min-bottom invisible">Submit</span>
+								<button class="button block strong text-left" type="submit">Send</button>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Intro Section -->
+
+
+
+
+
 <!-- Main Section -->
-<section class="main-section fill-neutral-1">
+<section class="main-section fill-light">
 	<div class="container">
 		<div class="row">
-			<!-- Sidebar -->
-			<div class="sidebar columns large-4 space-250-top-bottom">
-				<div class="sidebar-heading space-100-bottom h3">Architecture that Inspires and Endures</div>
-<div class="sidebar-para space-150-bottom h6">Rooted in Human-Centric Design, our unique approach combines functionality with timeless beauty!</div>
-<div class="form fill-white space-150-left-right space-150-top-bottom radius-50">
-	<form action="" method="post">
-		<div class="form-heading h6 strong text-red">Sign-up for a FREE<br>Online Consultation!</div>
-		<div class="form-fields space-25-top">
-			<label class="block space-25-top" for="fullName">
-				<span class="small strong inline space-min-bottom">Full Name</span>
-				<input class="input-field block" type="text" name="fullName">
-			</label>
-			<label class="block space-25-top" for="email">
-				<span class="small strong inline space-min-bottom">Email ID</span>
-				<input class="input-field block" type="text" name="email">
-			</label>
-			<label class="block space-25-top" for="phone">
-				<span class="small strong inline space-min-bottom">Phone Number <span class="w-400">(Optional: Request a Call-Back)</span></span>
-				<input class="input-field block" type="text" name="phone">
-			</label>
-			<label class="block space-25-top" for="phone">
-				<span class="small strong inline space-min-bottom invisible">Submit</span>
-				<button class="button block strong text-left" type="submit">Send</button>
-			</label>
-		</div>
-	</form>
-</div>
-<div class="space-150-top">
-	<div class="footer-head h6 block strong space-25-bottom">Address</div>
-	<div class="block p space-50-bottom">No.9, 39th Cross, 4th 'T' Block,<br>Jayanagar, Bengaluru - 560041.</div>
-	<a class="footer-map strong" href="https://www.google.com" target="_blank">Open in Google Maps</a>
-</div>
-<div class="space-150-top">
-	<div class="footer-head h6 block strong space-25-bottom">Phone</div>
-	<a class="text-underline p space-min-bottom" href="tel:+91 8041510310" target="_blank">+91 8041510310</a><br>
-	<a class="text-underline p" href="tel:+91 9886466930" target="_blank">+91 9886466930</a>
-</div>
-<div class="space-150-top">
-	<div class="footer-head h6 block strong space-25-bottom">Email</div>
-	<a class="text-underline p space-min-bottom" href="mailto:design-consult@greyscale.in" target="_blank">design-consult@greyscale.in</a>
-	<a class="text-underline p space-min-bottom" href="mailto:info@greyscale.in" target="_blank">info@greyscale.in</a><br>
-	<a class="text-underline p" href="mailto:withus@greyscale.in" target="_blank">withus@greyscale.in</a>
-</div>
-<div class="space-150-top">
-	<div class="footer-head h6 block strong space-25-bottom">Quick Links</div>
-	<a class="text-underline p space-min-bottom" href="#">Greyscale Stories</a><br>
-	<a class="text-underline p space-min-bottom" href="#">About Us</a><br>
-	<a class="text-underline p space-min-bottom" href="#">For Home Owners</a><br>
-	<a class="text-underline p space-min-bottom" href="#">For Builders</a><br>
-	<a class="text-underline p" href="#">For Students</a>
-</div>
-			</div>
-			<!-- END: Sidebar -->
 			<!-- Main -->
-			<div class="main columns large-7 large-offset-1 space-250-top-bottom">
+			<div class="main columns small-12 large-7 space-250-top-bottom">
 				<div class="demographic row space-200-bottom">
 					<div class="columns small-12 h6 space-50-bottom">Are you looking for...</div>
 					<div class="columns small-12 ">
@@ -301,6 +307,36 @@
 				</div>
 			</div>
 			<!-- END: Main -->
+			<!-- Sidebar -->
+			<div class="sidebar columns small-12 large-4 large-offset-1 space-250-top-bottom">
+				<div class="row">
+	<div class="columns small-12 medium-6 large-12 space-25 space-150-bottom">
+		<div class="h5 text-neutral-4 block space-50-bottom">Address</div>
+		<div class="block p space-50-bottom">No.9, 39th Cross, 4th 'T' Block,<br>Jayanagar, Bengaluru - 560041.</div>
+		<a class="footer-map strong text-violet" href="https://www.google.com" target="_blank"><span class="material-symbols-outlined inline-bottom">pin_drop</span> Open in Google Maps</a><br>
+	</div>
+	<div class="columns small-12 medium-6 large-12 space-25 space-100-bottom">
+		<div class="h5 text-neutral-4 block space-50-bottom">Phone</div>
+		<a class="text-violet p strong space-50-bottom" href="tel:+91 8041510310" target="_blank"><span class="material-symbols-outlined inline-bottom">headset_mic</span> +91 8041510310</a><br>
+		<a class="text-violet p strong space-50-bottom" href="tel:+91 9886466930" target="_blank"><span class="material-symbols-outlined inline-bottom">headset_mic</span> +91 9886466930</a><br>
+	</div>
+	<div class="columns small-12 medium-6 large-12 space-25 space-100-bottom">
+		<div class="h5 text-neutral-4 block space-50-bottom">Email</div>
+		<a class="text-violet p strong space-50-bottom" href="mailto:design-consult@greyscale.in" target="_blank"><span class="material-symbols-outlined inline-bottom">inbox</span> design-consult@greyscale.in</a><br>
+		<a class="text-violet p strong space-50-bottom" href="mailto:info@greyscale.in" target="_blank"><span class="material-symbols-outlined inline-bottom">inbox</span> info@greyscale.in</a><br>
+		<a class="text-violet p strong space-50-bottom" href="mailto:withus@greyscale.in" target="_blank"><span class="material-symbols-outlined inline-bottom">inbox</span> withus@greyscale.in</a><br>
+	</div>
+	<div class="columns small-12 medium-6 large-12 space-25 space-100-bottom">
+		<div class="h5 text-neutral-4 block space-50-bottom">Quick Links</div>
+		<a class="text-violet p strong space-25-bottom" href="#">Greyscale Stories</a><br>
+		<a class="text-violet p strong space-25-bottom" href="#">About Us</a><br>
+		<a class="text-violet p strong space-25-bottom" href="#">For Home Owners</a><br>
+		<a class="text-violet p strong space-25-bottom" href="#">For Builders</a><br>
+		<a class="text-violet p strong space-25-bottom" href="#">For Students</a><br>
+	</div>
+</div>
+			</div>
+			<!-- END: Sidebar -->
 		</div>
 	</div>
 </section>
@@ -312,6 +348,292 @@
 <!-- Sample Section -->
 
 <!-- END: Sample Section -->
+
+
+
+
+
+
+		
+		
+
+
+		<!-- Footer Section -->
+		<section id="footer-section" class="footer-section space-200-top-bottom hidden">
+			<div class="container">
+				<div class="row">
+					<div class="description columns small-12 medium-6">
+						<div class="logo space-75-bottom"><img class="block" src="media/logo-combination-eng.png" style="width: 66.666%;"></div>
+						<div class="p space-100-bottom space-200-right">Your ultimate hospitality partner, providing a wide array of products to meet diverse industry needs, including Kitchenware, Glassware, Cutlery, Bar Equipment, Flatware, Crockery, Buffet Ware, Banquet Equipment, Electrical Appliances, Housekeeping supplies. Specializing in Customized Commercial Kitchens and Turnkey Project Management, to ensure a seamless experience tailored to your specific requirements.</div>
+					</div>
+					<div class="quicklinks columns small-12 medium-3">
+						<div class="h4 font-h strong space-50-top space-25-bottom">Quick Links</div>
+						<a href="#welcome" class="link p inline text-blue-light space-25-bottom">Welcome</a><br>
+						<a href="#hotels" class="link p inline text-blue-light space-25-bottom">Hotels</a><br>
+						<a href="#restaurant" class="link p inline text-blue-light space-25-bottom">Restaurant</a><br>
+						<a href="#bakery" class="link p inline text-blue-light space-25-bottom">Bakery</a><br>
+						<a href="#catering" class="link p inline text-blue-light space-25-bottom">Catering</a><br>
+						<a href="#cta-section" class="link p inline text-blue-light space-25-bottom">Call Back</a><br>
+					</div>
+					<div class="connections columns small-12 medium-3">
+						<div class="h4 font-h strong space-50-top space-25-bottom">Get In Touch</div>
+						<a target="_blank" href="mailto:info@bgc.in" class="link p inline text-blue-light space-25-bottom">info@bgc.in</a><br>
+						<a target="_blank" href="tel:08041784600" class="link p inline text-blue-light space-25-bottom">080-4178-4600</a><br>
+						<!-- <div class="h4 font-h strong space-50-top space-25-bottom">Socials</div> -->
+						<!-- <a target="_blank" href="" class="link social p inline text-blue-light space-25-bottom" style="background-image: url('/media/icon-linkedin.png');">Linked In</a> -->
+						<!-- <a target="_blank" href="" class="link social p inline text-blue-light space-25-bottom" style="background-image: url('/media/icon-instagram.png');">Instagram</a> -->
+						<!-- <a target="_blank" href="" class="link social p inline text-blue-light space-25-bottom" style="background-image: url('/media/icon-facebook.png');">Facebook</a> -->
+						<!-- <a target="_blank" href="" class="link social p inline text-blue-light space-25-bottom" style="background-image: url('/media/icon-twitter.png');">Twitter - X</a> -->
+						<!-- <a target="_blank" href="" class="link social p inline text-blue-light space-25-bottom" style="background-image: url('/media/icon-youtube.png');">YouTube</a> -->
+						<div class="h4 font-h strong space-50-top space-25-bottom">Location</div>
+						<a target="_blank" href="https://maps.app.goo.gl/VEVbq6kHabw4rLna7" class="link p inline text-blue-light space-25-bottom">A M Industrial Estate, 7th Mile Hosur Rd, Garvebhavi Palya, Bengaluru, Karnataka 560068</a><br>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: Footer Section -->
+
+
+
+
+		<!-- Copyright Section -->
+		<style>
+			.copyright-section { text-align: center; }
+			@media( min-width: 1040px ) {
+				.copyright-section { text-align: left; }
+				.copyright-section .signature { text-align: left; }
+			}
+		</style>
+		<section class="copyright-section space-50-top-bottom fill-dark" id="copyright-section">
+			<div class="container">
+				<div class="row">
+					<div class="columns small-12 large-8 space-25">
+						<div class="p font-h strong">Copyright <span class="h6 inline-middle">&copy;</span> 2024 – Bharat Glass & Crockeries | All Rights Reserved</div>
+					</div>
+					<div class="signature columns small-12 large-4 space-25">
+						<a href="https://windsorsouza.com" target="_blank" class="p block font-h strong">Handcrafted with <span class="h6 inline-middle" style="color: darkorange;">&heartsuit;</span> at — <span style="color: darkorange;">WindsorSouza.com</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: Copyright Section -->
+
+
+
+
+
+
+
+
+		
+
+	</div><!-- END: Page Content -->
+
+</div><!-- END: Page Wrapper -->
+
+<!-- ⬇ All Modals below this point ⬇ -->
+
+<div id="modal-wrapper" style="display: none;"><!-- Modal Wrapper -->
+	<div class="modal-box js_modal_box">
+		<!-- Modal Content : Sample Video -->
+		<div class="modal-box-content js_modal_box_content" data-mod-id="sample-video">
+			<div class="container">
+				<div class="row">
+					<div class="columns small-12">
+						<!-- video embed -->
+						<div class="video-embed js_video_embed" data-src="lncVHzsc_QA">
+							<div class="video-loading-indicator"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- END : Sample Video -->
+
+		<!-- Modal Content : Sample Form -->
+		<div class="hidden modal-box-content js_modal_box_content" data-mod-id="sample-form">
+			<div class="container">
+				<div class="row">
+					<div class="columns small-12">
+						<h2>Form Title Goes Here</h2>
+					</div>
+				</div>
+				<div class="row">
+					<!-- video embed -->
+					<div class="columns small-12">
+						<div class="video-embed js_video_embed" data-src="lncVHzsc_QA">
+							<div class="video-loading-indicator"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="columns small-12">
+						<!-- <p>Sample text</p> -->
+					</div>
+				</div>
+			</div>
+		</div><!-- END : Sample Form -->
+
+
+		<!-- Modal Close Button -->
+		<div class="modal-close js_modal_close">&times;</div>
+	</div>
+
+</div><!-- END : Modal Wrapper -->
+
+<!--  ☠  MARKUP ENDS HERE  ☠  -->
+
+<script type="text/javascript" src="/js/video_embed.js"></script>
+
+
+
+<script type="text/javascript">
+	/* -- Smooth Scolling -- */
+	// document.addEventListener("DOMContentLoaded", makeLinksSmooth);
+	// function makeLinksSmooth() { 
+	// 	const navLinks = document.querySelectorAll("a.js_smooth"); 
+
+	// 	navLinks.forEach((link) => {
+	// 		link.addEventListener("click", smoothScroll);
+	// 	});
+	// }
+	// function smoothScroll(e) {
+	// 	e.preventDefault();
+	// 	const targetId = this.getAttribute("href");
+	// 	const targetElement = document.querySelector(targetId);
+
+	// 	if (targetElement) { 
+	// 		// targetElement.scrollIntoView({ behavior: "smooth", block: "end" }); 
+	// 		Jump(targetElement);
+	// 	}
+	// }
+
+	document.addEventListener("DOMContentLoaded", menuToggle);
+	function menuToggle(){
+		const navLinks = document.querySelectorAll(".js_menu"); 
+
+		navLinks.forEach((link) => {
+			link.addEventListener("click", function() {
+				var nextAnchor = link.nextElementSibling;
+				            
+				// Check if the next sibling is an anchor and trigger click
+				if (nextAnchor && nextAnchor.tagName === 'A') {
+					nextAnchor.click();
+				}
+			});
+		});
+	}
+
+
+	// function menuTrigger(trig){
+	// 	console.log("menu trigger");
+	// 	const nextElement = trig.nextElementSibling;
+	// 	console.log(nextElement);
+	// 	nextElement.click();
+	// }
+</script>
+
+
+<script>
+	/* Form 1 */
+	document.addEventListener("DOMContentLoaded", function() {
+	    var form = document.getElementById("homeGeneralLeads");
+	    form.addEventListener("submit", function(event) {
+	        event.preventDefault(); // Prevent default form submission
+	        
+	        // Collect form data
+	        var formData = new FormData(form);
+	        
+	        // Convert formData to URL encoded string
+	        var urlEncodedData = new URLSearchParams(formData).toString();
+	        
+	        // Define endpoint URL
+	        var endpoint = "https://docs.google.com/forms/d/e/1FAIpQLSeG6nfZX6S_nq29su85Olfx_5UT31lj8Mj50WJIwbrVa1wPTw/formResponse";
+	        
+	        // Fetch API POST request
+	        fetch(endpoint, {
+	            method: "POST",
+	            mode: "cors",
+	            credentials: "include",
+	            headers: {
+	                "Content-Type": "application/x-www-form-urlencoded"
+	            },
+	            body: urlEncodedData
+	        })
+	        .then(response => {
+	            if (!response.success) {
+	                throw new Error("Network response was Unsuccessful");
+	            }
+	            return response.text();
+	        })
+	        .then(data => {
+	            // Handle success response
+	            console.log("success:", data);
+	            // You can handle the success response here
+	            // For example, display a success message to the user
+	        })
+	        .catch(error => {
+	            // Handle error
+	            console.error("error:", error);
+	            // Handle the error response here
+	            // For example, display an error message to the user
+	        });
+	        form.classList.add("thank-you");
+	    });
+	});
+</script>
+
+<script>
+	/* Form 2 */
+	document.addEventListener("DOMContentLoaded", function() {
+	    var form = document.getElementById("egBusinessLeads");
+	    form.addEventListener("submit", function(event) {
+	        event.preventDefault(); // Prevent default form submission
+	        
+	        // Collect form data
+	        var formData = new FormData(form);
+	        
+	        // Convert formData to URL encoded string
+	        var urlEncodedData = new URLSearchParams(formData).toString();
+	        
+	        // Define endpoint URL
+	        var endpoint = "https://docs.google.com/forms/d/e/1FAIpQLSdxc5ViZcLMRLSXbny8rBTPVU4RrrN6xS1gxdWfAhhMw5KWew/formResponse";
+	        
+	        // Fetch API POST request
+	        fetch(endpoint, {
+	            method: "POST",
+	            mode: "cors",
+	            credentials: "include",
+	            headers: {
+	                "Content-Type": "application/x-www-form-urlencoded"
+	            },
+	            body: urlEncodedData
+	        })
+	        .then(response => {
+	            if (!response.success) {
+	                throw new Error("Network response was Unsuccessful");
+	            }
+	            return response.text();
+	        })
+	        .then(data => {
+	            // Handle success response
+	            console.log("success:", data);
+	            // You can handle the success response here
+	            // For example, display a success message to the user
+	        })
+	        .catch(error => {
+	            // Handle error
+	            console.error("error:", error);
+	            // Handle the error response here
+	            // For example, display an error message to the user
+	        });
+	        form.classList.add("thank-you");
+	    });
+	});
+</script>
+
+</body>
+
+</html>
 
 
 
