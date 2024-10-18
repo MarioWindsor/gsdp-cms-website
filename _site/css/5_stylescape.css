@@ -827,3 +827,7 @@ select {
 .box-shadow-violet {
 	box-shadow: 0 0 3px 1px rgba(143, 0, 255, 0.125),  0 0 9px 3px rgba(143, 0, 255, 0.125);
 }
+
+.flexbox {
+	display: flex;
+}

@@ -236,7 +236,82 @@
 				</div>
 				<!-- END: Demographic -->
 				<!-- Posts -->
-				<div class="posts row">
+				<div class="posts row position-relative">
+					<!-- Post Filter -->
+					<style type="text/css">
+						.option-label {
+							transform: translateY(-100%);
+						}
+						@media( min-width: 640px )  {
+							.option-label {
+								transform-origin: bottom left;
+								transform: scale(1.25) translateY(-75%);
+							}
+						}
+						@media( min-width: 1040px ) {
+						}
+						@media( min-width: 1480px ) {}
+						
+					</style>
+					<div class="filter columns small-12 space-100-bottom" style="position: sticky; top: var(--space-100); z-index: 8;">
+						<div class="row box-shadow-violet text-violet row fill-white radius-50 space-50-top-bottom space-50-right" style="backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); background: rgba(255, 255, 255, 0.5);">
+							<div class="columns small-12 medium-2 inline-top">
+								<div class="p font-h strong opacity-50 space-50-left space-50-bottom">
+									<span class="material-symbols-rounded inline-middle" style="font-size: var(--p); font-weight: 700;">tune</span> 
+									Filter By:
+								</div>
+							</div>
+							<div class="columns small-3 medium-2 inline-middle">
+								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
+									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Year</span>
+									<select class="block opacity-0" name="project">
+										<option value="" selected>Select</option>
+										<option value="">2018</option>
+										<option value="">2019</option>
+										<option value="">2020</option>
+										<option value="">2021</option>
+									</select>
+									<span class="option-label label strong position-absolute no-wrap no-pointer">
+										2018
+										<span class="material-symbols-rounded inline-middle" style="font-size: var(--label); font-weight: 700; transform: scale(1.5);">arrow_drop_down</span> 
+									</span>
+								</label>
+							</div>
+							<div class="columns small-4 medium-3 inline-middle">
+								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
+									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Category</span>
+									<select class="block opacity-0" name="project">
+										<option value="" selected>Select</option>
+										<option value="">Residential</option>
+										<option value="">Industrial</option>
+										<option value="">Apartmental</option>
+									</select>
+									<span class="option-label label strong position-absolute no-wrap no-pointer">
+										Residential
+										<span class="material-symbols-rounded inline-middle" style="font-size: var(--label); font-weight: 700; transform: scale(1.5);">arrow_drop_down</span> 
+									</span>
+								</label>
+							</div>
+							<div class="columns small-5 medium-5 inline-middle">
+								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
+									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Project</span>
+									<select class="block opacity-0" name="project">
+										<option value="" selected>Select</option>
+										<option value="">Dasta Concerto</option>
+										<option value="">ABC</option>
+										<option value="">XYZ</option>
+									</select>
+									<span class="option-label label strong position-absolute no-wrap no-pointer">
+										Dasta Concerto
+										<span class="material-symbols-rounded inline-middle" style="font-size: var(--label); font-weight: 700; transform: scale(1.5);">arrow_drop_down</span> 
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<!-- END: Post Filter -->
+
+					<!-- Post Listing -->
 					<ul class="post-listing columns small-12" style="list-style-type: none;">
 						
 						<li style="margin: 0; padding-bottom: var(--space-100);">
@@ -255,7 +330,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2009</span>
 										<span class="small text-neutral-3 space-min-right">Residential</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -283,7 +358,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2024</span>
 										<span class="small text-neutral-3 space-min-right">Residential</span>
 										<span class="small text-neutral-3 space-min-right">Ongoing</span>
@@ -311,7 +386,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2017</span>
 										<span class="small text-neutral-3 space-min-right">Residential</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -339,7 +414,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2015</span>
 										<span class="small text-neutral-3 space-min-right">Residential</span>
 										<span class="small text-neutral-3 space-min-right">Unbuilt</span>
@@ -367,7 +442,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2018</span>
 										<span class="small text-neutral-3 space-min-right">Residential</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -395,7 +470,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2018</span>
 										<span class="small text-neutral-3 space-min-right">Residential</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -423,7 +498,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2017</span>
 										<span class="small text-neutral-3 space-min-right">Residential</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -451,7 +526,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2018</span>
 										<span class="small text-neutral-3 space-min-right">Residential</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -479,7 +554,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2016</span>
 										<span class="small text-neutral-3 space-min-right">Renovation</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -507,7 +582,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2014</span>
 										<span class="small text-neutral-3 space-min-right">Renovation</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -535,7 +610,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2017</span>
 										<span class="small text-neutral-3 space-min-right">Residential</span>
 										<span class="small text-neutral-3 space-min-right">Unbuilt</span>
@@ -563,7 +638,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2017</span>
 										<span class="small text-neutral-3 space-min-right">Residential</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -591,7 +666,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2022</span>
 										<span class="small text-neutral-3 space-min-right">Residential</span>
 										<span class="small text-neutral-3 space-min-right">Proposed</span>
@@ -619,7 +694,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2015</span>
 										<span class="small text-neutral-3 space-min-right">Interiors</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -647,7 +722,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2008</span>
 										<span class="small text-neutral-3 space-min-right">Interiors</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -675,7 +750,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2020</span>
 										<span class="small text-neutral-3 space-min-right">Interiors</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -703,7 +778,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2017</span>
 										<span class="small text-neutral-3 space-min-right">Interiors</span>
 										<span class="small text-neutral-3 space-min-right">Completed</span>
@@ -731,7 +806,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2018</span>
 										<span class="small text-neutral-3 space-min-right">Institutional</span>
 										<span class="small text-neutral-3 space-min-right">Unbuilt</span>
@@ -759,7 +834,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2016</span>
 										<span class="small text-neutral-3 space-min-right">Institutional</span>
 										<span class="small text-neutral-3 space-min-right"></span>
@@ -787,7 +862,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2022</span>
 										<span class="small text-neutral-3 space-min-right">Hospitality</span>
 										<span class="small text-neutral-3 space-min-right">Proposed</span>
@@ -815,7 +890,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2012</span>
 										<span class="small text-neutral-3 space-min-right">Residential</span>
 										<span class="small text-neutral-3 space-min-right">Unbuilt</span>
@@ -843,7 +918,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2015</span>
 										<span class="small text-neutral-3 space-min-right">Hospitality</span>
 										<span class="small text-neutral-3 space-min-right">Unbuilt</span>
@@ -871,7 +946,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2012</span>
 										<span class="small text-neutral-3 space-min-right">Hospitality</span>
 										<span class="small text-neutral-3 space-min-right">Compeleted</span>
@@ -899,7 +974,7 @@
 									</div>
 								</div>
 								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-overflow">
+									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
 										<span class="small text-neutral-3 space-min-right">2014</span>
 										<span class="small text-neutral-3 space-min-right">Hospitality</span>
 										<span class="small text-neutral-3 space-min-right">Proposed</span>
@@ -912,6 +987,7 @@
 						</li>
 						
 					</ul>
+					<!-- END: Post Listing -->
 				</div>
 				<!-- End: Posts -->
 			</div>
