@@ -40,7 +40,8 @@
 	--neutral-5: #747377;
 	--neutral-6: #59585C;
 	--neutral-7: #3E3D41;
-	--dark: #1B121D;
+/*	--dark: #1B121D;*/
+	--dark: #1d0033;
 	--black: #000000;
 	--violet: #8F00FF;
 	--pink: #FA3478;
@@ -815,4 +816,14 @@ select {
 .carousel .carousel-controls .prev,
 .carousel .carousel-controls .next {
 	pointer-events: all;
+}
+
+
+
+/*
+ * Box Shadow
+ */
+
+.box-shadow-violet {
+	box-shadow: 0 0 3px 1px rgba(143, 0, 255, 0.125),  0 0 9px 3px rgba(143, 0, 255, 0.125);
 }

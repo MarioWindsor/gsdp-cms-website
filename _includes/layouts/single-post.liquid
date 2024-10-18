@@ -5,12 +5,138 @@
 
 
 
+<style type="text/css">
+	.single-post-tags-section .tag { margin-bottom: var(--space-min); }
+	.post-content { font-size: var(--label); color: var(--dark); }
+	.post-content h1 { display: block; font-size: var(--h2); font-weight: 700; padding: var(--h4) 0; font-family: "Rajdhani", Arial, serif; line-height: 1.125; }
+	.post-content h2 { display: block; font-size: var(--h3); font-weight: 700; padding: var(--h5) 0; font-family: "Rajdhani", Arial, serif; line-height: 1.125; }
+	.post-content h3 { display: block; font-size: var(--h4); font-weight: 700; padding: var(--h6) 0; font-family: "Rajdhani", Arial, serif; line-height: 1.125; }
+	.post-content h4 { display: block; font-size: var(--h5); font-weight: 700; padding: var(--h6) 0; font-family: "Rajdhani", Arial, serif; line-height: 1.125; }
+	.post-content h5 { display: block; font-size: var(--h6); font-weight: 700; padding: var(--p) 0; }
+	.post-content h6 { display: block; font-size: var(--p); font-weight: 700; padding: var(--p) 0; }
+	.post-content p 	{ display: block; font-size: var(--p); padding: var(--p) 0; }
+	.post-content label { display: inline-block; font-size: var(--label); font-weight: 700; }
+	.post-content small { display: inline-block; font-size: var(--label); }
+	.post-content b { display: inline-block; font-weight: 700; }
+	.post-content u { display: inline-block; text-decoration: underline; }
+	.post-content em { display: inline-block; font-style: italic; }
+	.post-content img { border-radius: var(--space-25); box-shadow: 0 0 3px 1px rgba(143, 0, 255, 0.125),  0 0 9px 3px rgba(143, 0, 255, 0.125); }
+	.post-content figcaption { padding: var(--space-25); font-size: var(--label); line-height: 1.125; text-align: left; color: var(--violet); opacity: 0.7; }
+</style>
 
 
-{{ content }}
+<!-- Single Post Thumbnail Section -->
+<section id="single-post-thumbnail-section" class="single-post-thumbnail-section" style="background-image: url('{{ thumbnail }}'); min-height: 50vw; background-size: cover; background-position: center center;">
+</section>
+<!-- END: Single Post Thumbnail Section -->
 
 
 
 
+
+<!-- Single Post Intro Section -->
+<section id="single-post-intro-section" class="single-post-intro-section fill-violet">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12 large-10 large-offset-1 text-center">
+				<div class="intro text-white space-100-top-bottom">
+					<div class="h3 strong font-h">{{ title }}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Single Post Intro Section -->
+
+
+
+
+
+
+<!-- Single Post Tags Section -->
+<section id="single-post-tags-section" class="single-post-tags-section fill-light space-150-top">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12 text-center">
+				<div class="space-25">
+					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ category }}</a>
+					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ project }}</a>
+					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ client }}</a>
+					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ site }}</a>
+					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ year }}</a>
+					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ status }}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Single Post Tags Section -->
+
+
+
+
+
+<!-- Single Post Content Section -->
+<section id="single-post-content-section" class="single-post-content-section space-150-top-bottom fill-light">
+	<div class="container">
+		<div class="row">
+			<div class="post-content columns small-12 large-10 large-offset-1">
+				{{ content }}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Single Post Content Section -->
+
+
+
+
+
+<!-- Single Post CTA Section -->
+<section id="single-post-cta-section" class="single-post-cta-section" style="background-image: url('media/image.jpg'); background-size: cover;">
+	<div class="row space-200-top-bottom" style="background: rgba(0, 0, 0, 0.7);">
+		<div class="container">
+			<div class="columns small-12 medium-6 large-4">
+				<div class="single-post-cta space-25 text-white">
+					<div class="h2 font-h strong space-100-bottom">Architecture that Inspires and Endures</div>
+					<div class="h6 space-100-bottom">Rooted in Human-Centric Design, our unique approach combines functionality with timeless beauty!</div>
+				</div>
+			</div>
+			<div class="columns small-12 medium-6 large-4 large-offset-4 text-light">
+				<!-- Form -->
+				<div class="form space-150-left-right space-150-top-bottom radius-50" style="backdrop-filter: blur(10px) brightness(150%); -webkit-backdrop-filter: blur(10px) brightness(150%); background: rgba(143, 0, 255, 0.5);">
+					<form action="" method="post">
+						<div class="h5">Sign-up for a FREE<br>Online Consultation!</div>
+						<label class="form-field block space-25-top" for="fullName">
+							<span class="label strong inline space-min-bottom">Full Name</span>
+							<input class="input-field block" type="text" name="fullName">
+						</label>
+						<label class="form-field block space-25-top" for="email">
+							<span class="label strong inline space-min-bottom">Email ID</span>
+							<input class="input-field block" type="text" name="email">
+						</label>
+						<label class="form-field block space-25-top" for="phone">
+							<span class="label strong inline space-min-bottom">Phone Number <span class="w-400">(Request a Call-Back)</span></span>
+							<input class="input-field block" type="text" name="phone">
+						</label>
+						<label class="form-field block space-25-top" for="phone">
+							<span class="label strong inline space-min-bottom invisible">Submit</span>
+							<button class="button block strong fill-light text-left" type="submit">Send</button>
+						</label>
+					</form>
+				</div>
+				<!-- END: Form -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Single Post CTA Section -->
+
+
+
+
+
+
+{% include 'parts/footer-menu.liquid' %}
 {% include 'parts/footer.liquid' %}
 {% include 'parts/foot.liquid' %}

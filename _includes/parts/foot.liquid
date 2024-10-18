@@ -207,6 +207,27 @@
 	});
 </script>
 
+
+<script type="text/javascript">
+	
+	/* -- Post Content - Fig Caption Generator -- */
+
+	document.addEventListener("DOMContentLoaded", function() {
+		const postContent = document.querySelector('.post-content');
+		const images = postContent.querySelectorAll('img');
+
+		images.forEach(image => {
+		  const altText = image.getAttribute('alt');
+
+		  if (altText) {
+		    const caption = document.createElement('figcaption');
+		    caption.textContent = altText;
+		    image.parentNode.insertBefore(caption, image.nextSibling);
+		  }
+		});
+	});
+</script>
+
 </body>
 
 </html>
