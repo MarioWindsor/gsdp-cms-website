@@ -470,8 +470,8 @@ select {
 	padding: 11px var(--space-50);
 	font-size: 1.4rem;
 	line-height: var(--space-150);
-	color: var(--white);
-	background-color: transparent;
+	color: inherit;
+	background-color: inherit;
 	border: 0;
 /*	border: solid 1px var(--neutral-1);*/
 	border-radius: var(--space-min);
@@ -576,6 +576,10 @@ select {
 /*		height: var(--space-50);*/
 /*		font-size: 1.8rem;*/
 	}
+}
+
+.form-field:focus-within .label {
+	color: rgba(255, 235, 59, 1);
 }
 
 

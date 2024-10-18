@@ -14,7 +14,7 @@ collections:
   # Article Collection
   - name: "article" # Used in routes, e.g., /admin/collections/blog
     label: "Article" # Used in the UI
-    folder: "_posts/article" # The path to the folder where the documents are stored
+    folder: "post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -27,7 +27,7 @@ collections:
   # Service Collection
   - name: "service" # Used in routes, e.g., /admin/collections/blog
     label: "Service" # Used in the UI
-    folder: "_posts/service" # The path to the folder where the documents are stored
+    folder: "service" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
