@@ -1,6 +1,6 @@
 ---
-
-project: Belagavi Home -  A Contemporary & Vernacular Home in Belagavi
+title: Belagavi Home - A Contemporary & Vernacular Home in Belagavi
+project: Belagavi Home
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249515959_Mohta_04.jpg
 client: Kaushik Mohta
 year: 2022
@@ -12,7 +12,7 @@ built_up_area: 8000
 status: Proposed
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.
 
-----------
+---
 
 ## A Contemporary & Vernacular Home in Belagavi
 

@@ -1,8 +1,6 @@
-# The Variance - A Family Home for 4 in Tamil Nadu
-
-----------
-
+---
 title: The Variance - A Family Home for 4 in Tamil Nadu
+thumbnail: https://paper-attachments.dropboxusercontent.com/s_A4528BC199912E9F414EE3FF286D6EDE32004A3572765E6010DFB11463BCA9AA_1729251132724_GSDS-JN-VIEW1.jpg
 project: The Variance 
 client: Mr. Jaganathan
 year: 2017
@@ -14,8 +12,8 @@ built_up_area: 12,500
 status: Completed
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.
 
-----------
-![thumbnail](https://paper-attachments.dropboxusercontent.com/s_A4528BC199912E9F414EE3FF286D6EDE32004A3572765E6010DFB11463BCA9AA_1729251132724_GSDS-JN-VIEW1.jpg)
+---
+
 
 ## A Family Home for 4 in Tamil Nadu
 ![](https://paper-attachments.dropboxusercontent.com/s_A4528BC199912E9F414EE3FF286D6EDE32004A3572765E6010DFB11463BCA9AA_1729251140238_GSDS-JN-+PLANS+2.jpg)
