@@ -578,8 +578,8 @@
 <script type="text/javascript">
 	
 	/* -- Post Content - Fig Caption Generator -- */
-
 	document.addEventListener("DOMContentLoaded", function() {
+
 		const postContent = document.querySelector('.post-content');
 		const images = postContent.querySelectorAll('img');
 
@@ -592,7 +592,34 @@
 		    image.parentNode.insertBefore(caption, image.nextSibling);
 		  }
 		});
+
 	});
+
+</script>
+
+<script type="text/javascript">
+	
+	/* -- Post Content - Fig Caption Generator -- */
+	document.addEventListener("DOMContentLoaded", function() {
+
+		/* -- Post Filter - Update Label -- */
+		const postFilterContainer = document.getElementById('postFilter');
+		const selectors = postFilterContainer.querySelectorAll('.selector');
+
+		selectors.forEach((selector) => {
+			console.log("pewpewpew");
+		  selector.addEventListener('change', () => {
+		    const selectedOption = selector.options[selector.selectedIndex];
+		    const label = selector.nextElementSibling; // Assuming the label is immediately after the select
+
+		    if (label.classList.contains('selector-label')) {
+		      label.textContent = selectedOption.text;
+		    }
+		  });
+		});
+
+	});
+	
 </script>
 
 </body>

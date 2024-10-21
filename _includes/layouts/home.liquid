@@ -87,12 +87,12 @@
 					<!-- Post Filter -->
 					<style type="text/css">
 						.filter { transform : scale(1.1); }
-						.option-label {
+						.selector-label {
 							transform: translateY(-100%);
 						}
 						@media( min-width: 640px )  {
 							.filter { transform : scale(1.05); }
-							.option-label {
+							.selector-label {
 								transform-origin: bottom left;
 								transform: scale(1.25) translateY(-75%);
 							}
@@ -102,7 +102,7 @@
 						@media( min-width: 1480px ) {}
 						
 					</style>
-					<div class="filter columns small-12 space-100-bottom" style="position: sticky; top: var(--space-100); z-index: 8;">
+					<div id="postFilter" class="filter columns small-12 space-100-bottom" style="position: sticky; top: var(--space-100); z-index: 8;">
 						<div class="row box-shadow-violet text-violet row fill-white radius-50 space-50-top-bottom space-50-right" style="backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); background: rgba(255, 255, 255, 0.5);">
 							<div class="columns small-12 medium-2 inline-top">
 								<div class="p font-h strong opacity-50 space-50-left space-50-bottom">
@@ -113,7 +113,7 @@
 							<div class="columns small-3 medium-2 inline-middle">
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
 									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Year</span>
-									<select class="block opacity-0" name="project">
+									<select class="selector block opacity-0" name="project">
 										<!-- 💀 WARNING: DO NOT INTRODUCE Whitespace Between Capture 💀 -->
 										<option value="all" selected>All</option>
 										<!-- capture years from all posts into a string with ',' comma separtion -->
@@ -125,8 +125,8 @@
 											<option value="{{itemYear}}">{{itemYear}}</option>
 										{% endfor %}
 									</select>
-									<span class="option-label label strong position-absolute no-wrap no-pointer">
-										2018
+									<span class="selector-label label strong position-absolute no-wrap no-pointer">
+										<span id="currentYear">All</span>
 										<span class="material-symbols-rounded inline-middle" style="font-size: var(--label); font-weight: 700; transform: scale(1.5);">arrow_drop_down</span> 
 									</span>
 								</label>
@@ -134,7 +134,7 @@
 							<div class="columns small-4 medium-3 inline-middle">
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
 									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Category</span>
-									<select class="block opacity-0" name="project">
+									<select class="selector block opacity-0" name="project">
 										<!-- 💀 WARNING: DO NOT INTRODUCE Whitespace Between Capture 💀 -->
 										<option value="all" selected>All</option>
 										<!-- capture categories from all posts into a string with ',' comma separtion -->
@@ -146,8 +146,8 @@
 											<option value="{{itemCategory}}">{{itemCategory}}</option>
 										{% endfor %}
 									</select>
-									<span class="option-label label strong position-absolute no-wrap no-pointer">
-										Residential
+									<span class="selector-label label strong position-absolute no-wrap no-pointer">
+										<span id="currentCategory">All</span>
 										<span class="material-symbols-rounded inline-middle" style="font-size: var(--label); font-weight: 700; transform: scale(1.5);">arrow_drop_down</span> 
 									</span>
 								</label>
@@ -155,7 +155,7 @@
 							<div class="columns small-5 medium-5 inline-middle">
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
 									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Project</span>
-									<select class="block opacity-0" name="project">
+									<select class="selector block opacity-0" name="project">
 										<!-- 💀 WARNING: DO NOT INTRODUCE Whitespace Between Capture 💀 -->
 										<option value="all" selected>All</option>
 										<!-- capture projects from all posts into a string with ',' comma separtion -->
@@ -167,8 +167,8 @@
 											<option value="{{itemProject}}">{{itemProject}}</option>
 										{% endfor %}
 									</select>
-									<span class="option-label label strong position-absolute no-wrap no-pointer">
-										Dasta Concerto
+									<span class="selector-label label strong position-absolute no-wrap no-pointer">
+										<span id="currentProject">All</span>
 										<span class="material-symbols-rounded inline-middle" style="font-size: var(--label); font-weight: 700; transform: scale(1.5);">arrow_drop_down</span> 
 									</span>
 								</label>
