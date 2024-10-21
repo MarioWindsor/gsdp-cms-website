@@ -1,11 +1,12 @@
 ---
+tags: post
 title: The Potpourri - Coconut Groove Themed Restaurant
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_CAE6F1362C0C99224C6C7B76D906EFEEDE9BDC70ADE9541299F381AB0AE5BF1F_1729262440120_1213+THEME+RESAURANT-DEFAULT-DEFAULT-004.jpg
 project: The Potpourri 
 client: Parashivamurthy
 year: 2012
 date:
-category: Residential 
+category: Residential
 site:  Sarjapur road, , Bengaluru
 site_area: 17,585 
 built_up_area: 40,225

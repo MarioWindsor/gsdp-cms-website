@@ -1,10 +1,11 @@
 ---
+tags: post
 title: The Club  - A Versatile Hospitality Project in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_EFB45E0BB8A4B8D10EB2972643207C7300B96502BA1B3DFE5D8D2EC6A8C90FD6_1729263703396_1314GUNJUR+CLUB-PR-VIEWS-020_1.jpg
 project: The Club
 year: 2015
 date:
-category: Hospitality 
+category: Hospitality
 site: Bengaluru
 site_area: 1.5 Acres
 built_up_area: 30000

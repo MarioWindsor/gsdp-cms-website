@@ -1,11 +1,12 @@
 ---
+tags: post
 title: The Lampird - A Jaali Hotel in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_6CF14421965A15012E5856383B2B7ED0375971B9B9C309FE144BB5DA7CE63CBE_1729262752752_NAGRAJ+02.jpg
 project: The Lampird
 client:  P. L. Nagraj
 year: 2012
 date:
-category: Hospitality  
+category: Hospitality
 site:  Chamrajpet, Bengaluru
 site_area: 3150
 built_up_area: 6475

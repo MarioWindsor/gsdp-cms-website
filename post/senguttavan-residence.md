@@ -1,11 +1,12 @@
 ---
+tags: post
 title: Senguttavan Residence  - A Versatile Home in Tamil Nadu
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_B63965FF9E5209A6B33B84745847AFAFFCEABE5CB3F828FCA5CC456766077C72_1729248183962_0004.jpg
 project: Senguttavan Residence 
 client: Senguttavan
 year: 2015
 date:
-category: Residential 
+category: Residential
 site: Erode, Tamil Nadu
 site_area: 15500
 built_up_area: 12000

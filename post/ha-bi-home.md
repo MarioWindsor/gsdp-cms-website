@@ -1,4 +1,5 @@
 ---
+tags: post
 title: Ha Bi Home - Wood and Metal Interior 
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_B7A083974F005EAD2CE47AC48E582371FE1335F998FF9D6C3D1EDA6C565C84AC_1729259593697_A2208571.jpg
 project: Ha Bi Home

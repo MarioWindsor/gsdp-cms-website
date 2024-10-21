@@ -1,10 +1,11 @@
 ---
+tags: post
 title: The Cognizance - A Colonnade Clubhouse in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_842C7439CF78E06F97762365822EB93C67A793D9B5237DBC693F5B6752217B77_1729263452662_01+1+1.jpg
 project: The Cognizance 
 year: 2014
 date:
-category: Hospitality 
+category: Hospitality
 site: Hosakote Main Road, Bengaluru
 site_area: 3 acres
 built_up_area: 1,36,000

@@ -1,4 +1,5 @@
 ---
+tags: post
 title: Sterling Home  - Apartment Interiors in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_07D04802E803BB01CDA78D50D9EC6F6733A57E336FEC2410ED626AB53C6207D2_1729259786414_3540.jpg
 project: Sterling Home

@@ -1,11 +1,12 @@
 ---
+tags: post
 title: Oxide Flair - Sklight Home in Bangalore
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_C47574A53A930B9F39B83BBF0EDEA809070DF7B305B6110393E35414A85D3533_1729166706806_EXTERNAL+01.jpg
 project: Oxide Flair
 client: Shekar Babu
 year: 2018
 date:
-category: Residential 
+category: Residential
 site: Jakkur, Bangalore
 site_area: 1200
 built_up_area: 3200

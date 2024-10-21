@@ -1,4 +1,5 @@
 ---
+tags: post
 title: Brickly Affair - An Open Plan, Multiple Height Home in Bangalore
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_5EAF91A48C2FF13DCA080F637C9DDD04B4757EC6FF4D541AE4D1E6DB46FE34CC_1729164696166_SIDE+FACADE.jpg
 project: Brickly Affair

@@ -1,4 +1,5 @@
 ---
+tags: post
 title: Greyscale Design Studio - Office Redo
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_B20B6E217961EFBA108AC54F86E7517B2E27D77CB516E681FB4A67AD7819E175_1729255250473__DSC2928.jpg
 project: Greyscale Design Studio

@@ -1,12 +1,12 @@
 ---
-
+tags: post
 title: Samyak - Open Space Interiors for a Home in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_1539B412F8F3BCE15E3E059BFA671CF31DAEB087BDEE2BDD37572B6357978FE0_1729259266824_grey+scale-banshankari+-0004.JPG
 project: Samyak
 client:  Mr. Gowtham and family
 year: 2015
 date:
-category: Interiors 
+category: Interiors
 site: Brigade Gateway, Bengaluru
 built_up_area: 1950
 status: Completed

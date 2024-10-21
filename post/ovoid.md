@@ -1,11 +1,12 @@
 ---
+tags: post
 title: Ovoid - A Holiday Home in Chickmanglur
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165664481_AJ_05520.jpg
 project: Ovoid
 client: Prem Mysore
 year: 2018
 date:
-category: Residential 
+category: Residential
 site: Gonibeedu, Chickmanglur
 built_up_area: 3200
 status: Completed

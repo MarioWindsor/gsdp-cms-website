@@ -1,11 +1,12 @@
 ---
+tags: post
 title: Veena Kumari - A Home in Mysore
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_E3A5CBF3AC2F55BBD1E681D8269AEED977C3A6F09E607A107F0E48AE4A52D05D_1729250556874_veena_01.jpg+c.jpg
 project: Veena Kumari
 client: Veena Kumari
 year: 2024
 date:
-category: Residential 
+category: Residential
 site: Mysore
 site_area: 2400
 built_up_area: 5000

@@ -1,4 +1,5 @@
 ---
+tags: post
 title: Belagavi Home - A Contemporary & Vernacular Home in Belagavi
 project: Belagavi Home
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249515959_Mohta_04.jpg

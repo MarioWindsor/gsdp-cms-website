@@ -1,11 +1,12 @@
 ---
+tags: post
 title: Vallabh Kun - Jalli Detailed Home in Jaipur
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_6EF58072C2E805B02FFC7B98D60E3CCE89FE4F6FBDFDD8C5906AB29376DF1437_1729166201916_01EXTERNAL.jpg
 project: Vallabh Kun
 client: V K Bhatia
 year: 2017
 date:
-category: Residential 
+category: Residential
 site: Raja Park, Jaipur
 site_area: 2500
 built_up_area: 7000

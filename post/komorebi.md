@@ -1,11 +1,12 @@
 ---
+tags: post
 title: Komorebi - Home in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_39B6E2E07213B887B130F7F1024218E86051591B1C87204A671C4B04B51E5DCE_1729165178012_11KOMOREBI.jpg
 project: Komorebi
 client: Mr Kiran Belagodu
 year: 2017
 date:
-category: Residential 
+category: Residential
 site: Hanumath Nagar, Bengaluru
 site_area: 2400
 built_up_area: 5500

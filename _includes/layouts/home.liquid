@@ -5,8 +5,6 @@
 
 
 
-
-
 <!-- Intro Section -->
 <section id="intro-section" class="intro-section" style="background-image: url('media/image.jpg'); background-size: cover;">
 	<div class="row space-200-top-bottom" style="background: rgba(0, 0, 0, 0.7);">
@@ -93,7 +91,7 @@
 							transform: translateY(-100%);
 						}
 						@media( min-width: 640px )  {
-							.filter { transform : scale(1); }
+							.filter { transform : scale(1.05); }
 							.option-label {
 								transform-origin: bottom left;
 								transform: scale(1.25) translateY(-75%);
@@ -116,11 +114,16 @@
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
 									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Year</span>
 									<select class="block opacity-0" name="project">
-										<option value="" selected>Select</option>
-										<option value="">2018</option>
-										<option value="">2019</option>
-										<option value="">2020</option>
-										<option value="">2021</option>
+										<!-- 💀 WARNING: DO NOT INTRODUCE Whitespace Between Capture 💀 -->
+										<option value="all" selected>All</option>
+										<!-- capture years from all posts into a string with ',' comma separtion -->
+										{% capture years %}{% for year in collections.post | sort: "year" %}{{ year.data.year }},{% endfor %}{% endcapture %}
+										<!-- assign years to an array by spliting sting at ','commas and only adding the unique ones -->
+										{% for yea in years %}{% assign itemsYear = yea | split: ',' | uniq | sort_natural %}{% endfor %}
+										<!-- loop to output uniqe years -->
+										{% for itemYear in itemsYear %}
+											<option value="{{itemYear}}">{{itemYear}}</option>
+										{% endfor %}
 									</select>
 									<span class="option-label label strong position-absolute no-wrap no-pointer">
 										2018
@@ -132,10 +135,16 @@
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
 									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Category</span>
 									<select class="block opacity-0" name="project">
-										<option value="" selected>Select</option>
-										<option value="">Residential</option>
-										<option value="">Industrial</option>
-										<option value="">Apartmental</option>
+										<!-- 💀 WARNING: DO NOT INTRODUCE Whitespace Between Capture 💀 -->
+										<option value="all" selected>All</option>
+										<!-- capture categories from all posts into a string with ',' comma separtion -->
+										{% capture categories %}{% for category in collections.post | sort: "category" %}{{ category.data.category }},{% endfor %}{% endcapture %}
+										<!-- assign categories to an array by spliting sting at ','commas and only adding the unique ones -->
+										{% for cat in categories %}{% assign itemsCategory = cat | split: ',' | uniq | sort_natural %}{% endfor %}
+										<!-- loop to output uniqe categories -->
+										{% for itemCategory in itemsCategory %}
+											<option value="{{itemCategory}}">{{itemCategory}}</option>
+										{% endfor %}
 									</select>
 									<span class="option-label label strong position-absolute no-wrap no-pointer">
 										Residential
@@ -147,10 +156,16 @@
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
 									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Project</span>
 									<select class="block opacity-0" name="project">
-										<option value="" selected>Select</option>
-										<option value="">Dasta Concerto</option>
-										<option value="">ABC</option>
-										<option value="">XYZ</option>
+										<!-- 💀 WARNING: DO NOT INTRODUCE Whitespace Between Capture 💀 -->
+										<option value="all" selected>All</option>
+										<!-- capture projects from all posts into a string with ',' comma separtion -->
+										{% capture projects %}{% for project in collections.post | sort: "project" %}{{ project.data.project }},{% endfor %}{% endcapture %}
+										<!-- assign projects to an array by spliting sting at ','commas and only adding the unique ones -->
+										{% for pro in projects %}{% assign itemsProject = pro | split: ',' | uniq | sort_natural %}{% endfor %}
+										<!-- loop to output uniqe projects -->
+										{% for itemProject in itemsProject %}
+											<option value="{{itemProject}}">{{itemProject}}</option>
+										{% endfor %}
 									</select>
 									<span class="option-label label strong position-absolute no-wrap no-pointer">
 										Dasta Concerto
@@ -164,34 +179,43 @@
 
 					<!-- Post Listing -->
 					<ul class="post-listing columns small-12" style="list-style-type: none;">
-						{% for post in collections.post %}
-						<li style="margin: 0; padding-bottom: var(--space-100);">
-							<div class="post box-shadow-violet radius-50 fill-white no-overflow">
-								<a class="thumbnail block cursor-pointor" href="{{ post.url }}" style="background: url('{{ post.data.thumbnail }}'); padding-bottom: 50%; background-size: cover; background-position: center center;">
-								</a>
-								<div class="meta  space-100-left-right space-50-top">
-									<span class="small text-violet space-min-right">{{ post.data.project }}</span>
-									<span class="small text-violet space-min-right">{{ post.data.client }}</span>
-									<span class="small text-violet space-min-right">{{ post.data.site }}</span>
-								</div>
-								<div class="content space-100-left-right space-25-top">
-									<a class="title h5 font-h block text-violet strong" href="{{ post.url }}">{{ post.data.title }}</a>
-									<div class="description label space-25-top-bottom">
-										<p>{{ post.data.description }}</p>
-									</div>
-								</div>
-								<div class="post-listing-footer row space-50-bottom">
-									<div class="columns small-10 inline-middle space-100-left no-wrap no-pointer no-overflow">
-										<span class="small text-neutral-3 space-min-right">{{ post.data.year }}</span>
-										<span class="small text-neutral-3 space-min-right">{{ post.data.category }}</span>
-										<span class="small text-neutral-3 space-min-right">{{ post.data.status }}</span>
-									</div>
-									<div class="columns small-2 inline-middle text-right">
-										<a class="button text-violet" href="{{ post.url }}"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
-									</div>
-								</div>
-							</div>
-						</li>
+						<!-- Reverse Sort By Year -->
+						{% capture reyears %}{% for reyear in collections.post | sort: "year"  %},{{ reyear.data.year }}{% endfor %}{% endcapture %}
+						<!-- assign reyears to an array by spliting sting at ','commas and only adding the unique ones -->
+						{% for yea in reyears %}{% assign itemsreYear = yea | split: ',' | uniq | sort_natural | reverse %}{% endfor %}
+						<!-- loop to output uniqe reyears -->
+						{% for itemreYear in itemsreYear %}
+							{% for post in collections.post %}
+								{% if itemreYear contains post.data.year %}
+									<li style="margin: 0; padding-bottom: var(--space-100);">
+										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
+											<a class="thumbnail block cursor-pointor" href="{{ post.url }}" style="background: url('{{ post.data.thumbnail }}'); padding-bottom: 50%; background-size: cover; background-position: center center;">
+											</a>
+											<div class="meta  space-100-left-right space-50-top">
+												<span class="small text-violet space-min-right">{{ post.data.project }}</span>
+												<span class="small text-violet space-min-right">{{ post.data.client }}</span>
+												<span class="small text-violet space-min-right">{{ post.data.site }}</span>
+											</div>
+											<div class="content space-100-left-right space-25-top">
+												<a class="title h5 font-h block text-violet strong" href="{{ post.url }}">{{ post.data.title }}</a>
+												<div class="description label space-25-top-bottom">
+													<p>{{ post.data.description }}</p>
+												</div>
+											</div>
+											<div class="post-listing-footer row space-50-bottom">
+												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
+													<span class="small text-neutral-3 space-min-right">{{ post.data.year }}</span>
+													<span class="small text-neutral-3 space-min-right">{{ post.data.category }}</span>
+													<span class="small text-neutral-3 space-min-right">{{ post.data.status }}</span>
+												</div>
+												<div class="columns small-2 inline-middle text-right">
+													<a class="button text-violet" href="{{ post.url }}"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
+												</div>
+											</div>
+										</div>
+									</li>
+								{% endif %}
+							{% endfor %}
 						{% endfor %}
 					</ul>
 					<!-- END: Post Listing -->

@@ -1,11 +1,12 @@
 ---
+tags: post
 title: Vishwakutumb - An All Encompassing Home for a Versatile Family
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_26CB88C86AB9D878EECEECDF22768797DB341BF06AA74ECB8105676619FC3AF8_1729162157204_gs+-+jain+-+001.JPG
 project: Vishwakutumb 
 client: Manoj Jain
 year: 2009
 date:
-category: Residential 
+category: Residential
 site: R M V Extension, Bengaluru
 site_area: 7700
 built_up_area: 12500
