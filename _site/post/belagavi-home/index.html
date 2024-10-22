@@ -578,9 +578,9 @@
 
 <script type="text/javascript">
 	
-	/* -- Post Content - Fig Caption Generator -- */
 	document.addEventListener("DOMContentLoaded", function() {
 
+		/* -- Post Content - Fig Caption Generator -- */
 		const postContent = document.querySelector('.post-content');
 		const images = postContent.querySelectorAll('img');
 
@@ -600,7 +600,6 @@
 
 <script type="text/javascript">
 	
-	/* -- Post Content - Fig Caption Generator -- */
 	document.addEventListener("DOMContentLoaded", function() {
 
 		/* -- Post Filter - Update Label -- */
@@ -608,7 +607,7 @@
 		const selectors = postFilterContainer.querySelectorAll('.selector');
 
 		selectors.forEach((selector) => {
-			console.log("pewpewpew");
+
 		  selector.addEventListener('change', () => {
 		    const selectedOption = selector.options[selector.selectedIndex];
 		    const label = selector.nextElementSibling; // Assuming the label is immediately after the select
@@ -617,7 +616,137 @@
 		      label.textContent = selectedOption.text;
 		    }
 		  });
+
 		});
+
+	});
+	
+</script>
+
+
+<!-- <div class="filters">
+  <label for="yearFilter">Year:</label>
+  <select id="yearFilter" class="selector">
+    <option value="">All</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+  </select>
+
+  <label for="categoryFilter">Category:</label>
+  <select id="categoryFilter" class="selector">
+    <option value="">All</option>
+    <option value="Design">Design</option>
+    <option value="Development">Development</option>
+    <option value="Marketing">Marketing</option>
+  </select>
+
+  <label for="projectFilter">Project:</label>
+  <select id="projectFilter" class="selector">
+    <option value="">All</option>
+    <option value="Project A">Project A</option>
+    <option value="Project B">Project B</option>
+    <option value="Project C">Project C</option>
+  </select>
+</div> -->
+
+<!-- <ul class="post-list">
+  <li data-year="2023" data-category="Design" data-project="Project A">
+    <p>Post 1 content</p>
+  </li>
+  <li data-year="2022" data-category="Development" data-project="Project B">
+    <p>Post 2 content</p>
+  </li>
+  <li data-year="2023" data-category="Marketing" data-project="Project C">
+    <p>Post 3 content</p>
+  </li>
+  <li data-year="2024" data-category="Design" data-project="Project A">
+    <p>Post 4 content</p>
+  </li>
+  <li data-year="2023" data-category="Development" data-project="Project B">
+    <p>Post 5 content</p>
+  </li>
+  <li data-year="2022" data-category="Marketing" data-project="Project C">
+    <p>Post 6 content</p>
+  </li>
+</ul> -->
+
+<script type="text/javascript">
+	
+	document.addEventListener("DOMContentLoaded", function() {
+
+		const postList = document.querySelector('.js_postList');
+		const yearFilter = document.getElementById('yearFilter');
+		const categoryFilter = document.getElementById('categoryFilter');
+		const projectFilter = document.getElementById('projectFilter');
+
+		function filterPosts() {
+			const selectedYear = yearFilter.value;
+			const selectedCategory = categoryFilter.value;
+			const selectedProject = projectFilter.value;
+
+			postList.querySelectorAll('li').forEach((post) => {
+				const postYear = post.getAttribute('data-year');
+				const postCategory = post.getAttribute('data-category');
+				const postProject = post.getAttribute('data-project');
+
+				if (
+					(selectedYear === '' || postYear === selectedYear) &&
+					(selectedCategory === '' || postCategory === selectedCategory) &&
+					(selectedProject === '' || postProject === selectedProject)
+				) {
+					post.style.display = 'block';
+				} else {
+					post.style.display = 'none';
+				}
+			});
+
+			/* Disable all options */
+			for (let i = 1; i < yearFilter.length; i++) {
+				yearFilter[i].disabled = true;
+			}
+			for (let i = 1; i < categoryFilter.length; i++) {
+				categoryFilter[i].disabled = true;
+			}
+			for (let i = 1; i < projectFilter.length; i++) {
+				projectFilter[i].disabled = true;
+			}
+
+			/* Enable Only Visible Options */
+			postList.querySelectorAll('li').forEach((post) => {
+				const post_title = post.getAttribute('data-title')
+				const post_year = post.getAttribute('data-year')
+				const post_category = post.getAttribute('data-category')
+				const post_project = post.getAttribute('data-project')
+
+				if ( post.style.display != 'none' ) {
+					for (let i = 0; i < yearFilter.length; i++) {
+						if (yearFilter[i].value === post_year) {
+							yearFilter[i].disabled = false;
+						}
+					}
+					for (let i = 0; i < categoryFilter.length; i++) {
+						if (categoryFilter[i].value === post_category) {
+							categoryFilter[i].disabled = false;
+						}
+					}
+					for (let i = 0; i < projectFilter.length; i++) {
+						if (projectFilter[i].value === post_project) {
+							projectFilter[i].disabled = false;
+						}
+					}
+				}
+
+			});
+
+		}
+
+		yearFilter.addEventListener('change', filterPosts);
+		categoryFilter.addEventListener('change', filterPosts);
+		projectFilter.addEventListener('change', filterPosts);
+
+		// Initial filtering
+		filterPosts();
 
 	});
 	

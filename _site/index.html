@@ -264,9 +264,8 @@
 							<div class="columns small-3 medium-2 inline-middle">
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
 									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Year</span>
-									<select class="selector block opacity-0" name="project">
-										<!-- 💀 WARNING: DO NOT INTRODUCE Whitespace Between Capture 💀 -->
-										<option value="all" selected>All</option>
+									<select id="yearFilter" class="selector block opacity-0" name="project">
+										<option value="" selected>All</option>
 										<!-- capture years from all posts into a string with ',' comma separtion -->
 										
 										<!-- assign years to an array by spliting sting at ','commas and only adding the unique ones -->
@@ -305,9 +304,8 @@
 							<div class="columns small-4 medium-3 inline-middle">
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
 									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Category</span>
-									<select class="selector block opacity-0" name="project">
-										<!-- 💀 WARNING: DO NOT INTRODUCE Whitespace Between Capture 💀 -->
-										<option value="all" selected>All</option>
+									<select id="categoryFilter" class="selector block opacity-0" name="project">
+										<option value="" selected>All</option>
 										<!-- capture categories from all posts into a string with ',' comma separtion -->
 										
 										<!-- assign categories to an array by spliting sting at ','commas and only adding the unique ones -->
@@ -334,9 +332,8 @@
 							<div class="columns small-5 medium-5 inline-middle">
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
 									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Project</span>
-									<select class="selector block opacity-0" name="project">
-										<!-- 💀 WARNING: DO NOT INTRODUCE Whitespace Between Capture 💀 -->
-										<option value="all" selected>All</option>
+									<select id="projectFilter" class="selector block opacity-0" name="project">
+										<option value="" selected>All</option>
 										<!-- capture projects from all posts into a string with ',' comma separtion -->
 										
 										<!-- assign projects to an array by spliting sting at ','commas and only adding the unique ones -->
@@ -405,7 +402,7 @@
 					<!-- END: Post Filter -->
 
 					<!-- Post Listing -->
-					<ul class="post-listing columns small-12" style="list-style-type: none;">
+					<ul class="js_postList post-listing columns small-12" style="list-style-type: none;">
 						<!-- Reverse Sort By Year -->
 						
 						<!-- assign reyears to an array by spliting sting at ','commas and only adding the unique ones -->
@@ -454,11 +451,7 @@
 								
 							
 								
-							
-								
-							
-								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="Veena Kumari - A Home in Mysore" data-year="2024" data-category="Residential" data-project="Veena Kumari" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/veena-kumari/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_E3A5CBF3AC2F55BBD1E681D8269AEED977C3A6F09E607A107F0E48AE4A52D05D_1729250556874_veena_01.jpg+c.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -491,42 +484,14 @@
 							
 								
 							
+								
+							
+								
+							
 						
 							
 								
-							
-								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
-										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
-											<a class="thumbnail block cursor-pointor" href="/post/white-escape/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_E49B407C9539B145416D5A39EAC6F2C77801AA0FC96DFB9A0D86009261AA7B16_1729262225067_01.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
-											</a>
-											<div class="meta  space-100-left-right space-50-top">
-												<span class="small text-violet space-min-right">White Escape</span>
-												<span class="small text-violet space-min-right">Mr Babu Joseph</span>
-												<span class="small text-violet space-min-right"></span>
-											</div>
-											<div class="content space-100-left-right space-25-top">
-												<a class="title h5 font-h block text-violet strong" href="/post/white-escape/">White Escape - Resort</a>
-												<div class="description label space-25-top-bottom">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
-												</div>
-											</div>
-											<div class="post-listing-footer row space-50-bottom">
-												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
-													<span class="small text-neutral-3 space-min-right">2022</span>
-													<span class="small text-neutral-3 space-min-right">Hospitality</span>
-													<span class="small text-neutral-3 space-min-right">Proposed</span>
-												</div>
-												<div class="columns small-2 inline-middle text-right">
-													<a class="button text-violet" href="/post/white-escape/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-								
-							
-								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="Belagavi Home - A Contemporary & Vernacular Home in Belagavi" data-year="2022" data-category="Residential" data-project="Belagavi Home" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/belagavi-home/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249515959_Mohta_04.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -560,7 +525,7 @@
 								
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="Ha Bi Home - Wood and Metal Interior" data-year="2022" data-category="Interiors" data-project="Ha Bi Home" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/ha-bi-home/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_B7A083974F005EAD2CE47AC48E582371FE1335F998FF9D6C3D1EDA6C565C84AC_1729259593697_A2208571.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -626,6 +591,38 @@
 								
 							
 								
+									<li data-title="White Escape - Resort" data-year="2022" data-category="Hospitality" data-project="White Escape" style="margin: 0; padding-bottom: var(--space-100);">
+										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
+											<a class="thumbnail block cursor-pointor" href="/post/white-escape/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_E49B407C9539B145416D5A39EAC6F2C77801AA0FC96DFB9A0D86009261AA7B16_1729262225067_01.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
+											</a>
+											<div class="meta  space-100-left-right space-50-top">
+												<span class="small text-violet space-min-right">White Escape</span>
+												<span class="small text-violet space-min-right">Mr Babu Joseph</span>
+												<span class="small text-violet space-min-right"></span>
+											</div>
+											<div class="content space-100-left-right space-25-top">
+												<a class="title h5 font-h block text-violet strong" href="/post/white-escape/">White Escape - Resort</a>
+												<div class="description label space-25-top-bottom">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
+												</div>
+											</div>
+											<div class="post-listing-footer row space-50-bottom">
+												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
+													<span class="small text-neutral-3 space-min-right">2022</span>
+													<span class="small text-neutral-3 space-min-right">Hospitality</span>
+													<span class="small text-neutral-3 space-min-right">Proposed</span>
+												</div>
+												<div class="columns small-2 inline-middle text-right">
+													<a class="button text-violet" href="/post/white-escape/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
+												</div>
+											</div>
+										</div>
+									</li>
+								
+							
+								
+							
+								
 							
 						
 							
@@ -646,7 +643,7 @@
 								
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="One & Only Row Villas - Villa Interiors in Bengaluru" data-year="2020" data-category="Interiors" data-project="One & Only Row Villas" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/one-&-only-row-villas/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_F6BA6668A4CF606D04C2B2CA3C4616DF7021F5EF56AA527DC9F35252A71BA208_1729260746180_IMG_8855.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -712,11 +709,7 @@
 								
 							
 								
-							
-								
-							
-								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="Brickly Affair - An Open Plan, Multiple Height Home in Bangalore" data-year="2018" data-category="Residential" data-project="Brickly Affair" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/brickly-affair/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_5EAF91A48C2FF13DCA080F637C9DDD04B4757EC6FF4D541AE4D1E6DB46FE34CC_1729164696166_SIDE+FACADE.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -750,7 +743,9 @@
 								
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+							
+								
+									<li data-title="Kingdom College - Educational Facility in Bengaluru" data-year="2018" data-category="Institutional" data-project="Kingdom College" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/kingdom-college/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_84DBA84C52E021504975E2D5977AB4C63993CE27FF092B08ADBF6F058FBA6628_1729261553383_1.0.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -784,7 +779,9 @@
 								
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+							
+								
+									<li data-title="Ovoid - A Holiday Home in Chickmanglur" data-year="2018" data-category="Residential" data-project="Ovoid" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/ovoid/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165664481_AJ_05520.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -814,7 +811,7 @@
 								
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="Oxide Flair - Sklight Home in Bangalore" data-year="2018" data-category="Residential" data-project="Oxide Flair" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/oxide-flair/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_C47574A53A930B9F39B83BBF0EDEA809070DF7B305B6110393E35414A85D3533_1729166706806_EXTERNAL+01.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -882,13 +879,41 @@
 								
 							
 								
-							
+									<li data-title="Rewdale - Earthy Office Interiors in Bengaluru" data-year="2017" data-category="Interiors" data-project="Rewdale" style="margin: 0; padding-bottom: var(--space-100);">
+										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
+											<a class="thumbnail block cursor-pointor" href="/post/rewdale/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_4508D95E495416561EFE55D99D582C6CA0379F069476CDAE53FE8BA597172F7B_1729260699218__DSC8066.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
+											</a>
+											<div class="meta  space-100-left-right space-50-top">
+												<span class="small text-violet space-min-right">Rewdale</span>
+												<span class="small text-violet space-min-right">Deepak Bhosle</span>
+												<span class="small text-violet space-min-right">Sampangiram Nagar, Bengaluru</span>
+											</div>
+											<div class="content space-100-left-right space-25-top">
+												<a class="title h5 font-h block text-violet strong" href="/post/rewdale/">Rewdale - Earthy Office Interiors in Bengaluru</a>
+												<div class="description label space-25-top-bottom">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
+												</div>
+											</div>
+											<div class="post-listing-footer row space-50-bottom">
+												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
+													<span class="small text-neutral-3 space-min-right">2017</span>
+													<span class="small text-neutral-3 space-min-right">Interiors</span>
+													<span class="small text-neutral-3 space-min-right">Completed</span>
+												</div>
+												<div class="columns small-2 inline-middle text-right">
+													<a class="button text-violet" href="/post/rewdale/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
+												</div>
+											</div>
+										</div>
+									</li>
 								
 							
 								
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+							
+								
+									<li data-title="Komorebi - Home in Bengaluru" data-year="2017" data-category="Residential" data-project="Komorebi" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/komorebi/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_39B6E2E07213B887B130F7F1024218E86051591B1C87204A671C4B04B51E5DCE_1729165178012_11KOMOREBI.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -924,34 +949,6 @@
 								
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
-										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
-											<a class="thumbnail block cursor-pointor" href="/post/rewdale/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_4508D95E495416561EFE55D99D582C6CA0379F069476CDAE53FE8BA597172F7B_1729260699218__DSC8066.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
-											</a>
-											<div class="meta  space-100-left-right space-50-top">
-												<span class="small text-violet space-min-right">Rewdale</span>
-												<span class="small text-violet space-min-right">Deepak Bhosle</span>
-												<span class="small text-violet space-min-right">Sampangiram Nagar, Bengaluru</span>
-											</div>
-											<div class="content space-100-left-right space-25-top">
-												<a class="title h5 font-h block text-violet strong" href="/post/rewdale/">Rewdale - Earthy Office Interiors in Bengaluru</a>
-												<div class="description label space-25-top-bottom">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
-												</div>
-											</div>
-											<div class="post-listing-footer row space-50-bottom">
-												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
-													<span class="small text-neutral-3 space-min-right">2017</span>
-													<span class="small text-neutral-3 space-min-right">Interiors</span>
-													<span class="small text-neutral-3 space-min-right">Completed</span>
-												</div>
-												<div class="columns small-2 inline-middle text-right">
-													<a class="button text-violet" href="/post/rewdale/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-								
 							
 								
 							
@@ -966,11 +963,7 @@
 								
 							
 								
-							
-								
-							
-								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="The Variance - A Family Home for 4 in Tamil Nadu" data-year="2017" data-category="Residential" data-project="The Variance" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/the-variance/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_A4528BC199912E9F414EE3FF286D6EDE32004A3572765E6010DFB11463BCA9AA_1729251132724_GSDS-JN-VIEW1.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1000,7 +993,7 @@
 								
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="Vallabh Kun - Jalli Detailed Home in Jaipur" data-year="2017" data-category="Residential" data-project="Vallabh Kun" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/vallabh-kun/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_6EF58072C2E805B02FFC7B98D60E3CCE89FE4F6FBDFDD8C5906AB29376DF1437_1729166201916_01EXTERNAL.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1034,7 +1027,9 @@
 								
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+							
+								
+									<li data-title="White Villa - A Home Infused with Nature in Bengaluru" data-year="2017" data-category="Residential" data-project="White Villa" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/white-villa/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_4F939B16FD9115BA50FF09D0C2FB5D8913DBCE28F6D42733EA01CEE4089FC955_1729249055633_GREYSCALE_White1435MJ_Deck_Ver03_26-06-2017.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1063,37 +1058,11 @@
 									</li>
 								
 							
+								
+							
 						
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
-										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
-											<a class="thumbnail block cursor-pointor" href="/post/iisc/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_CD29CC60133F32E86F593B38AFDB377F8A72A4058FAA1A8DC200945C8F64676E_1729261696812_20.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
-											</a>
-											<div class="meta  space-100-left-right space-50-top">
-												<span class="small text-violet space-min-right">Educational Facility</span>
-												<span class="small text-violet space-min-right">IISC</span>
-												<span class="small text-violet space-min-right"></span>
-											</div>
-											<div class="content space-100-left-right space-25-top">
-												<a class="title h5 font-h block text-violet strong" href="/post/iisc/">IISC - Educational Facility</a>
-												<div class="description label space-25-top-bottom">
-													<p></p>
-												</div>
-											</div>
-											<div class="post-listing-footer row space-50-bottom">
-												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
-													<span class="small text-neutral-3 space-min-right">2016</span>
-													<span class="small text-neutral-3 space-min-right">Institutional</span>
-													<span class="small text-neutral-3 space-min-right"></span>
-												</div>
-												<div class="columns small-2 inline-middle text-right">
-													<a class="button text-violet" href="/post/iisc/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-								
 							
 								
 							
@@ -1120,9 +1089,7 @@
 								
 							
 								
-							
-								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="Stance - Furniture Store Renovation in Bengaluru" data-year="2016" data-category="Renovation" data-project="Stance" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/stance/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_A35BC73F0571B070028662E744390936410A4ED35239FA8E5E99FE10BCCB99F3_1729254817407_1.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1171,6 +1138,36 @@
 							
 								
 							
+								
+									<li data-title="IISC - Educational Facility" data-year="2016" data-category="Institutional" data-project="Educational Facility" style="margin: 0; padding-bottom: var(--space-100);">
+										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
+											<a class="thumbnail block cursor-pointor" href="/post/iisc/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_CD29CC60133F32E86F593B38AFDB377F8A72A4058FAA1A8DC200945C8F64676E_1729261696812_20.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
+											</a>
+											<div class="meta  space-100-left-right space-50-top">
+												<span class="small text-violet space-min-right">Educational Facility</span>
+												<span class="small text-violet space-min-right">IISC</span>
+												<span class="small text-violet space-min-right"></span>
+											</div>
+											<div class="content space-100-left-right space-25-top">
+												<a class="title h5 font-h block text-violet strong" href="/post/iisc/">IISC - Educational Facility</a>
+												<div class="description label space-25-top-bottom">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
+												</div>
+											</div>
+											<div class="post-listing-footer row space-50-bottom">
+												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
+													<span class="small text-neutral-3 space-min-right">2016</span>
+													<span class="small text-neutral-3 space-min-right">Institutional</span>
+													<span class="small text-neutral-3 space-min-right"></span>
+												</div>
+												<div class="columns small-2 inline-middle text-right">
+													<a class="button text-violet" href="/post/iisc/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
+												</div>
+											</div>
+										</div>
+									</li>
+								
+							
 						
 							
 								
@@ -1196,9 +1193,7 @@
 								
 							
 								
-							
-								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="Samyak - Open Space Interiors for a Home in Bengaluru" data-year="2015" data-category="Interiors" data-project="Samyak" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/samyak/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_1539B412F8F3BCE15E3E059BFA671CF31DAEB087BDEE2BDD37572B6357978FE0_1729259266824_grey+scale-banshankari+-0004.JPG'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1228,7 +1223,7 @@
 								
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="Senguttavan Residence  - A Versatile Home in Tamil Nadu" data-year="2015" data-category="Residential" data-project="Senguttavan Residence" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/senguttavan-residence/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_B63965FF9E5209A6B33B84745847AFAFFCEABE5CB3F828FCA5CC456766077C72_1729248183962_0004.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1260,9 +1255,7 @@
 								
 							
 								
-							
-								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="The Club  - A Versatile Hospitality Project in Bengaluru" data-year="2015" data-category="Hospitality" data-project="The Club" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/the-club/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_EFB45E0BB8A4B8D10EB2972643207C7300B96502BA1B3DFE5D8D2EC6A8C90FD6_1729263703396_1314GUNJUR+CLUB-PR-VIEWS-020_1.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1307,6 +1300,10 @@
 							
 								
 							
+								
+							
+								
+							
 						
 							
 								
@@ -1314,11 +1311,7 @@
 								
 							
 								
-							
-								
-							
-								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="Greyscale Design Studio - Office Redo" data-year="2014" data-category="Renovation" data-project="Greyscale Design Studio" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/greyscale-design-studio/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_B20B6E217961EFBA108AC54F86E7517B2E27D77CB516E681FB4A67AD7819E175_1729255250473__DSC2928.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1372,7 +1365,7 @@
 								
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="The Cognizance - A Colonnade Clubhouse in Bengaluru" data-year="2014" data-category="Hospitality" data-project="The Cognizance" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/the-cognizance/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_842C7439CF78E06F97762365822EB93C67A793D9B5237DBC693F5B6752217B77_1729263452662_01+1+1.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1415,6 +1408,10 @@
 							
 								
 							
+								
+							
+								
+							
 						
 							
 								
@@ -1450,11 +1447,7 @@
 								
 							
 								
-							
-								
-							
-								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="The Lampird - A Jaali Hotel in Bengaluru" data-year="2012" data-category="Hospitality" data-project="The Lampird" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/the-lamphrid/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_6CF14421965A15012E5856383B2B7ED0375971B9B9C309FE144BB5DA7CE63CBE_1729262752752_NAGRAJ+02.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1484,7 +1477,7 @@
 								
 							
 								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="The Potpourri - Coconut Groove Themed Restaurant" data-year="2012" data-category="Residential" data-project="The Potpourri" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/the-potpourri/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_CAE6F1362C0C99224C6C7B76D906EFEEDE9BDC70ADE9541299F381AB0AE5BF1F_1729262440120_1213+THEME+RESAURANT-DEFAULT-DEFAULT-004.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1523,6 +1516,10 @@
 							
 								
 							
+								
+							
+								
+							
 						
 							
 								
@@ -1568,11 +1565,7 @@
 								
 							
 								
-							
-								
-							
-								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="Vishwakutumb - An All Encompassing Home for a Versatile Family" data-year="2009" data-category="Residential" data-project="Vishwakutumb" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/vishwakutumb/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_26CB88C86AB9D878EECEECDF22768797DB341BF06AA74ECB8105676619FC3AF8_1729162157204_gs+-+jain+-+001.JPG'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1603,6 +1596,10 @@
 							
 								
 							
+								
+							
+								
+							
 						
 							
 								
@@ -1618,25 +1615,7 @@
 								
 							
 								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="Sterling Home  - Apartment Interiors in Bengaluru" data-year="2008" data-category="Interiors" data-project="Sterling Home" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/sterling-home/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_07D04802E803BB01CDA78D50D9EC6F6733A57E336FEC2410ED626AB53C6207D2_1729259786414_3540.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
@@ -1663,6 +1642,24 @@
 											</div>
 										</div>
 									</li>
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
 								
 							
 								
@@ -2030,9 +2027,9 @@
 
 <script type="text/javascript">
 	
-	/* -- Post Content - Fig Caption Generator -- */
 	document.addEventListener("DOMContentLoaded", function() {
 
+		/* -- Post Content - Fig Caption Generator -- */
 		const postContent = document.querySelector('.post-content');
 		const images = postContent.querySelectorAll('img');
 
@@ -2052,7 +2049,6 @@
 
 <script type="text/javascript">
 	
-	/* -- Post Content - Fig Caption Generator -- */
 	document.addEventListener("DOMContentLoaded", function() {
 
 		/* -- Post Filter - Update Label -- */
@@ -2060,7 +2056,7 @@
 		const selectors = postFilterContainer.querySelectorAll('.selector');
 
 		selectors.forEach((selector) => {
-			console.log("pewpewpew");
+
 		  selector.addEventListener('change', () => {
 		    const selectedOption = selector.options[selector.selectedIndex];
 		    const label = selector.nextElementSibling; // Assuming the label is immediately after the select
@@ -2069,7 +2065,137 @@
 		      label.textContent = selectedOption.text;
 		    }
 		  });
+
 		});
+
+	});
+	
+</script>
+
+
+<!-- <div class="filters">
+  <label for="yearFilter">Year:</label>
+  <select id="yearFilter" class="selector">
+    <option value="">All</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+  </select>
+
+  <label for="categoryFilter">Category:</label>
+  <select id="categoryFilter" class="selector">
+    <option value="">All</option>
+    <option value="Design">Design</option>
+    <option value="Development">Development</option>
+    <option value="Marketing">Marketing</option>
+  </select>
+
+  <label for="projectFilter">Project:</label>
+  <select id="projectFilter" class="selector">
+    <option value="">All</option>
+    <option value="Project A">Project A</option>
+    <option value="Project B">Project B</option>
+    <option value="Project C">Project C</option>
+  </select>
+</div> -->
+
+<!-- <ul class="post-list">
+  <li data-year="2023" data-category="Design" data-project="Project A">
+    <p>Post 1 content</p>
+  </li>
+  <li data-year="2022" data-category="Development" data-project="Project B">
+    <p>Post 2 content</p>
+  </li>
+  <li data-year="2023" data-category="Marketing" data-project="Project C">
+    <p>Post 3 content</p>
+  </li>
+  <li data-year="2024" data-category="Design" data-project="Project A">
+    <p>Post 4 content</p>
+  </li>
+  <li data-year="2023" data-category="Development" data-project="Project B">
+    <p>Post 5 content</p>
+  </li>
+  <li data-year="2022" data-category="Marketing" data-project="Project C">
+    <p>Post 6 content</p>
+  </li>
+</ul> -->
+
+<script type="text/javascript">
+	
+	document.addEventListener("DOMContentLoaded", function() {
+
+		const postList = document.querySelector('.js_postList');
+		const yearFilter = document.getElementById('yearFilter');
+		const categoryFilter = document.getElementById('categoryFilter');
+		const projectFilter = document.getElementById('projectFilter');
+
+		function filterPosts() {
+			const selectedYear = yearFilter.value;
+			const selectedCategory = categoryFilter.value;
+			const selectedProject = projectFilter.value;
+
+			postList.querySelectorAll('li').forEach((post) => {
+				const postYear = post.getAttribute('data-year');
+				const postCategory = post.getAttribute('data-category');
+				const postProject = post.getAttribute('data-project');
+
+				if (
+					(selectedYear === '' || postYear === selectedYear) &&
+					(selectedCategory === '' || postCategory === selectedCategory) &&
+					(selectedProject === '' || postProject === selectedProject)
+				) {
+					post.style.display = 'block';
+				} else {
+					post.style.display = 'none';
+				}
+			});
+
+			/* Disable all options */
+			for (let i = 1; i < yearFilter.length; i++) {
+				yearFilter[i].disabled = true;
+			}
+			for (let i = 1; i < categoryFilter.length; i++) {
+				categoryFilter[i].disabled = true;
+			}
+			for (let i = 1; i < projectFilter.length; i++) {
+				projectFilter[i].disabled = true;
+			}
+
+			/* Enable Only Visible Options */
+			postList.querySelectorAll('li').forEach((post) => {
+				const post_title = post.getAttribute('data-title')
+				const post_year = post.getAttribute('data-year')
+				const post_category = post.getAttribute('data-category')
+				const post_project = post.getAttribute('data-project')
+
+				if ( post.style.display != 'none' ) {
+					for (let i = 0; i < yearFilter.length; i++) {
+						if (yearFilter[i].value === post_year) {
+							yearFilter[i].disabled = false;
+						}
+					}
+					for (let i = 0; i < categoryFilter.length; i++) {
+						if (categoryFilter[i].value === post_category) {
+							categoryFilter[i].disabled = false;
+						}
+					}
+					for (let i = 0; i < projectFilter.length; i++) {
+						if (projectFilter[i].value === post_project) {
+							projectFilter[i].disabled = false;
+						}
+					}
+				}
+
+			});
+
+		}
+
+		yearFilter.addEventListener('change', filterPosts);
+		categoryFilter.addEventListener('change', filterPosts);
+		projectFilter.addEventListener('change', filterPosts);
+
+		// Initial filtering
+		filterPosts();
 
 	});
 	

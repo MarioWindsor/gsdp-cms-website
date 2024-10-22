@@ -113,9 +113,8 @@
 							<div class="columns small-3 medium-2 inline-middle">
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
 									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Year</span>
-									<select class="selector block opacity-0" name="project">
-										<!-- 💀 WARNING: DO NOT INTRODUCE Whitespace Between Capture 💀 -->
-										<option value="all" selected>All</option>
+									<select id="yearFilter" class="selector block opacity-0" name="project">
+										<option value="" selected>All</option>
 										<!-- capture years from all posts into a string with ',' comma separtion -->
 										{% capture years %}{% for year in collections.post | sort: "year" %}{{ year.data.year }},{% endfor %}{% endcapture %}
 										<!-- assign years to an array by spliting sting at ','commas and only adding the unique ones -->
@@ -134,9 +133,8 @@
 							<div class="columns small-4 medium-3 inline-middle">
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
 									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Category</span>
-									<select class="selector block opacity-0" name="project">
-										<!-- 💀 WARNING: DO NOT INTRODUCE Whitespace Between Capture 💀 -->
-										<option value="all" selected>All</option>
+									<select id="categoryFilter" class="selector block opacity-0" name="project">
+										<option value="" selected>All</option>
 										<!-- capture categories from all posts into a string with ',' comma separtion -->
 										{% capture categories %}{% for category in collections.post | sort: "category" %}{{ category.data.category }},{% endfor %}{% endcapture %}
 										<!-- assign categories to an array by spliting sting at ','commas and only adding the unique ones -->
@@ -155,9 +153,8 @@
 							<div class="columns small-5 medium-5 inline-middle">
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
 									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Project</span>
-									<select class="selector block opacity-0" name="project">
-										<!-- 💀 WARNING: DO NOT INTRODUCE Whitespace Between Capture 💀 -->
-										<option value="all" selected>All</option>
+									<select id="projectFilter" class="selector block opacity-0" name="project">
+										<option value="" selected>All</option>
 										<!-- capture projects from all posts into a string with ',' comma separtion -->
 										{% capture projects %}{% for project in collections.post | sort: "project" %}{{ project.data.project }},{% endfor %}{% endcapture %}
 										<!-- assign projects to an array by spliting sting at ','commas and only adding the unique ones -->
@@ -178,7 +175,7 @@
 					<!-- END: Post Filter -->
 
 					<!-- Post Listing -->
-					<ul class="post-listing columns small-12" style="list-style-type: none;">
+					<ul class="js_postList post-listing columns small-12" style="list-style-type: none;">
 						<!-- Reverse Sort By Year -->
 						{% capture reyears %}{% for reyear in collections.post | sort: "year"  %},{{ reyear.data.year }}{% endfor %}{% endcapture %}
 						<!-- assign reyears to an array by spliting sting at ','commas and only adding the unique ones -->
@@ -187,7 +184,7 @@
 						{% for itemreYear in itemsreYear %}
 							{% for post in collections.post %}
 								{% if itemreYear contains post.data.year %}
-									<li style="margin: 0; padding-bottom: var(--space-100);">
+									<li data-title="{{ post.data.title }}" data-year="{{ post.data.year }}" data-category="{{ post.data.category }}" data-project="{{ post.data.project }}" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="{{ post.url }}" style="background: url('{{ post.data.thumbnail }}'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
