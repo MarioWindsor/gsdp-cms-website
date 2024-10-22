@@ -7,6 +7,7 @@ year: 2015
 date:
 category: Hospitality
 site: Bengaluru
+city: Bengaluru
 site_area: 1.5 Acres
 built_up_area: 30000
 status: Unbuilt

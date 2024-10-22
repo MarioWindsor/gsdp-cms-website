@@ -8,6 +8,7 @@ year: 2017
 date:
 category: Residential
 site: Raja Park, Jaipur
+city: Jaipur
 site_area: 2500
 built_up_area: 7000
 status: Completed

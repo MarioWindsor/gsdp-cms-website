@@ -8,13 +8,14 @@ year: 2018
 date:
 category: Residential
 site: Jakkur, Bangalore
+city: Bengaluru
 site_area: 1200
 built_up_area: 3200
 status: Completed
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.
 
 ---
-## Sklight Home in Bangalore  
+## Sklight Home in Bangalore
 
 ![](https://paper-attachments.dropboxusercontent.com/s_C47574A53A930B9F39B83BBF0EDEA809070DF7B305B6110393E35414A85D3533_1729166707849_COURTYARD+DINING.jpg)
 ![](https://paper-attachments.dropboxusercontent.com/s_C47574A53A930B9F39B83BBF0EDEA809070DF7B305B6110393E35414A85D3533_1729166706351_DAUGHTERS+BEDROOM.jpg)

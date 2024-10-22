@@ -8,12 +8,12 @@ year: 2018
 date:
 category: Institutional
 site: Bengaluru
+city: Bengaluru
 built_up_area: 30000
 status: Unbuilt
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.
 
 ---
-
 
 ## Educational Facility in Bengaluru
 

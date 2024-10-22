@@ -6,8 +6,9 @@ project: Ovoid
 client: Prem Mysore
 year: 2018
 date:
-category: Residential
+category: Residential 
 site: Gonibeedu, Chickmanglur
+city: Chickmanglur
 built_up_area: 3200
 status: Completed
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.
@@ -21,7 +22,7 @@ Ovoid , a second home commissioned by a family of coffee planters in Mudigere, C
 ![](https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165677794_AJ_05544.jpg)
 
 
-A 1.5 acre parcel of land was earmarked by the client a midst a 100acre plantation. In order to avoid disturbing the existing coffee plants and trees , the house was sited on one side, closer to the approach road. 
+A 1.5 acre parcel of land was earmarked by the client a midst a 100acre plantation. In order to avoid disturbing the existing coffee plants and trees , the house was sited on one side, closer to the approach road.
 
 ![](https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165726883_AJ_05618.jpg)
 
@@ -31,7 +32,7 @@ A 1.5 acre parcel of land was earmarked by the client a midst a 100acre plantati
 ![](https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165697792_AJ_05614.jpg)
 
 
-Attempting a linear mass aligned along north south, the house was approached via a laterite clad driveway, a part of the massing was scooped out to make room for two car park. 
+Attempting a linear mass aligned along north south, the house was approached via a laterite clad driveway, a part of the massing was scooped out to make room for two car park.
 
 ![](https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165755136_AJ_05670.jpg)
 
@@ -52,7 +53,7 @@ experience as you enter and use it at different times of the day.
 ![](https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165838232_AJ_05852.jpg)
 
 
-A laterite volume emerges from this courtyard plinth to house the foyer or the communal space of house, wrapped in a slatted wood lined with fine MS detailing ,protecting the interior while allowing a continuous relation with the outside. Seater like wide steps allow you to enter the living and dining at a slightly higher level. 
+A laterite volume emerges from this courtyard plinth to house the foyer or the communal space of house, wrapped in a slatted wood lined with fine MS detailing ,protecting the interior while allowing a continuous relation with the outside. Seater like wide steps allow you to enter the living and dining at a slightly higher level.
 
 ![](https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165878110_AJ_05879.jpg)
 ![](https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165876592_AJ_05882.jpg)
@@ -65,15 +66,14 @@ mornings. The verandah , extends out into a large lawn gradually merging into th
 ![](https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165895736_AJ_06031.jpg)
 
 
-Along the west of this family space intermediate solid timber panels were incorporated in the large glazed facade surface to reduce the harsh sun at the same time visually connect the occupants with the surrounding landscape at all times. 
+Along the west of this family space intermediate solid timber panels were incorporated in the large glazed facade surface to reduce the harsh sun at the same time visually connect the occupants with the surrounding landscape at all times.
 
 ![](https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165918712_AJ_05942.jpg)
 ![](https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165920617_AJ_05952.jpg)
 ![](https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165923239_AJ_05978.jpg)
 
 
-The kitchen and services occupy the end of this space in the north west, with easy access to the dining and the outdoor dining spaces. This whole 
-arrangement of spaces extending into large threshold verandah spaces on both the east and western side, looking into the landscape allowed the family varied use and experiences. 
+The kitchen and services occupy the end of this space in the north west, with easy access to the dining and the outdoor dining spaces. This whole arrangement of spaces extending into large threshold verandah spaces on both the east and western side, looking into the landscape allowed the family varied use and experiences.
 
 ![](https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165950333_AJ_05994.jpg)
 

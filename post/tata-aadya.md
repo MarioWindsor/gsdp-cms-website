@@ -1,19 +1,20 @@
 ---
 tags: post
-title: Rewdale - Earthy Office Interiors in Bengaluru
-thumbnail: https://paper-attachments.dropboxusercontent.com/s_4508D95E495416561EFE55D99D582C6CA0379F069476CDAE53FE8BA597172F7B_1729260699218__DSC8066.jpg
-project: Rewdale
-client: Deepak Bhosle
-year: 2017
+title: Tata Aadya Motors - A Standout Commercial Property in Bengaluru
+thumbnail: https://paper-attachments.dropboxusercontent.com/s_9948FDDEC2196C22A3BE49A27CE4A17D42A77115FA05D032289AD6547038B734_1729320600445_DSC_0096.JPG
+project: Tata Aadya Motors
+client: Tata Aadya Motors
+year: 2010
 date:
-category: Interiors
-site: Sampangiram Nagar, Bengaluru
+category: Commericial
+site: Hebbal, Bengaluru
 city: Bengaluru
-built_up_area: 3000
+site_area: 21000
+built_up_area: 15000
 status: Completed
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.
 
 ---
 
-## Earthy Office Interiors in Bengaluru
+## A Standout Commercial Property in Bengaluru
 

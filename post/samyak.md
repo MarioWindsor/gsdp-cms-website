@@ -6,8 +6,9 @@ project: Samyak
 client:  Mr. Gowtham and family
 year: 2015
 date:
-category: Interiors
+category: Interiors 
 site: Brigade Gateway, Bengaluru
+city: Bengaluru
 built_up_area: 1950
 status: Completed
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.

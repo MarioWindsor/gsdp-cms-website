@@ -5,9 +5,10 @@ thumbnail: https://paper-attachments.dropboxusercontent.com/s_5EAF91A48C2FF13DCA
 project: Brickly Affair
 client: Srinidhi Vishwanathan
 year: 2018
-date:
+date: 
 category: Residential 
 site: Nagarhavi, Begaluru
+city: Bengaluru
 site_area: 3700
 built_up_area: 2400
 status: Completed

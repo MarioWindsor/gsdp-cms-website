@@ -6,8 +6,9 @@ project: One & Only Row Villas
 client:  GR Constructions
 year: 2020
 date:
-category: Interiors
+category: Interiors 
 site: Bengaluru
+city: Bengaluru
 built_up_area: 3000
 status: Completed
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.
@@ -15,4 +16,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ult
 ---
 
 ## Villa Interiors in Bengaluru
+
+Row Villas built admist Landscaped area with well articulated Material Pallete for the external as well as
+Interiors. The Stone Facade feature acts as a highlight and brings about the space together
 

@@ -8,6 +8,7 @@ year: 2012
 date:
 category: Hospitality
 site:  Chamrajpet, Bengaluru
+city: Bengaluru
 site_area: 3150
 built_up_area: 6475
 status: Compeleted

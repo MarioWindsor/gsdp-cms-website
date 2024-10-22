@@ -8,6 +8,7 @@ year: 2014
 date:
 category: Renovation 
 site: Bengaluru
+city: Bengaluru
 site_area: 2400
 built_up_area: 11500
 status: Completed

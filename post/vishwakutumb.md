@@ -2,12 +2,13 @@
 tags: post
 title: Vishwakutumb - An All Encompassing Home for a Versatile Family
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_26CB88C86AB9D878EECEECDF22768797DB341BF06AA74ECB8105676619FC3AF8_1729162157204_gs+-+jain+-+001.JPG
-project: Vishwakutumb 
+project: Vishwakutumb
 client: Manoj Jain
 year: 2009
 date:
 category: Residential
 site: R M V Extension, Bengaluru
+city: Bengaluru
 site_area: 7700
 built_up_area: 12500
 status: Completed
@@ -17,7 +18,8 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ult
 
 ## An All Encompassing Home for a Versatile Family
 
-True to its name, *Vishwakutumb* was envisioned as a home that celebrates togetherness while nurturing the individuality of each family member. 
+True to its name, *Vishwakutumb* was envisioned as a home that celebrates togetherness while nurturing the individuality of each family member.
+
 
 ![The exterior front facade that blends rustic traditional charm with open minded design.](https://paper-attachments.dropboxusercontent.com/s_26CB88C86AB9D878EECEECDF22768797DB341BF06AA74ECB8105676619FC3AF8_1729162157204_gs+-+jain+-+001.JPG)
 
@@ -51,12 +53,14 @@ Simple yet elegant lighting fixture enhances the overall ambiance, creating a we
 ![A thoughtfully designed 12500 built up area floor plan that balances openness and privacy.](https://paper-attachments.dropboxusercontent.com/s_26CB88C86AB9D878EECEECDF22768797DB341BF06AA74ECB8105676619FC3AF8_1729160638861_Screenshot+2024-10-17+155325.png)
 
 
-This 12,500 sq. ft. home stands on a 7,700 sq. ft. site, utilizing the space to its maximum potential. The project focused on integrating natural light and ventilation, ensuring that every corner feels alive and connected to nature. 
+This 12,500 sq. ft. home stands on a 7,700 sq. ft. site, utilizing the space to its maximum potential. The project focused on integrating natural light and ventilation, ensuring that every corner feels alive and connected to nature.
+
 
 ![Unique exterior facadewhich not only adds visual interest but also maximizes natural light.](https://paper-attachments.dropboxusercontent.com/s_26CB88C86AB9D878EECEECDF22768797DB341BF06AA74ECB8105676619FC3AF8_1729161941491_gs+-+jain+-+005.JPG)
 
 
 The open design and abundant natural light create a nurturing environment with a seamless flow between the built structure and the natural environment.
+
 
 ![Outdoor area which is connected to the lawn and garden area.](https://paper-attachments.dropboxusercontent.com/s_26CB88C86AB9D878EECEECDF22768797DB341BF06AA74ECB8105676619FC3AF8_1729161252333_visw_004.JPG)
 

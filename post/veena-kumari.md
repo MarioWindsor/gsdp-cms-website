@@ -8,6 +8,7 @@ year: 2024
 date:
 category: Residential
 site: Mysore
+city: Mysore
 site_area: 2400
 built_up_area: 5000
 status: Ongoing
