@@ -6,7 +6,7 @@ project: Vishwakutumb Commercial
 client: Manoj Jain
 year: 2019
 date:
-category: Commerical
+category: Commercial
 site: HSR Layout, Bengaluru
 city: Bengaluru
 site_area: 3600

@@ -6,7 +6,7 @@ project: Tata Aadya Motors
 client: Tata Aadya Motors
 year: 2010
 date:
-category: Commericial
+category: Commercial
 site: Hebbal, Bengaluru
 city: Bengaluru
 site_area: 21000
