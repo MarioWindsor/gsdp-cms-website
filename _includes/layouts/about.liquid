@@ -1,0 +1,246 @@
+{% include 'parts/head.liquid' %}
+{% include 'parts/header.liquid' %}
+
+
+
+
+
+<style>
+	.intro-section {}
+
+	.intro-section .cover-img {
+		display: block;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		padding-bottom: calc(var(--space-100) * 10);
+	}
+
+	@media( min-width: 640px )  {
+		.intro-section .cover-img {
+			padding-bottom: calc(var(--space-100) * 20);
+			margin-bottom: var(--space-100);
+		}
+	}
+	@media( min-width: 1040px ) {
+		.intro-section .cover-img {
+			padding-bottom: calc(var(--space-100) * 23);
+		}
+
+		.intro-section .title {
+			padding: var(--space-250) 0;
+			transform-origin: left center;
+			transform: scale(1.333);
+		}
+	}
+	@media( min-width: 1480px ) {}
+
+
+
+
+	.stats-section {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.stats-section .row {
+		backdrop-filter: blur(3px) brightness(50%);
+		-webkit-backdrop-filter: blur(3px) brightness(50%);
+		background: rgba(143, 0, 255, 0.5);
+	}
+
+
+	.team-section .partner {
+		position: relative;
+	}
+	.team-section .partner .name {
+		position: relative;
+		z-index: 3;
+		transform: translateY(17%);
+		text-shadow: 0 0 5px var(--violet);
+	}
+	.team-section .partner .farkles {
+		position: absolute;
+		width: 150%;
+		z-index: 2;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0.85;
+	}
+	.team-section .team-photo {
+		display: block;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+		padding-bottom: calc(var(--space-100) * 10);
+		mix-blend-mode: screen;
+		filter: saturate(25%);
+	}
+</style>
+<!-- Intro Section -->
+<section id="intro-section" class="intro-section fill-dark space-200-top">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12 medium-6 space-150-bottom">
+				<div class="cover-img radius-50 box-shadow-pink" style="background-image: url('media/about-cover.png');"></div>
+			</div>
+			<div class="columns small-12 medium-5 medium-offset-1 space-200-bottom">
+				<div class="p strong text-pink text-uppercase space-50-top-bottom">We are . . .</div>
+				<div class="wordmark"><img src="media/logo-wordmark-white.png" class="block"></div>
+				<div class="title space-150-top-bottom">
+					<div class="h1 strong font-h text-pink">20 Years</div>
+					<div class="h3 strong font-h">of Architectural <br>Excellence!</div>
+				</div>
+				<div class="h6">Since our inception, we have designed spaces with a focus on integrating nature seamless with the unique character of each project.</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Intro Section -->
+
+
+
+
+<!-- Stats Section -->
+<section id="stats-section" class="stats-section fill-dark" style="background-image: url('media/stats-bg.jpg');">
+	<div class="row space-200-top-bottom">
+		<div class="container">
+			<div class="columns small-6 large-3 text-center">
+				<div class="icon"><img src=""></div>
+				<div class="h1 strong font-h">25M</div>
+				<div class="p">SQFT Designed</div>
+			</div>
+			<div class="columns small-6 large-3 text-center">
+				<div class="icon"><img src=""></div>
+				<div class="h1 strong font-h">4k+</div>
+				<div class="p">Happy Clients</div>
+			</div>
+			<div class="columns small-6 large-3 text-center">
+				<div class="icon"><img src=""></div>
+				<div class="h1 strong font-h">120</div>
+				<div class="p">Successful Projects</div>
+			</div>
+			<div class="columns small-6 large-3 text-center">
+				<div class="icon"><img src=""></div>
+				<div class="h1 strong font-h">73</div>
+				<div class="p">Awards Won</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Stats Section -->
+
+
+
+
+<!-- Team Section -->
+<section id="team-section" class="team-section fill-dark space-200-top-bottom">
+	<div class="container text-center">
+		<div class="row">
+			<div class="columns small-12">
+				<div class="p strong text-pink text-uppercase space-50-bottom">Meet the</div>
+				<div class="h1 font-h"><span class="text-pink">{ </span>Principal Architects<span class="text-pink"> }</span></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="partner columns small-12 medium-4 space-50">
+				<div class="name">
+					<div class="h2 font-h strong">Girish</div>
+					<div class="h6">Mysore</div>
+				</div>
+				<div class="img"><img src="media/partner-girish.png" class="radius-50 box-shadow-pink"></div>
+				<div class="title space-50-top">Site Planner, Resident Comedian, and Weekend Hiker.</div>
+				<div class="farkles"><img src="media/doodle-overlay-1.png"></div>
+			</div>
+			<div class="partner columns small-12 medium-4 space-50">
+				<div class="name">
+					<div class="h2 font-h strong">Ninu</div>
+					<div class="h6">Ahluwalia</div>
+				</div>
+				<div class="img"><img src="media/partner-ninu.png" class="radius-50 box-shadow-pink"></div>
+				<div class="title space-50-top">Sustainability Consultant, Coffee Aficionado, and DIY Enthusiast</div>
+				<div class="farkles"><img src="media/doodle-overlay-2.png"></div>
+			</div>
+			<div class="partner columns small-12 medium-4 space-50">
+				<div class="name">
+					<div class="h2 font-h strong">Magesh</div>
+					<div class="h6">Manohar</div>
+				</div>
+				<div class="img"><img src="media/partner-magesh.png" class="radius-50 box-shadow-pink"></div>
+				<div class="title space-50-top">Concept Designer, Amateur Cook, and Vintage Vinyl Collector.</div>
+				<div class="farkles"><img src="media/doodle-overlay-3.png"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="columns small-12 space-150-top-bottom">
+				<div class="h2 font-h">Innovators at Every Level</div>
+			</div>
+			<div class="columns small-12 large-10 large-offset-1 space-200-bottom">
+				<div class="h6">At Greyscale, our vibrant team shares a passion for creativity and sustainability in every project. From seasoned architects to eager interns, we collaborate to bring unique perspectives to residential, commercial, and hospitality spaces. We're always seeking to leave our mark on the next landmark, balancing visionary design with functionality.</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="team-photo block radius-50 box-shadow-pink" style="background-image: url('media/team.jpg');"></div>
+		</div>
+		<div class="row">
+			<div class="columns small-12 large-10 large-offset-1 space-250-top-bottom">
+				<div class="h3 font-h space-75-bottom">Shaping the Creative Minds of Tomorrow</div>
+				<div class="p">We believe in fostering the next generation of design professionals. Our interns are an integral part of the team, contributing fresh ideas and new perspectives while learning from industry experts.</div>
+				<div class="p space-75-top">Join us — <a href="mailto:withus@greyscale.in" class="inline cursor-pointer text-pink" target="_blank">withus@greyscale.in</a></div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Team Section -->
+
+
+
+<!-- Single Post CTA Section -->
+<section id="single-post-cta-section" class="single-post-cta-section" style="background-image: url('media/image.jpg'); background-size: cover;">
+	<div class="row space-200-top-bottom" style="background: rgba(0, 0, 0, 0.7);">
+		<div class="container">
+			<div class="columns small-12 medium-6 large-4">
+				<div class="single-post-cta space-25 text-white">
+					<div class="h2 font-h strong space-100-bottom">Architecture that Inspires and Endures</div>
+					<div class="h6 space-100-bottom">Rooted in Human-Centric Design, our unique approach combines functionality with timeless beauty!</div>
+				</div>
+			</div>
+			<div class="columns small-12 medium-6 large-4 large-offset-4 text-light">
+				<!-- Form -->
+				<div class="form space-150-left-right space-150-top-bottom radius-50" style="backdrop-filter: blur(10px) brightness(150%); -webkit-backdrop-filter: blur(10px) brightness(150%); background: rgba(143, 0, 255, 0.5);">
+					<form action="" method="post">
+						<div class="h5">Sign-up for a FREE<br>Online Consultation!</div>
+						<label class="form-field block space-25-top" for="fullName">
+							<span class="label strong inline space-min-bottom">Full Name</span>
+							<input class="input-field block" type="text" name="fullName">
+						</label>
+						<label class="form-field block space-25-top" for="email">
+							<span class="label strong inline space-min-bottom">Email ID</span>
+							<input class="input-field block" type="text" name="email">
+						</label>
+						<label class="form-field block space-25-top" for="phone">
+							<span class="label strong inline space-min-bottom">Phone Number <span class="w-400">(Request a Call-Back)</span></span>
+							<input class="input-field block" type="text" name="phone">
+						</label>
+						<label class="form-field block space-25-top" for="phone">
+							<span class="label strong inline space-min-bottom invisible">Submit</span>
+							<button class="button block strong fill-light text-left" type="submit">Send</button>
+						</label>
+					</form>
+				</div>
+				<!-- END: Form -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Single Post CTA Section -->
+
+
+
+
+
+
+{% include 'parts/footer-menu.liquid' %}
+{% include 'parts/footer.liquid' %}
+{% include 'parts/foot.liquid' %}

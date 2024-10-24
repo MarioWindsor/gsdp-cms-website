@@ -828,6 +828,10 @@ select {
 	box-shadow: 0 0 3px 1px rgba(143, 0, 255, 0.125),  0 0 9px 3px rgba(143, 0, 255, 0.125);
 }
 
+.box-shadow-pink {
+	box-shadow: 0 0 3px 1px rgba(250, 52, 120, 0.125),  0 0 12px 4px rgba(250, 52, 120, 0.2);
+}
+
 .flexbox {
 	display: flex;
 }
