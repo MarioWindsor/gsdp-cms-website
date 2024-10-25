@@ -10,6 +10,10 @@
 	.homeowner-landing-section .homeowner-landing .title {
 		transform-origin: top left;
 		transform: scale(1.25);
+		text-shadow: 0 0 6px var(--dark);
+	}
+	.homeowner-landing-section .homeowner-landing .point {
+		text-shadow: 0 0 6px var(--dark);
 	}
 
 	@media( min-width: 640px )  {
@@ -32,6 +36,43 @@
 		}
 	}
 
+
+	.portfolio-section .carousel .card {
+		position: relative;
+		width: calc(var(--space-100)*8);
+		height: calc(var(--space-100)*16);
+	}
+
+	.portfolio-section .carousel .card .title {
+		z-index: 2;
+		position: absolute;
+		left: var(--space-150);
+		bottom: var(--space-150);
+		transform-origin: bottom left;
+		transform: rotate(-90deg) translateY(100%);
+		text-shadow: 0 0 4px var(--dark);
+	}
+	.portfolio-section .carousel .card:before {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(30deg, var(--pink), var(--violet));
+		border-radius: var(--space-50);
+		opacity: 0.333;
+	}
+	.portfolio-section .carousel .card .arrow {
+		text-align: right;
+		position: absolute;
+		z-index: 3;
+		right: var(--space-50);
+		bottom: var(--space-150);
+		padding: var(--space-50);
+	}
 </style>
 <!-- Homeowner Landing Section -->
 <section id="homeowner-landing-section" class="homeowner-landing-section img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249515959_Mohta_04.jpg');">
@@ -88,6 +129,56 @@
 	</div>
 </section>
 <!-- END: Homeowner Landing Section -->
+
+
+
+
+<!-- Portfolio Section -->
+<section id="portfolio-section" class="portfolio-section fill-dark space-200-top-bottom">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12">
+				<div class="title h3 text-center font-h space-100-bottom">Home's crafted for <span class="text-pink">Homeowners</span></div>
+			</div>
+		</div>
+	</div>
+	<div class="carousel fill-dark">
+		<div class="carousel-list">
+		{% capture reyears %}{% for reyear in collections.post | sort: "year"  %},{{ reyear.data.year }}{% endfor %}{% endcapture %}
+		<!-- assign reyears to an array by spliting sting at ','commas and only adding the unique ones -->
+		{% for yea in reyears %}{% assign itemsreYear = yea | split: ',' | uniq | sort_natural | reverse %}{% endfor %}
+		<!-- loop to output uniqe reyears -->
+		{% for itemreYear in itemsreYear %}
+			{% for post in collections.post %}
+				{% if itemreYear contains post.data.year %}
+					{% if post.data.category == "Residential" %}
+			<a class="carousel-list-item space-50" href="{{ post.url }}" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('{{ post.data.thumbnail }}');">
+					<div class="title">
+						<div class="h5 strong no-wrap">{{ post.data.project }}</div>
+						<div class="p text-pink strong">{{ post.data.year }}</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+		</div>
+		<div class="row">
+			<div class="container">
+				<div class="columns small-6">
+					<div class="scroll-button button scroll-left" data-dir="left" tabindex="-1"><span class="text-pink material-symbols-rounded inline-middle" style="font-size: var(--h1); line-height: 0;">arrow_left</span></div>
+				</div>
+				<div class="columns small-6 text-right">
+					<div class="scroll-button button scroll-right" data-dir="right" tabindex="-1"><span class="text-pink material-symbols-rounded inline-middle" style="font-size: var(--h1); line-height: 0;">arrow_right</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Portfolio Section -->
 
 
 

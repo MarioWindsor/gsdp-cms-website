@@ -380,19 +380,6 @@ hr {
 
 
 
-/*
- *	Opacity
- */
-
-.opacity-0 { opacity: 0; }
-.opacity-25 { opacity: 0.25; }
-.opacity-50 { opacity: 0.5; }
-.opacity-75 { opacity: 0.75; }
-.opacity-100 { opacity: 1; }
-
-
-
-
 
 /*
  *
@@ -749,7 +736,7 @@ select {
 	z-index: 1;
 }
 
-/*.carousel:before,
+.carousel:before,
 .carousel:after {
 	pointer-events: none;
 	content: '';
@@ -759,7 +746,7 @@ select {
 	top: 0;
 	bottom: 0;
 	width: calc((100vw - var(--container-width) ) / 2);
-}*/
+}
 
 .carousel .carousel-list {
 	position: relative;
@@ -774,7 +761,7 @@ select {
 	scroll-snap-type: x mandatory;
 }
 
-/*.carousel:before {
+.carousel:before {
 	left: 0;
 	background-image: linear-gradient( to left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%);
 	opacity: 0.5;
@@ -788,13 +775,13 @@ select {
 
 .carousel.fill-dark:before {
 	left: 0;
-	background-image: linear-gradient( to left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%);
+	background-image: linear-gradient( to left, rgba(29,0,51,0) 0%, rgba(29,0,51,1) 90%);
 }
 
 .carousel.fill-dark:after {
 	right: 0;
-	background-image: linear-gradient( to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%);
-}*/
+	background-image: linear-gradient( to right, rgba(29,0,51,0) 0%, rgba(29,0,51,1) 90%);
+}
 
 .carousel .carousel-list .carousel-list-item {
 	display: inline-block;

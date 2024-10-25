@@ -161,6 +161,10 @@
 	.homeowner-landing-section .homeowner-landing .title {
 		transform-origin: top left;
 		transform: scale(1.25);
+		text-shadow: 0 0 6px var(--dark);
+	}
+	.homeowner-landing-section .homeowner-landing .point {
+		text-shadow: 0 0 6px var(--dark);
 	}
 
 	@media( min-width: 640px )  {
@@ -183,6 +187,43 @@
 		}
 	}
 
+
+	.portfolio-section .carousel .card {
+		position: relative;
+		width: calc(var(--space-100)*8);
+		height: calc(var(--space-100)*16);
+	}
+
+	.portfolio-section .carousel .card .title {
+		z-index: 2;
+		position: absolute;
+		left: var(--space-150);
+		bottom: var(--space-150);
+		transform-origin: bottom left;
+		transform: rotate(-90deg) translateY(100%);
+		text-shadow: 0 0 4px var(--dark);
+	}
+	.portfolio-section .carousel .card:before {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(30deg, var(--pink), var(--violet));
+		border-radius: var(--space-50);
+		opacity: 0.333;
+	}
+	.portfolio-section .carousel .card .arrow {
+		text-align: right;
+		position: absolute;
+		z-index: 3;
+		right: var(--space-50);
+		bottom: var(--space-150);
+		padding: var(--space-50);
+	}
 </style>
 <!-- Homeowner Landing Section -->
 <section id="homeowner-landing-section" class="homeowner-landing-section img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249515959_Mohta_04.jpg');">
@@ -243,6 +284,1382 @@
 
 
 
+<!-- Portfolio Section -->
+<section id="portfolio-section" class="portfolio-section fill-dark space-200-top-bottom">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12">
+				<div class="title h3 text-center font-h space-100-bottom">Home's crafted for <span class="text-pink">Homeowners</span></div>
+			</div>
+		</div>
+	</div>
+	<div class="carousel fill-dark">
+		<div class="carousel-list">
+		
+		<!-- assign reyears to an array by spliting sting at ','commas and only adding the unique ones -->
+		
+		<!-- loop to output uniqe reyears -->
+		
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+			<a class="carousel-list-item space-50" href="/post/veena-kumari/" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_E3A5CBF3AC2F55BBD1E681D8269AEED977C3A6F09E607A107F0E48AE4A52D05D_1729250556874_veena_01.jpg+c.jpg');">
+					<div class="title">
+						<div class="h5 strong no-wrap">Veena Kumari</div>
+						<div class="p text-pink strong">2024</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+					
+			<a class="carousel-list-item space-50" href="/post/belagavi-home/" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249515959_Mohta_04.jpg');">
+					<div class="title">
+						<div class="h5 strong no-wrap">Belagavi Home</div>
+						<div class="p text-pink strong">2022</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+					
+			<a class="carousel-list-item space-50" href="/post/brickly-affair/" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_5EAF91A48C2FF13DCA080F637C9DDD04B4757EC6FF4D541AE4D1E6DB46FE34CC_1729164696166_SIDE+FACADE.jpg');">
+					<div class="title">
+						<div class="h5 strong no-wrap">Brickly Affair</div>
+						<div class="p text-pink strong">2018</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+					
+			<a class="carousel-list-item space-50" href="/post/ovoid/" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_F55B2F63B58EFA94B7B5F2C71CE694211486C3D5512B3B6CB219B4F9263DB4BF_1729165664481_AJ_05520.jpg');">
+					<div class="title">
+						<div class="h5 strong no-wrap">Ovoid</div>
+						<div class="p text-pink strong">2018</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					
+				
+			
+				
+					
+			<a class="carousel-list-item space-50" href="/post/oxide-flair/" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_C47574A53A930B9F39B83BBF0EDEA809070DF7B305B6110393E35414A85D3533_1729166706806_EXTERNAL+01.jpg');">
+					<div class="title">
+						<div class="h5 strong no-wrap">Oxide Flair</div>
+						<div class="p text-pink strong">2018</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+			<a class="carousel-list-item space-50" href="/post/komorebi/" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_39B6E2E07213B887B130F7F1024218E86051591B1C87204A671C4B04B51E5DCE_1729165178012_11KOMOREBI.jpg');">
+					<div class="title">
+						<div class="h5 strong no-wrap">Komorebi</div>
+						<div class="p text-pink strong">2017</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+			<a class="carousel-list-item space-50" href="/post/the-variance/" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_A4528BC199912E9F414EE3FF286D6EDE32004A3572765E6010DFB11463BCA9AA_1729251132724_GSDS-JN-VIEW1.jpg');">
+					<div class="title">
+						<div class="h5 strong no-wrap">The Variance</div>
+						<div class="p text-pink strong">2017</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					
+				
+			
+				
+					
+			<a class="carousel-list-item space-50" href="/post/vallabh-kun/" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_6EF58072C2E805B02FFC7B98D60E3CCE89FE4F6FBDFDD8C5906AB29376DF1437_1729166201916_01EXTERNAL.jpg');">
+					<div class="title">
+						<div class="h5 strong no-wrap">Vallabh Kun</div>
+						<div class="p text-pink strong">2017</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+			<a class="carousel-list-item space-50" href="/post/white-villa/" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_4F939B16FD9115BA50FF09D0C2FB5D8913DBCE28F6D42733EA01CEE4089FC955_1729249055633_GREYSCALE_White1435MJ_Deck_Ver03_26-06-2017.jpg');">
+					<div class="title">
+						<div class="h5 strong no-wrap">White Villa</div>
+						<div class="p text-pink strong">2017</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+					
+				
+			
+				
+					
+			<a class="carousel-list-item space-50" href="/post/senguttavan-residence/" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_B63965FF9E5209A6B33B84745847AFAFFCEABE5CB3F828FCA5CC456766077C72_1729248183962_0004.jpg');">
+					<div class="title">
+						<div class="h5 strong no-wrap">Senguttavan Residence</div>
+						<div class="p text-pink strong">2015</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+					
+			<a class="carousel-list-item space-50" href="/post/the-potpourri/" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_CAE6F1362C0C99224C6C7B76D906EFEEDE9BDC70ADE9541299F381AB0AE5BF1F_1729262440120_1213+THEME+RESAURANT-DEFAULT-DEFAULT-004.jpg');">
+					<div class="title">
+						<div class="h5 strong no-wrap">The Potpourri</div>
+						<div class="p text-pink strong">2012</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+			<a class="carousel-list-item space-50" href="/post/vishwakutumb/" target="_blank">
+				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_26CB88C86AB9D878EECEECDF22768797DB341BF06AA74ECB8105676619FC3AF8_1729162157204_gs+-+jain+-+001.JPG');">
+					<div class="title">
+						<div class="h5 strong no-wrap">Vishwakutumb</div>
+						<div class="p text-pink strong">2009</div>
+					</div>
+					<span class="arrow text-pink material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+				</div>
+			</a>
+					
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+		</div>
+		<div class="row">
+			<div class="container">
+				<div class="columns small-6">
+					<div class="scroll-button button scroll-left" data-dir="left" tabindex="-1"><span class="text-pink material-symbols-rounded inline-middle" style="font-size: var(--h1); line-height: 0;">arrow_left</span></div>
+				</div>
+				<div class="columns small-6 text-right">
+					<div class="scroll-button button scroll-right" data-dir="right" tabindex="-1"><span class="text-pink material-symbols-rounded inline-middle" style="font-size: var(--h1); line-height: 0;">arrow_right</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Portfolio Section -->
+
+
+
+
 
 
 <!-- Footer Menu Section -->
@@ -260,7 +1677,7 @@
 				<div class="h5 text-neutral-4 block space-50-bottom">Quick Links</div>
 				<a class="text-violet p inline space-25-bottom" href="/"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> Greyscale Stories</a><br>
 				<a class="text-violet p inline space-25-bottom" href="/about"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> About Us</a><br>
-				<a class="text-violet p inline space-25-bottom" href="/for-homeowners"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Home Owners</a><br>
+				<a class="text-violet p inline space-25-bottom" href="/for-homeowners"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Homeowners</a><br>
 				<a class="text-violet p inline space-25-bottom" href="#"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Builders</a><br>
 				<a class="text-violet p inline space-25-bottom" href="#"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Students</a><br>
 			</div>
