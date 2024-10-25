@@ -1,0 +1,171 @@
+/*
+ *  For Homeowners Page
+ */
+
+
+/* -- homeowner-landing-section -- */
+
+.homeowner-landing-section {}
+.homeowner-landing-section .homeowner-landing .title {
+	transform-origin: top left;
+	transform: scale(1.25);
+	text-shadow: 0 0 6px var(--dark);
+}
+.homeowner-landing-section .homeowner-landing .point {
+	text-shadow: 0 0 6px var(--dark);
+}
+
+@media( min-width: 640px )  {
+	.homeowner-landing-section .homeowner-landing .title {
+		transform: scale(1.125);
+	}
+}
+@media( min-width: 1040px ) {
+	.homeowner-landing-section .homeowner-landing .title {
+		transform: scale(1.5);
+	}
+	.homeowner-landing-section .homeowner-landing .point {
+		transform-origin: top left;
+		transform: scale(1.125);
+	}
+}
+@media( min-width: 1480px ) {
+	.homeowner-landing-section .homeowner-landing .point {
+		transform: scale(1.125) translateY(-10%);
+	}
+}
+
+
+
+/* -- portfolio-section -- */
+
+.portfolio-section .carousel .card {
+	position: relative;
+	width: calc(var(--space-100)*8);
+	height: calc(var(--space-100)*16);
+}
+
+.portfolio-section .carousel .card .title {
+	z-index: 2;
+	position: absolute;
+	left: var(--space-150);
+	bottom: var(--space-150);
+	transform-origin: bottom left;
+	transform: rotate(-90deg) translateY(100%);
+	text-shadow: 0 0 4px var(--dark);
+}
+.portfolio-section .carousel .card:before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(30deg, var(--pink), var(--violet));
+	border-radius: var(--space-50);
+	opacity: 0.333;
+}
+.portfolio-section .carousel .card .arrow {
+	text-align: right;
+	position: absolute;
+	z-index: 3;
+	right: var(--space-50);
+	bottom: var(--space-150);
+	padding: var(--space-50);
+}
+
+
+
+/* -- human-centric-section -- */
+
+.human-centric-section {
+	position: relative;
+	z-index: 3;
+	text-align: center;
+}
+.human-centric-section  .human-centric {}
+.human-centric-section  .human-centric .isometric img {
+	position: relative;
+	z-index: 3;
+	transform: scale(1.333);
+}
+
+@media( min-width: 640px )  {
+	.human-centric-section {
+		text-align: left;
+		overflow-x: clip;
+		overflow-y: visible;
+	}
+	.human-centric-section .human-centric .isometric {
+		float: right;
+	}
+	.human-centric-section .human-centric .isometric img {
+		transform-origin: left top;
+		transform: scale(2);
+	}
+}
+@media( min-width: 1040px ) {
+	.human-centric-section .human-centric .isometric img {
+		transform-origin: left top;
+		transform: scale(2) translate(-15%, -5%);
+	}
+}
+@media( min-width: 1480px ) {}
+
+
+
+/* -- handbook-section -- */
+
+.handbook-section {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	padding-bottom: var(--space-250);
+}
+.handbook-section .handbook .book img {
+	position: relative;
+	z-index: 2;
+	transform: scale(1.333);
+}
+
+@media( min-width: 640px )  {
+	.handbook-section {
+		text-align: left;
+		padding-bottom: var(--space-50);
+	}
+	.handbook-section .handbook .book img {
+		transform-origin: center top;
+		transform: scale(1.7) translateY(-10%);
+	}
+}
+@media( min-width: 1040px ) {
+	.handbook-section {
+		padding-top: var(--space-200);
+		padding-bottom: var(--space-150);
+	}
+	.handbook-section .handbook .book img {
+		transform-origin: center top;
+		transform: scale(2.25) translate(-10%, -17%);
+	}
+}
+@media( min-width: 1480px ) {}
+
+
+
+/* -- why-us-section -- */
+
+.why-us-section {}
+.why-us-section .row {
+	backdrop-filter: blur(3px) brightness(50%);
+	-webkit-backdrop-filter: blur(3px) brightness(50%);
+	background: rgba(143, 0, 255, 0.5);
+}
+
+@media (min-width: 640px) {
+}
+@media (min-width: 1040px) {
+}
+@media (min-width: 1480px) {
+}
