@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
 
-	<title>Veena Kumari - A Home in Mysore</title>
+	<title>Architecture For Home Owners | Greyscale Design Studio</title>
     <base href="/">
 	
 	<!-- Metadata -->
@@ -47,7 +47,7 @@
 	<!-- Launch Screen Image -->
 	<!-- <link rel="apple-touch-startup-image" href="/path/to/launch.png"> -->
 	<!-- Launch Icon Title -->
-	<meta name="apple-mobile-web-app-title" content="Veena Kumari - A Home in Mysore">
+	<meta name="apple-mobile-web-app-title" content="Architecture For Home Owners | Greyscale Design Studio">
 	<!-- Enable standalone (full-screen) mode -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<!-- Status bar appearance (has no effect unless standalone mode is enabled) -->
@@ -62,13 +62,13 @@
 	<!-- Facebook Open Graph -->
 	<meta property="og:url" content="">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Veena Kumari - A Home in Mysore">
+	<meta property="og:title" content="Architecture For Home Owners | Greyscale Design Studio">
 	<meta property="og:description" content="Greyscale Design Studio - Architecture that Inspires and Endures. Rooted in Human-Centric Design, our unique approach combines functionality with timeless beauty!">
 	<meta property="og:image" content="">
 	<meta property="og:site_name" content="">
 
 	<!-- Schema.org / Google+ -->
-	<meta itemprop="name" content="Veena Kumari - A Home in Mysore">
+	<meta itemprop="name" content="Architecture For Home Owners | Greyscale Design Studio">
 	<meta itemprop="description" content="Greyscale Design Studio - Architecture that Inspires and Endures. Rooted in Human-Centric Design, our unique approach combines functionality with timeless beauty!">
 	<meta itemprop="image" content=" ">
 
@@ -156,120 +156,194 @@
 
 
 
-<style type="text/css">
-	.single-post-tags-section .tag { margin-bottom: var(--space-min); }
-	.post-content { font-size: var(--label); color: var(--dark); }
-	.post-content h1 { display: block; font-size: var(--h2); font-weight: 700; padding: var(--h4) 0; font-family: "Rajdhani", Arial, serif; line-height: 1.125; }
-	.post-content h2 { display: block; font-size: var(--h3); font-weight: 700; padding: var(--h5) 0; font-family: "Rajdhani", Arial, serif; line-height: 1.125; }
-	.post-content h3 { display: block; font-size: var(--h4); font-weight: 700; padding: var(--h6) 0; font-family: "Rajdhani", Arial, serif; line-height: 1.125; }
-	.post-content h4 { display: block; font-size: var(--h5); font-weight: 700; padding: var(--h6) 0; font-family: "Rajdhani", Arial, serif; line-height: 1.125; }
-	.post-content h5 { display: block; font-size: var(--h6); font-weight: 700; padding: var(--p) 0; }
-	.post-content h6 { display: block; font-size: var(--p); font-weight: 700; padding: var(--p) 0; }
-	.post-content p 	{ display: block; font-size: var(--p); padding: var(--p) 0; }
-	.post-content label { display: inline-block; font-size: var(--label); font-weight: 700; }
-	.post-content small { display: inline-block; font-size: var(--label); }
-	.post-content b { display: inline-block; font-weight: 700; }
-	.post-content u { display: inline-block; text-decoration: underline; }
-	.post-content em { display: inline-block; font-style: italic; }
-	.post-content img { border-radius: var(--space-25); box-shadow: 0 0 3px 1px rgba(143, 0, 255, 0.125),  0 0 9px 3px rgba(143, 0, 255, 0.125); }
-	.post-content figcaption { padding: var(--space-25); font-size: var(--label); line-height: 1.125; text-align: left; color: var(--violet); opacity: 0.7; }
+<style>
+	.intro-section {}
 
-
-	.meta-tags {
-		opacity: 0.5;
-	}
-	.meta-tags .tag-row {
-		display: flex;
-		width: 100%;
-		justify-content: space-between;
-		space
+	.intro-section .cover-img {
+		display: block;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		padding-bottom: calc(var(--space-100) * 10);
 	}
 
 	@media( min-width: 640px )  {
-		.meta-tags {
-			column-count: 2;
-			column-gap: calc(var(--space-100) * 2);
+		.intro-section .cover-img {
+			padding-bottom: calc(var(--space-100) * 20);
+			margin-bottom: var(--space-100);
 		}
 	}
 	@media( min-width: 1040px ) {
-		.meta-tags {
-			column-count: 3;
-			column-gap: calc(var(--space-100) * 2);
+		.intro-section .cover-img {
+			padding-bottom: calc(var(--space-100) * 23);
+		}
+
+		.intro-section .title {
+			padding: var(--space-250) 0;
+			transform-origin: left center;
+			transform: scale(1.333);
 		}
 	}
 	@media( min-width: 1480px ) {}
+
+
+
+
+	.stats-section {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.stats-section .row {
+		backdrop-filter: blur(3px) brightness(50%);
+		-webkit-backdrop-filter: blur(3px) brightness(50%);
+		background: rgba(143, 0, 255, 0.5);
+	}
+
+
+	.team-section .partner {
+		position: relative;
+	}
+	.team-section .partner .name {
+		position: relative;
+		z-index: 3;
+		transform: translateY(17%);
+		text-shadow: 0 0 5px var(--violet);
+	}
+	.team-section .partner .farkles {
+		position: absolute;
+		width: 150%;
+		z-index: 2;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0.85;
+	}
+	.team-section .team-photo {
+		display: block;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+		padding-bottom: calc(var(--space-100) * 10);
+		mix-blend-mode: screen;
+		filter: saturate(25%);
+	}
 </style>
-
-
-<!-- Single Post Thumbnail Section -->
-<section id="single-post-thumbnail-section" class="single-post-thumbnail-section" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_E3A5CBF3AC2F55BBD1E681D8269AEED977C3A6F09E607A107F0E48AE4A52D05D_1729250556874_veena_01.jpg+c.jpg'); min-height: 50vw; background-size: cover; background-position: center center;">
-</section>
-<!-- END: Single Post Thumbnail Section -->
-
-
-
-
-
-<!-- Single Post Intro Section -->
-<section id="single-post-intro-section" class="single-post-intro-section fill-violet">
-	<div class="row">
-		<div class="container">
-			<div class="columns small-12 large-10 large-offset-1 text-center">
-				<div class="intro text-white space-100-top-bottom">
-					<div class="h3 strong font-h">Veena Kumari - A Home in Mysore</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END: Single Post Intro Section -->
-
-
-
-
-
-
-<!-- Single Post Tags Section -->
-<section id="single-post-tags-section" class="single-post-tags-section fill-light space-150-top">
-	<div class="row">
-		<div class="container">
-			<div class="columns small-12 large-10 large-offset-1">
-				<div class="meta-tags space-25" style="">
-					 <div class="tag-row p space-min-bottom">Status : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Ongoing</a></div>
-					 <div class="tag-row p space-min-bottom">Year : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">2024</a></div>
-					 <div class="tag-row p space-min-bottom">Category : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Residential</a></div>
-					 <div class="tag-row p space-min-bottom">Client : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Veena Kumari</a></div>
-					 <div class="tag-row p space-min-bottom">Project : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Veena Kumari</a></div>
-					 <div class="tag-row p space-min-bottom">Site : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Mysore</a></div>
-					 <div class="tag-row p space-min-bottom">City : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Mysore</a></div>
-					 <div class="tag-row p space-min-bottom">Site Area : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">2400</a></div>
-					 <div class="tag-row p space-min-bottom">Built-up Area : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">5000</a></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END: Single Post Tags Section -->
-
-
-
-
-
-<!-- Single Post Content Section -->
-<section id="single-post-content-section" class="single-post-content-section space-100-top-bottom fill-light">
+<!-- Intro Section -->
+<section id="intro-section" class="intro-section fill-dark space-200-top">
 	<div class="container">
 		<div class="row">
-			<div class="post-content columns small-12 large-10 large-offset-1">
-				<h2>A Home in Mysore</h2>
-<p><img src="https://paper-attachments.dropboxusercontent.com/s_E3A5CBF3AC2F55BBD1E681D8269AEED977C3A6F09E607A107F0E48AE4A52D05D_1729250573093_veena_02.jpg" alt=""></p>
-
+			<div class="columns small-12 medium-6 space-150-bottom">
+				<div class="cover-img radius-50 box-shadow-pink" style="background-image: url('media/about-cover.png');"></div>
+			</div>
+			<div class="columns small-12 medium-5 medium-offset-1 space-200-bottom">
+				<div class="p strong text-pink text-uppercase space-50-top-bottom">We are . . .</div>
+				<div class="wordmark"><img src="media/logo-wordmark-white.png" class="block"></div>
+				<div class="title space-150-top-bottom">
+					<div class="h1 strong font-h text-pink">20 Years</div>
+					<div class="h3 strong font-h">of Architectural <br>Excellence!</div>
+				</div>
+				<div class="h6">Since our inception, we have designed spaces with a focus on integrating nature seamless with the unique character of each project.</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- END: Single Post Content Section -->
+<!-- END: Intro Section -->
 
 
+
+
+<!-- Stats Section -->
+<section id="stats-section" class="stats-section fill-dark" style="background-image: url('media/stats-bg.jpg');">
+	<div class="row space-200-top space-50-bottom">
+		<div class="container">
+			<div class="columns small-6 large-3 text-center space-150-bottom">
+				<div class="icon space-50-bottom"><img src="media/icon-sqft.png" style="width: calc(var(--space-100) * 4);"></div>
+				<div class="h1 strong font-h">25M</div>
+				<div class="p">SQFT Designed</div>
+			</div>
+			<div class="columns small-6 large-3 text-center space-150-bottom">
+				<div class="icon space-50-bottom"><img src="media/icon-clients.png" style="width: calc(var(--space-100) * 4);"></div>
+				<div class="h1 strong font-h">4k+</div>
+				<div class="p">Happy Clients</div>
+			</div>
+			<div class="columns small-6 large-3 text-center space-150-bottom">
+				<div class="icon space-50-bottom"><img src="media/icon-successful-projects.png" style="width: calc(var(--space-100) * 4);"></div>
+				<div class="h1 strong font-h">120</div>
+				<div class="p">Successful Projects</div>
+			</div>
+			<div class="columns small-6 large-3 text-center space-150-bottom">
+				<div class="icon space-50-bottom"><img src="media/icon-awards.png" style="width: calc(var(--space-100) * 4);"></div>
+				<div class="h1 strong font-h">73</div>
+				<div class="p">Awards Won</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Stats Section -->
+
+
+
+
+<!-- Team Section -->
+<section id="team-section" class="team-section fill-dark space-200-top-bottom">
+	<div class="container text-center">
+		<div class="row">
+			<div class="columns small-12">
+				<div class="p strong text-pink text-uppercase space-50-bottom">Meet the</div>
+				<div class="h1 font-h"><span class="text-pink">{ </span>Principal Architects<span class="text-pink"> }</span></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="partner columns small-12 medium-4 space-50">
+				<div class="name">
+					<div class="h2 font-h strong">Girish</div>
+					<div class="h6">Mysore</div>
+				</div>
+				<div class="img"><img src="media/partner-girish.png" class="radius-50 box-shadow-pink"></div>
+				<div class="title space-50-top">Site Planner, Resident Comedian, and Weekend Hiker.</div>
+				<div class="farkles"><img src="media/doodle-overlay-1.png"></div>
+			</div>
+			<div class="partner columns small-12 medium-4 space-50">
+				<div class="name">
+					<div class="h2 font-h strong">Ninu</div>
+					<div class="h6">Ahluwalia</div>
+				</div>
+				<div class="img"><img src="media/partner-ninu.png" class="radius-50 box-shadow-pink"></div>
+				<div class="title space-50-top">Sustainability Consultant, Coffee Aficionado, and DIY Enthusiast</div>
+				<div class="farkles"><img src="media/doodle-overlay-2.png"></div>
+			</div>
+			<div class="partner columns small-12 medium-4 space-50">
+				<div class="name">
+					<div class="h2 font-h strong">Magesh</div>
+					<div class="h6">Manohar</div>
+				</div>
+				<div class="img"><img src="media/partner-magesh.png" class="radius-50 box-shadow-pink"></div>
+				<div class="title space-50-top">Concept Designer, Amateur Cook, and Vintage Vinyl Collector.</div>
+				<div class="farkles"><img src="media/doodle-overlay-3.png"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="columns small-12 space-150-top-bottom">
+				<div class="h2 font-h">Innovators at Every Level</div>
+			</div>
+			<div class="columns small-12 large-10 large-offset-1 space-200-bottom">
+				<div class="h6">At Greyscale, our vibrant team shares a passion for creativity and sustainability in every project. From seasoned architects to eager interns, we collaborate to bring unique perspectives to residential, commercial, and hospitality spaces. We're always seeking to leave our mark on the next landmark, balancing visionary design with functionality.</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="team-photo block radius-50 box-shadow-pink" style="background-image: url('media/team.jpg');"></div>
+		</div>
+		<div class="row">
+			<div class="columns small-12 large-10 large-offset-1 space-250-top-bottom">
+				<div class="h3 font-h space-75-bottom">Shaping the Creative Minds of Tomorrow</div>
+				<div class="p">We believe in fostering the next generation of design professionals. Our interns are an integral part of the team, contributing fresh ideas and new perspectives while learning from industry experts.</div>
+				<div class="p space-75-top">Join us — <a href="mailto:withus@greyscale.in" class="inline cursor-pointer text-pink" target="_blank">withus@greyscale.in</a></div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Team Section -->
 
 
 
@@ -333,7 +407,7 @@
 				<div class="h5 text-neutral-4 block space-50-bottom">Quick Links</div>
 				<a class="text-violet p inline space-25-bottom" href="/"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> Greyscale Stories</a><br>
 				<a class="text-violet p inline space-25-bottom" href="/about"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> About Us</a><br>
-				<a class="text-violet p inline space-25-bottom" href="/for-homeowners"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Home Owners</a><br>
+				<a class="text-violet p inline space-25-bottom" href="#"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Home Owners</a><br>
 				<a class="text-violet p inline space-25-bottom" href="#"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Builders</a><br>
 				<a class="text-violet p inline space-25-bottom" href="#"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Students</a><br>
 			</div>

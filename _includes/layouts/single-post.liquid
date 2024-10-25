@@ -22,6 +22,31 @@
 	.post-content em { display: inline-block; font-style: italic; }
 	.post-content img { border-radius: var(--space-25); box-shadow: 0 0 3px 1px rgba(143, 0, 255, 0.125),  0 0 9px 3px rgba(143, 0, 255, 0.125); }
 	.post-content figcaption { padding: var(--space-25); font-size: var(--label); line-height: 1.125; text-align: left; color: var(--violet); opacity: 0.7; }
+
+
+	.meta-tags {
+		opacity: 0.5;
+	}
+	.meta-tags .tag-row {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		space
+	}
+
+	@media( min-width: 640px )  {
+		.meta-tags {
+			column-count: 2;
+			column-gap: calc(var(--space-100) * 2);
+		}
+	}
+	@media( min-width: 1040px ) {
+		.meta-tags {
+			column-count: 3;
+			column-gap: calc(var(--space-100) * 2);
+		}
+	}
+	@media( min-width: 1480px ) {}
 </style>
 
 
@@ -57,14 +82,17 @@
 <section id="single-post-tags-section" class="single-post-tags-section fill-light space-150-top">
 	<div class="row">
 		<div class="container">
-			<div class="columns small-12 text-center">
-				<div class="space-25">
-					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ category }}</a>
-					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ project }}</a>
-					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ client }}</a>
-					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ site }}</a>
-					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ year }}</a>
-					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ status }}</a>
+			<div class="columns small-12 large-10 large-offset-1">
+				<div class="meta-tags space-25" style="">
+					{% if status %} <div class="tag-row p space-min-bottom">Status : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ status }}</a></div>{% endif %}
+					{% if year %} <div class="tag-row p space-min-bottom">Year : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ year }}</a></div>{% endif %}
+					{% if category %} <div class="tag-row p space-min-bottom">Category : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ category }}</a></div>{% endif %}
+					{% if client %} <div class="tag-row p space-min-bottom">Client : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ client }}</a></div>{% endif %}
+					{% if project %} <div class="tag-row p space-min-bottom">Project : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ project }}</a></div>{% endif %}
+					{% if site %} <div class="tag-row p space-min-bottom">Site : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ site }}</a></div>{% endif %}
+					{% if city %} <div class="tag-row p space-min-bottom">City : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ city }}</a></div>{% endif %}
+					{% if site_area %} <div class="tag-row p space-min-bottom">Site Area : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ site_area }}</a></div>{% endif %}
+					{% if built_up_area %} <div class="tag-row p space-min-bottom">Built-up Area : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">{{ built_up_area }}</a></div>{% endif %}
 				</div>
 			</div>
 		</div>
@@ -77,7 +105,7 @@
 
 
 <!-- Single Post Content Section -->
-<section id="single-post-content-section" class="single-post-content-section space-150-top-bottom fill-light">
+<section id="single-post-content-section" class="single-post-content-section space-100-top-bottom fill-light">
 	<div class="container">
 		<div class="row">
 			<div class="post-content columns small-12 large-10 large-offset-1">

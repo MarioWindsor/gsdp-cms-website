@@ -173,6 +173,31 @@
 	.post-content em { display: inline-block; font-style: italic; }
 	.post-content img { border-radius: var(--space-25); box-shadow: 0 0 3px 1px rgba(143, 0, 255, 0.125),  0 0 9px 3px rgba(143, 0, 255, 0.125); }
 	.post-content figcaption { padding: var(--space-25); font-size: var(--label); line-height: 1.125; text-align: left; color: var(--violet); opacity: 0.7; }
+
+
+	.meta-tags {
+		opacity: 0.5;
+	}
+	.meta-tags .tag-row {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		space
+	}
+
+	@media( min-width: 640px )  {
+		.meta-tags {
+			column-count: 2;
+			column-gap: calc(var(--space-100) * 2);
+		}
+	}
+	@media( min-width: 1040px ) {
+		.meta-tags {
+			column-count: 3;
+			column-gap: calc(var(--space-100) * 2);
+		}
+	}
+	@media( min-width: 1480px ) {}
 </style>
 
 
@@ -208,14 +233,17 @@
 <section id="single-post-tags-section" class="single-post-tags-section fill-light space-150-top">
 	<div class="row">
 		<div class="container">
-			<div class="columns small-12 text-center">
-				<div class="space-25">
-					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Interiors</a>
-					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Ha Bi Home</a>
-					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Hailey and Bindya</a>
-					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Prestige Falcon City , Bengaluru</a>
-					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">2022</a>
-					<a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Completed</a>
+			<div class="columns small-12 large-10 large-offset-1">
+				<div class="meta-tags space-25" style="">
+					 <div class="tag-row p space-min-bottom">Status : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Completed</a></div>
+					 <div class="tag-row p space-min-bottom">Year : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">2022</a></div>
+					 <div class="tag-row p space-min-bottom">Category : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Interiors</a></div>
+					 <div class="tag-row p space-min-bottom">Client : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Hailey and Bindya</a></div>
+					 <div class="tag-row p space-min-bottom">Project : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Ha Bi Home</a></div>
+					 <div class="tag-row p space-min-bottom">Site : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Prestige Falcon City , Bengaluru</a></div>
+					 <div class="tag-row p space-min-bottom">City : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Bengaluru</a></div>
+					
+					 <div class="tag-row p space-min-bottom">Built-up Area : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">2000</a></div>
 				</div>
 			</div>
 		</div>
@@ -228,7 +256,7 @@
 
 
 <!-- Single Post Content Section -->
-<section id="single-post-content-section" class="single-post-content-section space-150-top-bottom fill-light">
+<section id="single-post-content-section" class="single-post-content-section space-100-top-bottom fill-light">
 	<div class="container">
 		<div class="row">
 			<div class="post-content columns small-12 large-10 large-offset-1">
@@ -311,7 +339,7 @@
 				<div class="h5 text-neutral-4 block space-50-bottom">Quick Links</div>
 				<a class="text-violet p inline space-25-bottom" href="/"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> Greyscale Stories</a><br>
 				<a class="text-violet p inline space-25-bottom" href="/about"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> About Us</a><br>
-				<a class="text-violet p inline space-25-bottom" href="#"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Home Owners</a><br>
+				<a class="text-violet p inline space-25-bottom" href="/for-homeowners"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Home Owners</a><br>
 				<a class="text-violet p inline space-25-bottom" href="#"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Builders</a><br>
 				<a class="text-violet p inline space-25-bottom" href="#"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Students</a><br>
 			</div>
