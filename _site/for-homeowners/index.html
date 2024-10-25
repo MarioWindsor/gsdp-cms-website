@@ -224,6 +224,89 @@
 		bottom: var(--space-150);
 		padding: var(--space-50);
 	}
+
+
+
+
+	.human-centric-section {
+		position: relative;
+		z-index: 3;
+		text-align: center;
+	}
+	.human-centric-section	.human-centric {}
+	.human-centric-section	.human-centric .isometric img {
+		position: relative;
+		z-index: 3;
+		transform: scale(1.333);
+	}
+
+	@media( min-width: 640px )  {
+		.human-centric-section {
+			text-align: left;
+			overflow-x: clip;
+			overflow-y: visible;
+		}
+		.human-centric-section .human-centric .isometric {
+			float: right;
+		}
+		.human-centric-section .human-centric .isometric img {
+			transform-origin: left top;
+			transform: scale(2);
+		}
+	}
+	@media( min-width: 1040px ) {
+		.human-centric-section .human-centric .isometric img {
+			transform-origin: left top;
+			transform: scale(2) translate(-15%, -5%);
+		}
+	}
+	@media( min-width: 1480px ) {}
+
+
+
+
+	.handbook-section {
+		position: relative;
+		z-index: 2;
+		text-align: center;
+		padding-bottom: var(--space-250);
+	}
+	.handbook-section .handbook .book img {
+		position: relative;
+		z-index: 2;
+		transform: scale(1.333);
+	}
+	@media( min-width: 640px )  {
+		.handbook-section {
+			text-align: left;
+			padding-bottom: var(--space-50);
+		}
+		.handbook-section .handbook .book img {
+			transform-origin: center top;
+			transform: scale(1.7) translateY(-10%);
+		}
+	}
+	@media( min-width: 1040px ) {
+		.handbook-section {
+			padding-top: var(--space-200);
+			padding-bottom: var(--space-150);
+		}
+		.handbook-section .handbook .book img {
+			transform-origin: center top;
+			transform: scale(2.25) translate(-10%, -17%);
+		}
+	}
+	@media( min-width: 1480px ) {}
+
+
+	.why-us-section {}
+	.why-us-section .row {
+		backdrop-filter: blur(3px) brightness(50%);
+		-webkit-backdrop-filter: blur(3px) brightness(50%);
+		background: rgba(143, 0, 255, 0.5);
+	}
+
+
 </style>
 <!-- Homeowner Landing Section -->
 <section id="homeowner-landing-section" class="homeowner-landing-section img-cover" style="background-image: url('https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249515959_Mohta_04.jpg');">
@@ -285,7 +368,7 @@
 
 
 <!-- Portfolio Section -->
-<section id="portfolio-section" class="portfolio-section fill-dark space-200-top-bottom">
+<section id="portfolio-section" class="portfolio-section fill-dark space-200-top space-100-bottom">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12">
@@ -1658,6 +1741,80 @@
 <!-- END: Portfolio Section -->
 
 
+
+
+<!-- Human Centric Section -->
+<section id="human-centric-section" class="human-centric-section fill-dark">
+	<div class="human-centric row">
+		<div class="container clearfix">
+			<div class="isometric columns small-12 medium-6 large-5 large-offset-1 space-200-bottom">
+				<img class="block" src="media/isometric-3d-house.png">
+			</div>
+			<div class="columns small-12 medium-6 large-4 large-offset-1">
+				<div class="h2 font-h strong text-pink">Human-Centric Architecture</div>
+				<div class="h4 font-h strong space-25-bottom">Next-Level Homes Designed Around You :</div>
+				<div class="p space-25-bottom">Through our core principles we create spaces you can live with long-term. By...</div>
+				<div class="p"><span class="h5 strong font-h text-pink">1.</span> Listening to your Needs <br><span class="h5 strong font-h text-pink">2.</span> Thoughtful Design <br><span class="h5 strong font-h text-pink">3.</span> Careful Construction.</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Human Centric Section -->
+
+
+
+
+<!-- Handbook Section -->
+<section id="handbook-section" class="handbook-section fill-dark">
+	<div class="handbook row">
+		<div class="container">
+			<div class="book columns small-12 medium-6 large-3 large-offset-1 inline-middle">
+				<img class="block" src="media/download-ebook.png">
+			</div>
+			<div class="columns small-10 medium-4 medium-offset-2 large-3 large-offset-1 inline-middle space-50-top-bottom">
+				<div class="h4 font-h text-white space-50-bottom"><span class="strong">Human-Centric Architecture :</span> <span class="no-wrap">Get the FREE e-book</span></div>
+				<div class="button fill-pink text-white strong block
+				">Download Now</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Handbook Section -->
+
+
+
+
+<!-- Why Us Section -->
+<section id="why-us-section" class="why-us-section fill-violet text-white img-cover" style="background-image: url('media/architect-drawing.jpg');">
+	<div class="row">
+		<div class="container space-250-top space-150-bottom">
+			<div class="columns small-11 medium-6 large-4 large-offset-1  space-150-right">
+				<div class="h5 font-h text-pink strong opacity-75">Why us?</div>
+				<div class="h2 font-h strong space-50-bottom">Because we get "YOU"</div>
+				<div class="h5 font-h space-50-bottom">As first-time homeowners, you want a place that feels like “YOU.” </div>
+				<div class="p space-50-bottom opacity-75">Our team is dedicated to crafting personalised spaces around your lifestyle, sparking joy and wonder. </div>
+				<div class="p space-100-bottom opacity-75">Let us partner with you on this journey to create a home that’s a true reflection of who you are.</div>
+			</div>
+			<div class="columns small-12 medium-6 large-5 large-offset-2 space-100-bottom">
+				<img src="media/homeowner-1.jpeg" class="block radius-50 box-shadow-violet">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Why Us Section -->
+
+
+
+
+<!-- Process Section -->
+<section id="process-section" class="process-section fill-dark">
+	<div class="row">
+		<div class="container space-200-top-bottom">
+			<div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui expedita quos, assumenda doloribus iste id voluptatum accusamus non ad ducimus sit quas aliquid consequatur, tempora voluptatem, in repudiandae vero dolorem.</div>
+		</div>
+	</div>
+</section>
+<!-- END: Process Section -->
 
 
 
