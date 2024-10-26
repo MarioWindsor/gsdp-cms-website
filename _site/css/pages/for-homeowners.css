@@ -179,15 +179,28 @@
 
 .process-section {}
 
+.process-section .process .step.step-1 .step-thumbnail .thumbnail {
+	height: calc(var(--space-100) * 7);
+}
+
+
 @media (min-width: 640px) {
 	.process-section .process .step .step-title {
 		transform-origin: bottom left;
 		transform: scale(1.25);
 	}
+
+	.process-section .process .step.step-1 .step-thumbnail .thumbnail {
+		height: calc(var(--space-100) * 10);
+	}
 }
 @media (min-width: 1040px) {
 	.process-section .process .step .step-title {
 		transform: scale(1.333);
+	}
+
+	.process-section .process .step.step-1 .step-thumbnail .thumbnail {
+		height: calc(var(--space-100) * 12);
 	}
 }
 @media (min-width: 1480px) {
