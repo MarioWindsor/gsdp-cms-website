@@ -183,7 +183,8 @@ p, small, label {
 
 .font-h {
 	font-family: "Rajdhani", Arial, serif;
-	line-height: 1.125;
+/*	line-height: 1.125;*/
+	line-height: 1.075;
 }
 
 

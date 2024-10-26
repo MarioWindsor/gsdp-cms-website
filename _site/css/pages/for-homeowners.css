@@ -28,6 +28,9 @@
 		transform-origin: top left;
 		transform: scale(1.125);
 	}
+	.homeowner-landing-section .homeowner-landing .point:last-child {
+		padding-bottom: 0;
+	}
 }
 @media( min-width: 1480px ) {
 	.homeowner-landing-section .homeowner-landing .point {
@@ -166,6 +169,26 @@
 @media (min-width: 640px) {
 }
 @media (min-width: 1040px) {
+}
+@media (min-width: 1480px) {
+}
+
+
+
+/* -- why-us-section -- */
+
+.process-section {}
+
+@media (min-width: 640px) {
+	.process-section .process .step .step-title {
+		transform-origin: bottom left;
+		transform: scale(1.25);
+	}
+}
+@media (min-width: 1040px) {
+	.process-section .process .step .step-title {
+		transform: scale(1.333);
+	}
 }
 @media (min-width: 1480px) {
 }
