@@ -823,3 +823,49 @@ select {
 .flexbox {
 	display: flex;
 }
+
+
+
+/* -- accordion -- */
+
+.accordion {}
+.accordion .tab {
+	margin-bottom: var(--space-50);
+}
+.accordion .tab .tab-head {
+	position: relative;
+}
+.accordion .tab .tab-head * { pointer-events: none; }
+.accordion .tab .tab-head .icon {
+	position: absolute;
+	top: 50%;
+	right: var(--space-50);
+	transform: translate(-50% -50%);
+}
+
+.accordion .tab input + .tab-head .icon {
+	transition: all 0.4s 0.1s ease-in-out;
+}
+.accordion .tab input:checked + .tab-head .icon {
+	transform: rotate(-180deg);
+}
+
+.accordion .tab .tab-content > .p {
+	padding-top: 0;
+}
+
+.accordion .tab input + .tab-head + .tab-content {
+/*	height: 0;*/
+/*	overflow: clip;*/
+/*	interpolate-size: allow-keywords; /* -- Support Limited : only Chrome (Desktop, Android), as on Oct 2024 -- */
+	
+	height: 100%;
+	overflow: hidden;
+	max-height: 0;
+	transition: all 0.7s ease-in-out;
+
+}
+.accordion .tab input:checked + .tab-head + .tab-content {
+/*	height: auto;*/
+	max-height: 800px;
+}
