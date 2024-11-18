@@ -42,8 +42,10 @@
 	--neutral-7: #3E3D41;
 /*	--dark: #1B121D;*/
 	--dark: #1d0033;
-	--black: #000000;
-	--violet: #8F00FF;
+	--black: #0D001A;
+	--violet-light: #A540FF;
+	--violet: #8600FF;
+	--violet-dark: #6400BF;
 	--pink: #FF2896;
 	--red: #FF194B;
 	--yellow: #FFEB3B;
@@ -147,7 +149,8 @@ body, .body {
 	font-weight: 400;
 	font-size: 1.4rem;
 	line-height: 1.375;
-	background-color: var(--white);
+/*	background-color: var(--white);*/
+	background-color: var(--neutral-1);
 }
 
 
@@ -256,9 +259,15 @@ hr {
 .fill-black {
 	color: var(--white);
 	background-color: var(--black); }
+.fill-violet-light {
+	color: var(--dark);
+	background-color: var(--violet-light); }
 .fill-violet {
 	color: var(--dark);
 	background-color: var(--violet); }
+.fill-violet-dark {
+	color: var(--dark);
+	background-color: var(--violet-dark); }
 .fill-pink {
 	color: var(--dark);
 	background-color: var(--pink); }
@@ -274,6 +283,10 @@ hr {
 .fill-blue {
 	color: var(--dark);
 	background-color: var(--blue); }
+.fill-violet-gradient {
+	color: var(--dark);
+	background-color: var(--violet);
+	background-image: linear-gradient(-120deg, var(--violet-light), var(--violet-dark)); }
 
 
 
@@ -296,7 +309,9 @@ hr {
 .text-neutral-7 { color: var(--neutral-7); }
 .text-dark { color: var(--dark); }
 .text-black { color: var(--black); }
+.text-violet-light { color: var(--violet-light); }
 .text-violet { color: var(--violet); }
+.text-violet-dark { color: var(--violet-dark); }
 .text-pink { color: var(--pink); }
 .text-red { color: var(--red); }
 .text-yellow { color: var(--yellow); }
@@ -774,14 +789,14 @@ select {
 	opacity: 0.5;
 }
 
-.carousel.fill-dark:before {
+.carousel.fill-black:before {
 	left: 0;
-	background-image: linear-gradient( to left, rgba(29,0,51,0) 0%, rgba(29,0,51,1) 90%);
+	background-image: linear-gradient( to left, rgba(13,0,26,0) 0%, rgba(13,0,26,1) 90%);
 }
 
-.carousel.fill-dark:after {
+.carousel.fill-black:after {
 	right: 0;
-	background-image: linear-gradient( to right, rgba(29,0,51,0) 0%, rgba(29,0,51,1) 90%);
+	background-image: linear-gradient( to right, rgba(13,0,26,0) 0%, rgba(13,0,26,1) 90%);
 }
 
 .carousel .carousel-list .carousel-list-item {

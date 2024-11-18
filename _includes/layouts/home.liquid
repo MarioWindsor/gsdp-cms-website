@@ -5,56 +5,45 @@
 
 
 
-<!-- Intro Section -->
-<section id="intro-section" class="intro-section" style="background-image: url('media/image.jpg'); background-size: cover;">
-	<div class="row space-200-top-bottom" style="background: rgba(0, 0, 0, 0.7);">
-		<div class="container">
-			<div class="columns small-12 medium-6 large-4">
-				<div class="intro space-25 text-white">
-					<div class="h2 font-h strong space-100-bottom">Architecture that Inspires and Endures</div>
-					<div class="h6 space-100-bottom">Rooted in Human-Centric Design, our unique approach combines functionality with timeless beauty!</div>
-				</div>
-			</div>
-			<div class="columns small-12 medium-6 large-4 large-offset-4 text-light">
-				<!-- Form -->
-				<div class="form space-150-left-right space-150-top-bottom radius-50" style="backdrop-filter: blur(10px) brightness(150%); -webkit-backdrop-filter: blur(10px) brightness(150%); background: rgba(143, 0, 255, 0.5);">
-					<form action="" method="post">
-						<div class="h5">Sign-up for a FREE<br>Online Consultation!</div>
-						<label class="form-field block space-25-top" for="fullName">
-							<span class="label strong inline space-min-bottom">Full Name</span>
-							<input class="input-field block" type="text" name="fullName">
-						</label>
-						<label class="form-field block space-25-top" for="email">
-							<span class="label strong inline space-min-bottom">Email ID</span>
-							<input class="input-field block" type="text" name="email">
-						</label>
-						<label class="form-field block space-25-top" for="phone">
-							<span class="label strong inline space-min-bottom">Phone Number <span class="w-400">(Request a Call-Back)</span></span>
-							<input class="input-field block" type="text" name="phone">
-						</label>
-						<label class="form-field block space-25-top" for="phone">
-							<span class="label strong inline space-min-bottom invisible">Submit</span>
-							<button class="button block strong fill-white text-left" type="submit">Send</button>
-						</label>
-					</form>
-				</div>
-				<!-- END: Form -->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END: Intro Section -->
 
 
 
 
 
 <!-- Main Section -->
-<section class="main-section fill-white">
+<section class="main-section space-150-top">
 	<div class="container">
 		<div class="row">
 			<!-- Main -->
-			<div class="main columns small-12 large-7 space-200-top-bottom">
+			<style type="text/css">
+				.posts {
+					z-index: 1;
+					max-height: 250vh;
+					overflow-y: clip;
+					transition: 3.5s ease-out;
+				}
+				.fade-posts { z-index: 2; }
+				.fade-posts:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					padding-top: calc(var(--space-250) * 3);
+					background-image: linear-gradient(180deg, transparent 25%, var(--neutral-1) 75%);
+					transform: translateY(-99%) scale(1.125);
+				}
+
+				#togglePosts:checked + .main .posts {
+					max-height: calc(100vh*99);
+				}
+				#togglePosts:checked + .main .posts + .fade-posts {
+					display: none;
+				}
+			</style>
+			<input class="visuallyhidden" type="checkbox" name="togglePosts" id="togglePosts">
+			<div class="main columns small-12 large-8 space-200-bottom">
 				<!-- Demographic -->
 				<div class="demographic row space-200-bottom hidden">
 					<div class="columns small-12 h6 space-50-bottom">Are you looking for...</div>
@@ -103,7 +92,7 @@
 						
 					</style>
 					<div id="postFilter" class="filter columns small-12 space-100-bottom" style="position: sticky; top: var(--space-100); z-index: 8;">
-						<div class="row box-shadow-violet text-violet row fill-white radius-50 space-50-top-bottom space-50-right" style="backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); background: rgba(255, 255, 255, 0.5);">
+						<div class="row box-shadow-violet text-violet row fill-white radius-50 space-50-top-bottom space-50-right" style="backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); background: rgba(255, 255, 255, 0.666);">
 							<div class="columns small-12 medium-2 inline-top">
 								<div class="p font-h strong opacity-50 space-50-left space-50-bottom">
 									<span class="material-symbols-rounded inline-middle" style="font-size: var(--p); font-weight: 700;">tune</span> 
@@ -152,7 +141,7 @@
 							</div>
 							<div class="columns small-5 medium-5 inline-middle">
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
-									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Project</span>
+									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Topic</span>
 									<select id="projectFilter" class="selector block opacity-0" name="project">
 										<option value="" selected>All</option>
 										<!-- capture projects from all posts into a string with ',' comma separtion -->
@@ -217,17 +206,94 @@
 					<!-- END: Post Listing -->
 				</div>
 				<!-- End: Posts -->
+				<div class="fade-posts space-100-top-bottom position-relative text-center">
+					<label class="togglePosts button inline fill-violet-gradient text-white strong" for="togglePosts">Show All</label>
+				</div>
 			</div>
 			<!-- END: Main -->
 			<!-- Sidebar -->
-			<div class="sidebar columns small-12 large-4 large-offset-1">
-				{% include 'parts/sidebar-menu.liquid' %}
+			<style type="text/css">
+				.sidebar .card { cursor: pointer; opacity: 0.85; transition: .3s ease-out; }
+				.sidebar .card:hover { opacity: 1; transform: scale(1.01) ;}
+
+				.sidebar .card *{
+					pointer-events: none;
+				}
+			</style>
+			<div class="sidebar columns small-12 large-3 large-offset-1 position-sticky" style="top: var(--space-100); text-shadow: 0 0 2px var(--black);">
+				{%# include 'parts/sidebar-menu.liquid' %}
+				<a class="card position-relative block fill-violet-gradient radius-50 box-shadow-violet" href="/for-homeowner" style="margin-bottom: var(--space-100);">
+					<div class="position-relative block text-white space-100-bottom space-250-top space-100-left-right radius-50" style="z-index: 2;">
+						<span class="p strong block text-uppercase">Architecture</span>
+						<span class="h5 font-h strong block">For Homeowner</span>
+					</div>
+					<div class="position-absolute radius-50 img-cover" style="mix-blend-mode: multiply; background-image: url('https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249489656_Mohta_03.jpg'); z-index: 1; top: 0; left: 0; right: 0; bottom: 0; filter: grayscale(100%) brightness(150%);"></div>
+				</a>
+				<a class="card position-relative block fill-violet-gradient radius-50 box-shadow-violet" href="/for-business" style="margin-bottom: var(--space-100);">
+					<div class="position-relative block text-white space-100-bottom space-250-top space-100-left-right radius-50" style="z-index: 2;">
+						<span class="p strong block text-uppercase">Architecture</span>
+						<span class="h5 font-h strong block">For Business</span>
+					</div>
+					<div class="position-absolute radius-50 img-cover" style="mix-blend-mode: multiply; background-image: url('https://paper-attachments.dropboxusercontent.com/s_50E194CC2DADED5F8EF195E17E3AE70B73E329D771E81C9993D0A8C6694677F0_1729320870331_Greyscale-VikCommJC-V1-Ver02-Sep+17th.jpg'); z-index: 1; top: 0; left: 0; right: 0; bottom: 0; filter: grayscale(100%) brightness(150%);"></div>
+				</a>
+				<a class="card position-relative block fill-violet-gradient radius-50 box-shadow-violet" href="/for-student" style="margin-bottom: var(--space-100);">
+					<div class="position-relative block text-white space-100-bottom space-250-top space-100-left-right radius-50" style="z-index: 2;">
+						<span class="p strong block text-uppercase">Architecture</span>
+						<span class="h5 font-h strong block">For Student</span>
+					</div>
+					<div class="position-absolute radius-50 img-cover" style="mix-blend-mode: multiply; background-image: url('media/stats-bg.jpg'); z-index: 1; top: 0; left: 0; right: 0; bottom: 0; filter: grayscale(100%); opacity: 0.85;"></div>
+				</a>
 			</div>
 			<!-- END: Sidebar -->
 		</div>
 	</div>
 </section>
 <!-- END: Main Section -->
+
+
+
+
+
+<!-- Intro Section -->
+<section id="intro-section" class="intro-section" style="background-image: url('media/image.jpg'); background-size: cover;">
+	<div class="row space-200-top-bottom" style="background: rgba(0, 0, 0, 0.7);">
+		<div class="container">
+			<div class="columns small-12 medium-6 large-4">
+				<div class="intro space-25 text-white">
+					<div class="h2 font-h strong space-100-bottom">Architecture that Inspires and Endures</div>
+					<div class="h6 space-100-bottom">Rooted in Human-Centric Design, our unique approach combines functionality with timeless beauty!</div>
+				</div>
+			</div>
+			<div class="columns small-12 medium-6 large-4 large-offset-4 text-light">
+				<!-- Form -->
+				<div class="form space-150-left-right space-150-top-bottom radius-50" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); background: rgba(143, 0, 255, 0.666);">
+					<form action="" method="post">
+						<div class="h5">Sign-up for a FREE<br>Online Consultation!</div>
+						<label class="form-field block space-25-top" for="fullName">
+							<span class="label strong inline space-min-bottom">Full Name</span>
+							<input class="input-field block" type="text" name="fullName">
+						</label>
+						<label class="form-field block space-25-top" for="email">
+							<span class="label strong inline space-min-bottom">Email ID</span>
+							<input class="input-field block" type="text" name="email">
+						</label>
+						<label class="form-field block space-25-top" for="phone">
+							<span class="label strong inline space-min-bottom">Phone Number <span class="w-400">(Request a Call-Back)</span></span>
+							<input class="input-field block" type="text" name="phone">
+						</label>
+						<label class="form-field block space-25-top" for="phone">
+							<span class="label strong inline space-min-bottom invisible">Submit</span>
+							<button class="button block strong fill-white text-left" type="submit">Send</button>
+						</label>
+					</form>
+				</div>
+				<!-- END: Form -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Intro Section -->
+
 
 
 
@@ -259,5 +325,6 @@
 
 
 
+{% include 'parts/footer-menu.liquid' %}
 {% include 'parts/footer.liquid' %}
 {% include 'parts/foot.liquid' %}

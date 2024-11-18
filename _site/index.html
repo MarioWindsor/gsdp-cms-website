@@ -135,20 +135,20 @@
 
 
 <!-- Header Section -->
-<section id="header-section" class="header-section fill-white">
+<section id="header-section" class="header-section fill-white box-shadow-violet">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-11 medium-5 large-4 inline-middle">
 				<a class="logo block space-100-top-bottom space-50-right" href="/">
-					<img class="block no-pointer" src="/media/logo.png" alt="Greyscale Logo">
+					<img class="block no-pointer" src="/media/logo-color.svg" alt="Greyscale Logo">
 				</a>
 			</div>
-			<div class="menu columns small-12 medium-7 large-8 inline-middle text-right hide-small">
-				<a class="link label text-uppercase strong text-violet inline" href="/">Stories</a>
-				<a class="link label text-uppercase strong text-violet inline" href="/about">About</a>
-				<a class="link label text-uppercase strong text-violet inline" href="/for-homeowner">Homeowner</a>
-				<a class="link label text-uppercase strong text-violet inline" href="/for-business">Business</a>
-				<a class="link label text-uppercase strong text-violet inline" href="/for-student">Student</a>
+			<div class="menu columns small-12 medium-7 large-8 inline-middle text-right hide-small text-violet">
+				<a class="link label text-uppercase strong inline" href="/">Stories</a>
+				<a class="link label text-uppercase strong inline" href="/about">About</a>
+				<a class="link label text-uppercase strong inline" href="/for-homeowner">Homeowner</a>
+				<a class="link label text-uppercase strong inline" href="/for-business">Business</a>
+				<a class="link label text-uppercase strong inline" href="/for-student">Student</a>
 			</div>
 		</div>
 	</div>
@@ -165,56 +165,45 @@
 
 
 
-<!-- Intro Section -->
-<section id="intro-section" class="intro-section" style="background-image: url('media/image.jpg'); background-size: cover;">
-	<div class="row space-200-top-bottom" style="background: rgba(0, 0, 0, 0.7);">
-		<div class="container">
-			<div class="columns small-12 medium-6 large-4">
-				<div class="intro space-25 text-white">
-					<div class="h2 font-h strong space-100-bottom">Architecture that Inspires and Endures</div>
-					<div class="h6 space-100-bottom">Rooted in Human-Centric Design, our unique approach combines functionality with timeless beauty!</div>
-				</div>
-			</div>
-			<div class="columns small-12 medium-6 large-4 large-offset-4 text-light">
-				<!-- Form -->
-				<div class="form space-150-left-right space-150-top-bottom radius-50" style="backdrop-filter: blur(10px) brightness(150%); -webkit-backdrop-filter: blur(10px) brightness(150%); background: rgba(143, 0, 255, 0.5);">
-					<form action="" method="post">
-						<div class="h5">Sign-up for a FREE<br>Online Consultation!</div>
-						<label class="form-field block space-25-top" for="fullName">
-							<span class="label strong inline space-min-bottom">Full Name</span>
-							<input class="input-field block" type="text" name="fullName">
-						</label>
-						<label class="form-field block space-25-top" for="email">
-							<span class="label strong inline space-min-bottom">Email ID</span>
-							<input class="input-field block" type="text" name="email">
-						</label>
-						<label class="form-field block space-25-top" for="phone">
-							<span class="label strong inline space-min-bottom">Phone Number <span class="w-400">(Request a Call-Back)</span></span>
-							<input class="input-field block" type="text" name="phone">
-						</label>
-						<label class="form-field block space-25-top" for="phone">
-							<span class="label strong inline space-min-bottom invisible">Submit</span>
-							<button class="button block strong fill-white text-left" type="submit">Send</button>
-						</label>
-					</form>
-				</div>
-				<!-- END: Form -->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END: Intro Section -->
 
 
 
 
 
 <!-- Main Section -->
-<section class="main-section fill-white">
+<section class="main-section space-150-top">
 	<div class="container">
 		<div class="row">
 			<!-- Main -->
-			<div class="main columns small-12 large-7 space-200-top-bottom">
+			<style type="text/css">
+				.posts {
+					z-index: 1;
+					max-height: 250vh;
+					overflow-y: clip;
+					transition: 3.5s ease-out;
+				}
+				.fade-posts { z-index: 2; }
+				.fade-posts:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					padding-top: calc(var(--space-250) * 3);
+					background-image: linear-gradient(180deg, transparent 25%, var(--neutral-1) 75%);
+					transform: translateY(-99%) scale(1.125);
+				}
+
+				#togglePosts:checked + .main .posts {
+					max-height: calc(100vh*99);
+				}
+				#togglePosts:checked + .main .posts + .fade-posts {
+					display: none;
+				}
+			</style>
+			<input class="visuallyhidden" type="checkbox" name="togglePosts" id="togglePosts">
+			<div class="main columns small-12 large-8 space-200-bottom">
 				<!-- Demographic -->
 				<div class="demographic row space-200-bottom hidden">
 					<div class="columns small-12 h6 space-50-bottom">Are you looking for...</div>
@@ -263,7 +252,7 @@
 						
 					</style>
 					<div id="postFilter" class="filter columns small-12 space-100-bottom" style="position: sticky; top: var(--space-100); z-index: 8;">
-						<div class="row box-shadow-violet text-violet row fill-white radius-50 space-50-top-bottom space-50-right" style="backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); background: rgba(255, 255, 255, 0.5);">
+						<div class="row box-shadow-violet text-violet row fill-white radius-50 space-50-top-bottom space-50-right" style="backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); background: rgba(255, 255, 255, 0.666);">
 							<div class="columns small-12 medium-2 inline-top">
 								<div class="p font-h strong opacity-50 space-50-left space-50-bottom">
 									<span class="material-symbols-rounded inline-middle" style="font-size: var(--p); font-weight: 700;">tune</span> 
@@ -352,7 +341,7 @@
 							</div>
 							<div class="columns small-5 medium-5 inline-middle">
 								<label class="dropdown block space-50-left inline-middle cursor-pointor position-relative">
-									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Project</span>
+									<span class="p font-h strong text-uppercase position-absolute opacity-50 no-pointer">Topic</span>
 									<select id="projectFilter" class="selector block opacity-0" name="project">
 										<option value="" selected>All</option>
 										<!-- capture projects from all posts into a string with ',' comma separtion -->
@@ -452,53 +441,32 @@
 						
 							
 								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
+									<li data-title="Dasta Concerto - A Jaali Apartment in Bengaluru" data-year="2099" data-category="Apartments" data-project="Dasta Concerto" style="margin: 0; padding-bottom: var(--space-100);">
+										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
+											<a class="thumbnail block cursor-pointor" href="/post/dasta-concerto/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_99D2E3EE99530FD09217DA510BF1C34161BA50F0F4181B98359505CF9B4621A1_1729321769550_North-East-Elevation.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
+											</a>
+											<div class="meta  space-100-left-right space-50-top">
+												<span class="small text-violet space-min-right">Dasta Concerto</span>
+												<span class="small text-violet space-min-right">Bengaluru</span>
+											</div>
+											<div class="content space-100-left-right space-25-top">
+												<a class="title h5 font-h block text-violet strong" href="/post/dasta-concerto/">Dasta Concerto - A Jaali Apartment in Bengaluru</a>
+												<div class="description label space-25-top-bottom">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
+												</div>
+											</div>
+											<div class="post-listing-footer row space-50-bottom">
+												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
+													<span class="small text-neutral-3 space-min-right">2099</span>
+													<span class="small text-neutral-3 space-min-right">Apartments</span>
+													<span class="small text-neutral-3 space-min-right">Completed</span>
+												</div>
+												<div class="columns small-2 inline-middle text-right">
+													<a class="button text-violet" href="/post/dasta-concerto/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
+												</div>
+											</div>
+										</div>
+									</li>
 								
 							
 								
@@ -537,6 +505,8 @@
 								
 							
 								
+							
+								
 									<li data-title="GRC Nakshatra - Apartment Complex" data-year="2099" data-category="Apartments" data-project="GRC Nakshatra" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/grc-nakshatra/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_B43967DE63E89ED1E1A82C85FD215DFF7AE96F7E82D33C99E22A49D6C657E8A2_1729329878868_GRC+NAKSHATRA_1.JPG'); padding-bottom: 50%; background-size: cover; background-position: center center;">
@@ -563,8 +533,6 @@
 											</div>
 										</div>
 									</li>
-								
-							
 								
 							
 								
@@ -601,35 +569,103 @@
 								
 							
 								
-									<li data-title="Dasta Concerto - A Jaali Apartment in Bengaluru" data-year="2099" data-category="Apartments" data-project="Dasta Concerto" style="margin: 0; padding-bottom: var(--space-100);">
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									<li data-title="GR Samkruthi - Poolside Apartment in Bengaluru" data-year="2024" data-category="Apartments" data-project="GR Samkruthi" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
-											<a class="thumbnail block cursor-pointor" href="/post/dasta-concerto/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_99D2E3EE99530FD09217DA510BF1C34161BA50F0F4181B98359505CF9B4621A1_1729321769550_North-East-Elevation.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
+											<a class="thumbnail block cursor-pointor" href="/post/gr-samkruthi/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_B16C24F7A07B41F9067EE7C40B04B1533856FBD33DC7AC47B4AB259550621E0E_1729329413869_Grey+Scale_GR+Samskruthi1941+J_Pool+outside_Ver+03_06-01-2020+1.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
 											<div class="meta  space-100-left-right space-50-top">
-												<span class="small text-violet space-min-right">Dasta Concerto</span>
+												<span class="small text-violet space-min-right">GR Samkruthi</span>
 												<span class="small text-violet space-min-right">Bengaluru</span>
 											</div>
 											<div class="content space-100-left-right space-25-top">
-												<a class="title h5 font-h block text-violet strong" href="/post/dasta-concerto/">Dasta Concerto - A Jaali Apartment in Bengaluru</a>
+												<a class="title h5 font-h block text-violet strong" href="/post/gr-samkruthi/">GR Samkruthi - Poolside Apartment in Bengaluru</a>
 												<div class="description label space-25-top-bottom">
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
 												</div>
 											</div>
 											<div class="post-listing-footer row space-50-bottom">
 												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
-													<span class="small text-neutral-3 space-min-right">2099</span>
+													<span class="small text-neutral-3 space-min-right">2024</span>
 													<span class="small text-neutral-3 space-min-right">Apartments</span>
-													<span class="small text-neutral-3 space-min-right">Completed</span>
+													<span class="small text-neutral-3 space-min-right">Ongoing</span>
 												</div>
 												<div class="columns small-2 inline-middle text-right">
-													<a class="button text-violet" href="/post/dasta-concerto/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
+													<a class="button text-violet" href="/post/gr-samkruthi/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
 												</div>
 											</div>
 										</div>
 									</li>
 								
 							
-						
+								
+							
+								
+							
+								
+							
+								
 							
 								
 							
@@ -708,29 +744,33 @@
 							
 								
 							
+						
+							
 								
-									<li data-title="GR Samkruthi - Poolside Apartment in Bengaluru" data-year="2024" data-category="Apartments" data-project="GR Samkruthi" style="margin: 0; padding-bottom: var(--space-100);">
+							
+								
+									<li data-title="Belagavi Home - A Contemporary & Vernacular Home in Belagavi" data-year="2022" data-category="Residential" data-project="Belagavi Home" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
-											<a class="thumbnail block cursor-pointor" href="/post/gr-samkruthi/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_B16C24F7A07B41F9067EE7C40B04B1533856FBD33DC7AC47B4AB259550621E0E_1729329413869_Grey+Scale_GR+Samskruthi1941+J_Pool+outside_Ver+03_06-01-2020+1.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
+											<a class="thumbnail block cursor-pointor" href="/post/belagavi-home/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249515959_Mohta_04.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
 											<div class="meta  space-100-left-right space-50-top">
-												<span class="small text-violet space-min-right">GR Samkruthi</span>
-												<span class="small text-violet space-min-right">Bengaluru</span>
+												<span class="small text-violet space-min-right">Belagavi Home</span>
+												<span class="small text-violet space-min-right">Belagavi</span>
 											</div>
 											<div class="content space-100-left-right space-25-top">
-												<a class="title h5 font-h block text-violet strong" href="/post/gr-samkruthi/">GR Samkruthi - Poolside Apartment in Bengaluru</a>
+												<a class="title h5 font-h block text-violet strong" href="/post/belagavi-home/">Belagavi Home - A Contemporary & Vernacular Home in Belagavi</a>
 												<div class="description label space-25-top-bottom">
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
 												</div>
 											</div>
 											<div class="post-listing-footer row space-50-bottom">
 												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
-													<span class="small text-neutral-3 space-min-right">2024</span>
-													<span class="small text-neutral-3 space-min-right">Apartments</span>
-													<span class="small text-neutral-3 space-min-right">Ongoing</span>
+													<span class="small text-neutral-3 space-min-right">2022</span>
+													<span class="small text-neutral-3 space-min-right">Residential</span>
+													<span class="small text-neutral-3 space-min-right">Proposed</span>
 												</div>
 												<div class="columns small-2 inline-middle text-right">
-													<a class="button text-violet" href="/post/gr-samkruthi/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
+													<a class="button text-violet" href="/post/belagavi-home/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
 												</div>
 											</div>
 										</div>
@@ -748,14 +788,6 @@
 								
 							
 								
-							
-								
-							
-								
-							
-								
-							
-						
 							
 								
 							
@@ -786,6 +818,10 @@
 											</div>
 										</div>
 									</li>
+								
+							
+								
+							
 								
 							
 								
@@ -860,55 +896,26 @@
 								
 							
 								
-									<li data-title="Belagavi Home - A Contemporary & Vernacular Home in Belagavi" data-year="2022" data-category="Residential" data-project="Belagavi Home" style="margin: 0; padding-bottom: var(--space-100);">
-										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
-											<a class="thumbnail block cursor-pointor" href="/post/belagavi-home/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249515959_Mohta_04.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
-											</a>
-											<div class="meta  space-100-left-right space-50-top">
-												<span class="small text-violet space-min-right">Belagavi Home</span>
-												<span class="small text-violet space-min-right">Belagavi</span>
-											</div>
-											<div class="content space-100-left-right space-25-top">
-												<a class="title h5 font-h block text-violet strong" href="/post/belagavi-home/">Belagavi Home - A Contemporary & Vernacular Home in Belagavi</a>
-												<div class="description label space-25-top-bottom">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
-												</div>
-											</div>
-											<div class="post-listing-footer row space-50-bottom">
-												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
-													<span class="small text-neutral-3 space-min-right">2022</span>
-													<span class="small text-neutral-3 space-min-right">Residential</span>
-													<span class="small text-neutral-3 space-min-right">Proposed</span>
-												</div>
-												<div class="columns small-2 inline-middle text-right">
-													<a class="button text-violet" href="/post/belagavi-home/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
 							
 						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
 							
 								
 							
@@ -945,24 +952,6 @@
 											</div>
 										</div>
 									</li>
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
 								
 							
 								
@@ -1113,6 +1102,51 @@
 								
 							
 								
+									<li data-title="Brickly Affair - An Open Plan, Multiple Height Home in Bangalore" data-year="2018" data-category="Residential" data-project="Brickly Affair" style="margin: 0; padding-bottom: var(--space-100);">
+										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
+											<a class="thumbnail block cursor-pointor" href="/post/brickly-affair/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_5EAF91A48C2FF13DCA080F637C9DDD04B4757EC6FF4D541AE4D1E6DB46FE34CC_1729164696166_SIDE+FACADE.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
+											</a>
+											<div class="meta  space-100-left-right space-50-top">
+												<span class="small text-violet space-min-right">Brickly Affair</span>
+												<span class="small text-violet space-min-right">Bengaluru</span>
+											</div>
+											<div class="content space-100-left-right space-25-top">
+												<a class="title h5 font-h block text-violet strong" href="/post/brickly-affair/">Brickly Affair - An Open Plan, Multiple Height Home in Bangalore</a>
+												<div class="description label space-25-top-bottom">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
+												</div>
+											</div>
+											<div class="post-listing-footer row space-50-bottom">
+												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
+													<span class="small text-neutral-3 space-min-right">2018</span>
+													<span class="small text-neutral-3 space-min-right">Residential</span>
+													<span class="small text-neutral-3 space-min-right">Completed</span>
+												</div>
+												<div class="columns small-2 inline-middle text-right">
+													<a class="button text-violet" href="/post/brickly-affair/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
+												</div>
+											</div>
+										</div>
+									</li>
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
 									<li data-title="Kingdom College - Educational Facility in Bengaluru" data-year="2018" data-category="Institutional" data-project="Kingdom College" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/kingdom-college/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_84DBA84C52E021504975E2D5977AB4C63993CE27FF092B08ADBF6F058FBA6628_1729261553383_1.0.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
@@ -1241,52 +1275,25 @@
 							
 								
 							
-								
-									<li data-title="Brickly Affair - An Open Plan, Multiple Height Home in Bangalore" data-year="2018" data-category="Residential" data-project="Brickly Affair" style="margin: 0; padding-bottom: var(--space-100);">
-										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
-											<a class="thumbnail block cursor-pointor" href="/post/brickly-affair/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_5EAF91A48C2FF13DCA080F637C9DDD04B4757EC6FF4D541AE4D1E6DB46FE34CC_1729164696166_SIDE+FACADE.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
-											</a>
-											<div class="meta  space-100-left-right space-50-top">
-												<span class="small text-violet space-min-right">Brickly Affair</span>
-												<span class="small text-violet space-min-right">Bengaluru</span>
-											</div>
-											<div class="content space-100-left-right space-25-top">
-												<a class="title h5 font-h block text-violet strong" href="/post/brickly-affair/">Brickly Affair - An Open Plan, Multiple Height Home in Bangalore</a>
-												<div class="description label space-25-top-bottom">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
-												</div>
-											</div>
-											<div class="post-listing-footer row space-50-bottom">
-												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
-													<span class="small text-neutral-3 space-min-right">2018</span>
-													<span class="small text-neutral-3 space-min-right">Residential</span>
-													<span class="small text-neutral-3 space-min-right">Completed</span>
-												</div>
-												<div class="columns small-2 inline-middle text-right">
-													<a class="button text-violet" href="/post/brickly-affair/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
 						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
 							
 								
 							
@@ -1379,6 +1386,8 @@
 								
 							
 								
+							
+								
 									<li data-title="The Variance - A Family Home for 4 in Tamil Nadu" data-year="2017" data-category="Residential" data-project="The Variance" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/the-variance/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_A4528BC199912E9F414EE3FF286D6EDE32004A3572765E6010DFB11463BCA9AA_1729251132724_GSDS-JN-VIEW1.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
@@ -1443,6 +1452,8 @@
 								
 							
 								
+							
+								
 									<li data-title="White Villa - A Home Infused with Nature in Bengaluru" data-year="2017" data-category="Residential" data-project="White Villa" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/white-villa/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_4F939B16FD9115BA50FF09D0C2FB5D8913DBCE28F6D42733EA01CEE4089FC955_1729249055633_GREYSCALE_White1435MJ_Deck_Ver03_26-06-2017.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
@@ -1471,32 +1482,55 @@
 									</li>
 								
 							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
 						
 							
 								
 							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+									<li data-title="IISC - Educational Facility" data-year="2016" data-category="Institutional" data-project="Educational Facility" style="margin: 0; padding-bottom: var(--space-100);">
+										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
+											<a class="thumbnail block cursor-pointor" href="/post/iisc/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_CD29CC60133F32E86F593B38AFDB377F8A72A4058FAA1A8DC200945C8F64676E_1729261696812_20.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
+											</a>
+											<div class="meta  space-100-left-right space-50-top">
+												<span class="small text-violet space-min-right">Educational Facility</span>
+												<span class="small text-violet space-min-right">xxx</span>
+											</div>
+											<div class="content space-100-left-right space-25-top">
+												<a class="title h5 font-h block text-violet strong" href="/post/iisc/">IISC - Educational Facility</a>
+												<div class="description label space-25-top-bottom">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
+												</div>
+											</div>
+											<div class="post-listing-footer row space-50-bottom">
+												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
+													<span class="small text-neutral-3 space-min-right">2016</span>
+													<span class="small text-neutral-3 space-min-right">Institutional</span>
+													<span class="small text-neutral-3 space-min-right">Proposed</span>
+												</div>
+												<div class="columns small-2 inline-middle text-right">
+													<a class="button text-violet" href="/post/iisc/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
+												</div>
+											</div>
+										</div>
+									</li>
 								
 							
 								
@@ -1574,7 +1608,7 @@
 							
 								
 							
-								
+						
 							
 								
 							
@@ -1583,28 +1617,30 @@
 								
 							
 								
-									<li data-title="IISC - Educational Facility" data-year="2016" data-category="Institutional" data-project="Educational Facility" style="margin: 0; padding-bottom: var(--space-100);">
+							
+								
+									<li data-title="GR 4077 - A Simple Apartment Complex in Bengaluru" data-year="2015" data-category="Apartments" data-project="GR 4077" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
-											<a class="thumbnail block cursor-pointor" href="/post/iisc/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_CD29CC60133F32E86F593B38AFDB377F8A72A4058FAA1A8DC200945C8F64676E_1729261696812_20.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
+											<a class="thumbnail block cursor-pointor" href="/post/gr-4077/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_55C8A9194C9F0295140B95C3760D4BF02AD069F7C3DEF12116E459BA3FB11B40_1729328707169__DSC1002.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
 											</a>
 											<div class="meta  space-100-left-right space-50-top">
-												<span class="small text-violet space-min-right">Educational Facility</span>
-												<span class="small text-violet space-min-right">xxx</span>
+												<span class="small text-violet space-min-right">GR 4077</span>
+												<span class="small text-violet space-min-right">Bengaluru</span>
 											</div>
 											<div class="content space-100-left-right space-25-top">
-												<a class="title h5 font-h block text-violet strong" href="/post/iisc/">IISC - Educational Facility</a>
+												<a class="title h5 font-h block text-violet strong" href="/post/gr-4077/">GR 4077 - A Simple Apartment Complex in Bengaluru</a>
 												<div class="description label space-25-top-bottom">
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
 												</div>
 											</div>
 											<div class="post-listing-footer row space-50-bottom">
 												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
-													<span class="small text-neutral-3 space-min-right">2016</span>
-													<span class="small text-neutral-3 space-min-right">Institutional</span>
-													<span class="small text-neutral-3 space-min-right">Proposed</span>
+													<span class="small text-neutral-3 space-min-right">2015</span>
+													<span class="small text-neutral-3 space-min-right">Apartments</span>
+													<span class="small text-neutral-3 space-min-right">Completed</span>
 												</div>
 												<div class="columns small-2 inline-middle text-right">
-													<a class="button text-violet" href="/post/iisc/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
+													<a class="button text-violet" href="/post/gr-4077/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
 												</div>
 											</div>
 										</div>
@@ -1618,8 +1654,6 @@
 								
 							
 								
-							
-						
 							
 								
 							
@@ -1731,6 +1765,8 @@
 								
 							
 								
+							
+								
 									<li data-title="The Club  - A Versatile Hospitality Project in Bengaluru" data-year="2015" data-category="Hospitality" data-project="The Club" style="margin: 0; padding-bottom: var(--space-100);">
 										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
 											<a class="thumbnail block cursor-pointor" href="/post/the-club/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_EFB45E0BB8A4B8D10EB2972643207C7300B96502BA1B3DFE5D8D2EC6A8C90FD6_1729263703396_1314GUNJUR+CLUB-PR-VIEWS-020_1.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
@@ -1779,54 +1815,23 @@
 							
 								
 							
-								
-							
-								
-							
-								
-							
-								
-									<li data-title="GR 4077 - A Simple Apartment Complex in Bengaluru" data-year="2015" data-category="Apartments" data-project="GR 4077" style="margin: 0; padding-bottom: var(--space-100);">
-										<div class="post box-shadow-violet radius-50 fill-white no-overflow">
-											<a class="thumbnail block cursor-pointor" href="/post/gr-4077/" style="background: url('https://paper-attachments.dropboxusercontent.com/s_55C8A9194C9F0295140B95C3760D4BF02AD069F7C3DEF12116E459BA3FB11B40_1729328707169__DSC1002.jpg'); padding-bottom: 50%; background-size: cover; background-position: center center;">
-											</a>
-											<div class="meta  space-100-left-right space-50-top">
-												<span class="small text-violet space-min-right">GR 4077</span>
-												<span class="small text-violet space-min-right">Bengaluru</span>
-											</div>
-											<div class="content space-100-left-right space-25-top">
-												<a class="title h5 font-h block text-violet strong" href="/post/gr-4077/">GR 4077 - A Simple Apartment Complex in Bengaluru</a>
-												<div class="description label space-25-top-bottom">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.</p>
-												</div>
-											</div>
-											<div class="post-listing-footer row space-50-bottom">
-												<div class="columns small-9 medium-10 space-100-left inline-middle no-wrap no-pointer no-overflow">
-													<span class="small text-neutral-3 space-min-right">2015</span>
-													<span class="small text-neutral-3 space-min-right">Apartments</span>
-													<span class="small text-neutral-3 space-min-right">Completed</span>
-												</div>
-												<div class="columns small-2 inline-middle text-right">
-													<a class="button text-violet" href="/post/gr-4077/"><span class="visuallyhidden">Open</span><span class="material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
 						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
 							
 								
 									<li data-title="Greyscale Design Studio - Office Redo" data-year="2014" data-category="Renovation" data-project="Greyscale Design Studio" style="margin: 0; padding-bottom: var(--space-100);">
@@ -1855,6 +1860,10 @@
 											</div>
 										</div>
 									</li>
+								
+							
+								
+							
 								
 							
 								
@@ -1932,27 +1941,27 @@
 							
 								
 							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
 						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
 							
 								
 							
@@ -2058,27 +2067,25 @@
 							
 								
 							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
 						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
 							
 								
 							
@@ -2159,45 +2166,7 @@
 							
 								
 							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
 						
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
 							
 								
 							
@@ -2276,7 +2245,49 @@
 							
 								
 							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
 						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
 							
 								
 							
@@ -2353,29 +2364,25 @@
 							
 								
 							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
 						
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
 							
 								
 							
@@ -2430,24 +2437,6 @@
 											</div>
 										</div>
 									</li>
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
-								
-							
 								
 							
 								
@@ -2551,42 +2540,94 @@
 					<!-- END: Post Listing -->
 				</div>
 				<!-- End: Posts -->
+				<div class="fade-posts space-100-top-bottom position-relative text-center">
+					<label class="togglePosts button inline fill-violet-gradient text-white strong" for="togglePosts">Show All</label>
+				</div>
 			</div>
 			<!-- END: Main -->
 			<!-- Sidebar -->
-			<div class="sidebar columns small-12 large-4 large-offset-1">
-				<div class="row space-200-top-bottom">
-	<div class="columns small-12 medium-6 large-12 space-25 space-150-bottom">
-		<div class="h5 text-neutral-4 block space-50-bottom">Address</div>
-		<div class="block p space-50-bottom">No.9, 39th Cross, 4th 'T' Block,<br>Jayanagar, Bengaluru - 560041.</div>
-		<a class="text-violet p inline" href="https://maps.app.goo.gl/CoMc1wfP6cwJQHXK9" target="_blank"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">pin_drop</span> Open in Google Maps</a><br>
-	</div>
-	<div class="columns small-12 medium-6 large-12 space-25 space-100-bottom">
-		<div class="h5 text-neutral-4 block space-50-bottom">Phone</div>
-		<a class="text-violet p inline space-50-bottom" href="tel:+91 8041510310" target="_blank"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">headset_mic</span> +91 8041510310</a><br>
-		<a class="text-violet p inline space-50-bottom" href="tel:+91 9886466930" target="_blank"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">headset_mic</span> +91 9886466930</a><br>
-	</div>
-	<div class="columns small-12 medium-6 large-12 space-25 space-100-bottom">
-		<div class="h5 text-neutral-4 block space-50-bottom">Email</div>
-		<a class="text-violet p inline space-50-bottom" href="mailto:design-consult@greyscale.in" target="_blank"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">inbox</span> design-consult@greyscale.in</a><br>
-		<a class="text-violet p inline space-50-bottom" href="mailto:info@greyscale.in" target="_blank"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">inbox</span> info@greyscale.in</a><br>
-		<a class="text-violet p inline space-50-bottom" href="mailto:withus@greyscale.in" target="_blank"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">inbox</span> withus@greyscale.in</a><br>
-	</div>
-	<div class="columns small-12 medium-6 large-12 space-25 space-100-bottom">
-		<div class="h5 text-neutral-4 block space-50-bottom">Quick Links</div>
-		<a class="text-violet p inline space-25-bottom" href="/"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> Greyscale Stories</a><br>
-		<a class="text-violet p inline space-25-bottom" href="/about"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> About Us</a><br>
-		<a class="text-violet p inline space-25-bottom" href="/for-homeowner"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Homeowner</a><br>
-		<a class="text-violet p inline space-25-bottom" href="/for-business"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Business</a><br>
-		<a class="text-violet p inline space-25-bottom" href="/for-student"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Student</a><br>
-	</div>
-</div>
+			<style type="text/css">
+				.sidebar .card { cursor: pointer; opacity: 0.85; transition: .3s ease-out; }
+				.sidebar .card:hover { opacity: 1; transform: scale(1.01) ;}
+
+				.sidebar .card *{
+					pointer-events: none;
+				}
+			</style>
+			<div class="sidebar columns small-12 large-3 large-offset-1 position-sticky" style="top: var(--space-100); text-shadow: 0 0 2px var(--black);">
+				
+				<a class="card position-relative block fill-violet-gradient radius-50 box-shadow-violet" href="/for-homeowner" style="margin-bottom: var(--space-100);">
+					<div class="position-relative block text-white space-100-bottom space-250-top space-100-left-right radius-50" style="z-index: 2;">
+						<span class="p strong block text-uppercase">Architecture</span>
+						<span class="h5 font-h strong block">For Homeowner</span>
+					</div>
+					<div class="position-absolute radius-50 img-cover" style="mix-blend-mode: multiply; background-image: url('https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249489656_Mohta_03.jpg'); z-index: 1; top: 0; left: 0; right: 0; bottom: 0; filter: grayscale(100%) brightness(150%);"></div>
+				</a>
+				<a class="card position-relative block fill-violet-gradient radius-50 box-shadow-violet" href="/for-business" style="margin-bottom: var(--space-100);">
+					<div class="position-relative block text-white space-100-bottom space-250-top space-100-left-right radius-50" style="z-index: 2;">
+						<span class="p strong block text-uppercase">Architecture</span>
+						<span class="h5 font-h strong block">For Business</span>
+					</div>
+					<div class="position-absolute radius-50 img-cover" style="mix-blend-mode: multiply; background-image: url('https://paper-attachments.dropboxusercontent.com/s_50E194CC2DADED5F8EF195E17E3AE70B73E329D771E81C9993D0A8C6694677F0_1729320870331_Greyscale-VikCommJC-V1-Ver02-Sep+17th.jpg'); z-index: 1; top: 0; left: 0; right: 0; bottom: 0; filter: grayscale(100%) brightness(150%);"></div>
+				</a>
+				<a class="card position-relative block fill-violet-gradient radius-50 box-shadow-violet" href="/for-student" style="margin-bottom: var(--space-100);">
+					<div class="position-relative block text-white space-100-bottom space-250-top space-100-left-right radius-50" style="z-index: 2;">
+						<span class="p strong block text-uppercase">Architecture</span>
+						<span class="h5 font-h strong block">For Student</span>
+					</div>
+					<div class="position-absolute radius-50 img-cover" style="mix-blend-mode: multiply; background-image: url('media/stats-bg.jpg'); z-index: 1; top: 0; left: 0; right: 0; bottom: 0; filter: grayscale(100%); opacity: 0.85;"></div>
+				</a>
 			</div>
 			<!-- END: Sidebar -->
 		</div>
 	</div>
 </section>
 <!-- END: Main Section -->
+
+
+
+
+
+<!-- Intro Section -->
+<section id="intro-section" class="intro-section" style="background-image: url('media/image.jpg'); background-size: cover;">
+	<div class="row space-200-top-bottom" style="background: rgba(0, 0, 0, 0.7);">
+		<div class="container">
+			<div class="columns small-12 medium-6 large-4">
+				<div class="intro space-25 text-white">
+					<div class="h2 font-h strong space-100-bottom">Architecture that Inspires and Endures</div>
+					<div class="h6 space-100-bottom">Rooted in Human-Centric Design, our unique approach combines functionality with timeless beauty!</div>
+				</div>
+			</div>
+			<div class="columns small-12 medium-6 large-4 large-offset-4 text-light">
+				<!-- Form -->
+				<div class="form space-150-left-right space-150-top-bottom radius-50" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); background: rgba(143, 0, 255, 0.666);">
+					<form action="" method="post">
+						<div class="h5">Sign-up for a FREE<br>Online Consultation!</div>
+						<label class="form-field block space-25-top" for="fullName">
+							<span class="label strong inline space-min-bottom">Full Name</span>
+							<input class="input-field block" type="text" name="fullName">
+						</label>
+						<label class="form-field block space-25-top" for="email">
+							<span class="label strong inline space-min-bottom">Email ID</span>
+							<input class="input-field block" type="text" name="email">
+						</label>
+						<label class="form-field block space-25-top" for="phone">
+							<span class="label strong inline space-min-bottom">Phone Number <span class="w-400">(Request a Call-Back)</span></span>
+							<input class="input-field block" type="text" name="phone">
+						</label>
+						<label class="form-field block space-25-top" for="phone">
+							<span class="label strong inline space-min-bottom invisible">Submit</span>
+							<button class="button block strong fill-white text-left" type="submit">Send</button>
+						</label>
+					</form>
+				</div>
+				<!-- END: Form -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Intro Section -->
+
 
 
 
@@ -2599,6 +2640,46 @@
 
 
 
+
+<!-- Footer Menu Section -->
+<section id="footer-menu-section" class="footer-menu-section fill-white">
+	<div class="container">
+		<div class="row space-200-top-bottom">
+			<div class="columns small-12 large-7 space-25 space-150-bottom">
+				<div class="logo space-100-bottom" style="width: 75%;">
+					<img src="media/logo-color.svg" alt="" style="transform: scale(1.06);">
+				</div>	
+				<div class="h4 strong text-violet font-h">Architecture that Inspires and Endures</div>
+				<div class="p">Rooted in Human-Centric Design, our unique approach combines functionality with timeless beauty!</div>
+			</div>
+			<div class="columns small-12 medium-6 large-4 large-offset-1 space-25 space-100-bottom">
+				<div class="h5 text-neutral-4 block space-50-bottom">Quick Links</div>
+				<a class="text-violet p inline space-25-bottom" href="/"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> Greyscale Stories</a><br>
+				<a class="text-violet p inline space-25-bottom" href="/about"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> About Us</a><br>
+				<a class="text-violet p inline space-25-bottom" href="/for-homeowner"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Homeowner</a><br>
+				<a class="text-violet p inline space-25-bottom" href="/for-business"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Business</a><br>
+				<a class="text-violet p inline space-25-bottom" href="/for-student"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">link</span> For Student</a><br>
+			</div>
+			<div class="columns small-12 medium-6 large-4 space-25 space-100-bottom">
+				<div class="h5 text-neutral-4 block space-50-bottom">Address</div>
+				<div class="block p space-50-bottom">No.9, 39th Cross, 4th 'T' Block,<br>Jayanagar, Bengaluru - 560041.</div>
+				<a class="text-violet p inline" href="https://maps.app.goo.gl/CoMc1wfP6cwJQHXK9" target="_blank"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">pin_drop</span> Open in Google Maps</a><br>
+			</div>
+			<div class="columns small-12 medium-6 large-4 space-25 space-100-bottom">
+				<div class="h5 text-neutral-4 block space-50-bottom">Phone</div>
+				<a class="text-violet p inline space-50-bottom" href="tel:+91 8041510310" target="_blank"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">headset_mic</span> +91 8041510310</a><br>
+				<a class="text-violet p inline space-50-bottom" href="tel:+91 9886466930" target="_blank"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">headset_mic</span> +91 9886466930</a><br>
+			</div>
+			<div class="columns small-12 medium-6 large-4 space-25 space-100-bottom">
+				<div class="h5 text-neutral-4 block space-50-bottom">Email</div>
+				<a class="text-violet p inline space-50-bottom" href="mailto:design-consult@greyscale.in" target="_blank"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">inbox</span> design-consult@greyscale.in</a><br>
+				<a class="text-violet p inline space-50-bottom" href="mailto:info@greyscale.in" target="_blank"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">inbox</span> info@greyscale.in</a><br>
+				<a class="text-violet p inline space-50-bottom" href="mailto:withus@greyscale.in" target="_blank"><span class="material-symbols-rounded inline-bottom" style="font-size: var(--h5);">inbox</span> withus@greyscale.in</a><br>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Footer Menu Section -->
 
 
 

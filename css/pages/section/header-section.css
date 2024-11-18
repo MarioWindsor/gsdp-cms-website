@@ -17,9 +17,8 @@
 	.header-section .logo {
 		padding-right: var(--space-250);
 	}
-	.header-section .menu {
-		transform-origin: right center;
-		transform: scale(1.333);
+	.header-section .menu .link {
+		font-size: var(--p);
 	}
 }
 @media( min-width: 1480px ) {}
