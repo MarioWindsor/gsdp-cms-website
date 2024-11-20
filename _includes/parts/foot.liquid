@@ -263,22 +263,22 @@
 		const postList = document.querySelector('.js_postList');
 		const yearFilter = document.getElementById('yearFilter');
 		const categoryFilter = document.getElementById('categoryFilter');
-		const projectFilter = document.getElementById('projectFilter');
+		const topicFilter = document.getElementById('topicFilter');
 
 		function filterPosts() {
 			const selectedYear = yearFilter.value;
 			const selectedCategory = categoryFilter.value;
-			const selectedProject = projectFilter.value;
+			const selectedTopic = topicFilter.value;
 
 			postList.querySelectorAll('li').forEach((post) => {
 				const postYear = post.getAttribute('data-year');
 				const postCategory = post.getAttribute('data-category');
-				const postProject = post.getAttribute('data-project');
+				const postTopic = post.getAttribute('data-topic');
 
 				if (
 					(selectedYear === '' || postYear === selectedYear) &&
 					(selectedCategory === '' || postCategory === selectedCategory) &&
-					(selectedProject === '' || postProject === selectedProject)
+					(selectedTopic === '' || postTopic === selectedTopic)
 				) {
 					post.style.display = 'block';
 				} else {
@@ -293,8 +293,8 @@
 			for (let i = 1; i < categoryFilter.length; i++) {
 				categoryFilter[i].disabled = true;
 			}
-			for (let i = 1; i < projectFilter.length; i++) {
-				projectFilter[i].disabled = true;
+			for (let i = 1; i < topicFilter.length; i++) {
+				topicFilter[i].disabled = true;
 			}
 
 			/* Enable Only Visible Options */
@@ -302,7 +302,7 @@
 				const post_title = post.getAttribute('data-title')
 				const post_year = post.getAttribute('data-year')
 				const post_category = post.getAttribute('data-category')
-				const post_project = post.getAttribute('data-project')
+				const post_topic = post.getAttribute('data-topic')
 
 				if ( post.style.display != 'none' ) {
 					for (let i = 0; i < yearFilter.length; i++) {
@@ -315,9 +315,9 @@
 							categoryFilter[i].disabled = false;
 						}
 					}
-					for (let i = 0; i < projectFilter.length; i++) {
-						if (projectFilter[i].value === post_project) {
-							projectFilter[i].disabled = false;
+					for (let i = 0; i < topicFilter.length; i++) {
+						if (topicFilter[i].value === post_topic) {
+							topicFilter[i].disabled = false;
 						}
 					}
 				}
@@ -328,7 +328,7 @@
 
 		yearFilter.addEventListener('change', filterPosts);
 		categoryFilter.addEventListener('change', filterPosts);
-		projectFilter.addEventListener('change', filterPosts);
+		topicFilter.addEventListener('change', filterPosts);
 
 		// Initial filtering
 		filterPosts();

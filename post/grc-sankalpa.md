@@ -2,7 +2,7 @@
 tags: post
 title: GRC Sankalpa - Versatile Apartments in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_E2724962BFA0651C3659D48AF5B99A1951852728A51E2DA3AAD085CCF7CA03A6_1729324026000_IMG_8919.jpg
-project: GRC Sankalpa
+topic: GRC Sankalpa
 client: GR Constructions
 date:
 year: 2099

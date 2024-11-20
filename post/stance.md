@@ -2,7 +2,7 @@
 tags: post
 title: Stance - Furniture Store Renovation in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_A35BC73F0571B070028662E744390936410A4ED35239FA8E5E99FE10BCCB99F3_1729254817407_1.jpg
-project: Stance
+topic: Stance
 year: 2016
 date:
 category: Renovation 

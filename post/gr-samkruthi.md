@@ -2,7 +2,7 @@
 tags: post
 title: GR Samkruthi - Poolside Apartment in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_B16C24F7A07B41F9067EE7C40B04B1533856FBD33DC7AC47B4AB259550621E0E_1729329413869_Grey+Scale_GR+Samskruthi1941+J_Pool+outside_Ver+03_06-01-2020+1.jpg
-project: GR Samkruthi
+topic: GR Samkruthi
 client: GR Constructions
 year: 2024
 date: 

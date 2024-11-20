@@ -135,7 +135,7 @@
 
 
 <!-- Header Section -->
-<section id="header-section" class="header-section fill-white box-shadow-violet">
+<section id="header-section" class="header-section fill-white box-shadow-violet position-relative" style="z-index: 2;">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-11 medium-5 large-4 inline-middle">
@@ -220,7 +220,7 @@
 
 
 <!-- Single Post Intro Section -->
-<section id="single-post-intro-section" class="single-post-intro-section fill-dark">
+<section id="single-post-intro-section" class="single-post-intro-section fill-black">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12 large-10 large-offset-1 text-center">
@@ -248,11 +248,11 @@
 					 <div class="tag-row p space-min-bottom">Year : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">2017</a></div>
 					 <div class="tag-row p space-min-bottom">Category : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Residential</a></div>
 					 <div class="tag-row p space-min-bottom">Client : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Mr. Jaganathan</a></div>
-					 <div class="tag-row p space-min-bottom">Project : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">The Variance</a></div>
+					 <div class="tag-row p space-min-bottom">Topic : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">The Variance</a></div>
 					 <div class="tag-row p space-min-bottom">Site : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Erode, Tamil Nadu</a></div>
 					 <div class="tag-row p space-min-bottom">City : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">Erode</a></div>
-					 <div class="tag-row p space-min-bottom">Site Area : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">51000</a></div>
-					 <div class="tag-row p space-min-bottom">Built-up Area : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">12500</a></div>
+					 <div class="tag-row p space-min-bottom">Site Area : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">51000&nbsp;sqft</a></div>
+					 <div class="tag-row p space-min-bottom">Built-up Area : <a class="tag box-shadow-violet inline-block fill-violet text-white label space-min-top-bottom space-25-left-right radius-min inline cursor-pointer">12500&nbsp;sqft</a></div>
 				</div>
 			</div>
 		</div>
@@ -380,7 +380,7 @@
 				.copyright-section .signature { text-align: left; }
 			}
 		</style>
-		<section class="copyright-section space-50-top-bottom fill-dark" id="copyright-section">
+		<section class="copyright-section space-50-top-bottom fill-black" id="copyright-section">
 			<div class="container">
 				<div class="row">
 					<div class="columns small-12 large-8 space-25">
@@ -663,22 +663,22 @@
 		const postList = document.querySelector('.js_postList');
 		const yearFilter = document.getElementById('yearFilter');
 		const categoryFilter = document.getElementById('categoryFilter');
-		const projectFilter = document.getElementById('projectFilter');
+		const topicFilter = document.getElementById('topicFilter');
 
 		function filterPosts() {
 			const selectedYear = yearFilter.value;
 			const selectedCategory = categoryFilter.value;
-			const selectedProject = projectFilter.value;
+			const selectedTopic = topicFilter.value;
 
 			postList.querySelectorAll('li').forEach((post) => {
 				const postYear = post.getAttribute('data-year');
 				const postCategory = post.getAttribute('data-category');
-				const postProject = post.getAttribute('data-project');
+				const postTopic = post.getAttribute('data-topic');
 
 				if (
 					(selectedYear === '' || postYear === selectedYear) &&
 					(selectedCategory === '' || postCategory === selectedCategory) &&
-					(selectedProject === '' || postProject === selectedProject)
+					(selectedTopic === '' || postTopic === selectedTopic)
 				) {
 					post.style.display = 'block';
 				} else {
@@ -693,8 +693,8 @@
 			for (let i = 1; i < categoryFilter.length; i++) {
 				categoryFilter[i].disabled = true;
 			}
-			for (let i = 1; i < projectFilter.length; i++) {
-				projectFilter[i].disabled = true;
+			for (let i = 1; i < topicFilter.length; i++) {
+				topicFilter[i].disabled = true;
 			}
 
 			/* Enable Only Visible Options */
@@ -702,7 +702,7 @@
 				const post_title = post.getAttribute('data-title')
 				const post_year = post.getAttribute('data-year')
 				const post_category = post.getAttribute('data-category')
-				const post_project = post.getAttribute('data-project')
+				const post_topic = post.getAttribute('data-topic')
 
 				if ( post.style.display != 'none' ) {
 					for (let i = 0; i < yearFilter.length; i++) {
@@ -715,9 +715,9 @@
 							categoryFilter[i].disabled = false;
 						}
 					}
-					for (let i = 0; i < projectFilter.length; i++) {
-						if (projectFilter[i].value === post_project) {
-							projectFilter[i].disabled = false;
+					for (let i = 0; i < topicFilter.length; i++) {
+						if (topicFilter[i].value === post_topic) {
+							topicFilter[i].disabled = false;
 						}
 					}
 				}
@@ -728,7 +728,7 @@
 
 		yearFilter.addEventListener('change', filterPosts);
 		categoryFilter.addEventListener('change', filterPosts);
-		projectFilter.addEventListener('change', filterPosts);
+		topicFilter.addEventListener('change', filterPosts);
 
 		// Initial filtering
 		filterPosts();

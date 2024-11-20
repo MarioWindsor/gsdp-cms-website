@@ -2,7 +2,7 @@
 tags: post
 title: Sarakki Apartment - Apartment Complex in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_D34F79164D53A3AF0ECEAA96A91D05E37B4CD4EB1ED21CE23AE5ADF30D81C4A4_1729330041667_4+1.jpg
-project: Sarakki Apartment
+topic: Sarakki Apartment
 client: Sarakki Apartment
 year: 2015
 date:

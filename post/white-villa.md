@@ -2,7 +2,7 @@
 tags: post
 title: White Villa - A Home Infused with Nature in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_4F939B16FD9115BA50FF09D0C2FB5D8913DBCE28F6D42733EA01CEE4089FC955_1729249055633_GREYSCALE_White1435MJ_Deck_Ver03_26-06-2017.jpg
-project: White Villa
+topic: White Villa
 client:  Babu Joseph
 year: 2017
 date:

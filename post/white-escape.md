@@ -2,7 +2,7 @@
 tags: post
 title: White Escape - Resort
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_E49B407C9539B145416D5A39EAC6F2C77801AA0FC96DFB9A0D86009261AA7B16_1729262225067_01.jpg
-project: White Escape
+topic: White Escape
 client: Mr Babu Joseph
 year: 2022
 date:

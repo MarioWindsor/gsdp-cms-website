@@ -2,7 +2,7 @@
 tags: post
 title: Rewdale - Earthy Office Interiors in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_4508D95E495416561EFE55D99D582C6CA0379F069476CDAE53FE8BA597172F7B_1729260699218__DSC8066.jpg
-project: Rewdale
+topic: Rewdale
 client: Deepak Bhosle
 year: 2017
 date:

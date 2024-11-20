@@ -2,7 +2,7 @@
 tags: post
 title: The Variance - A Family Home for 4 in Tamil Nadu
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_A4528BC199912E9F414EE3FF286D6EDE32004A3572765E6010DFB11463BCA9AA_1729251132724_GSDS-JN-VIEW1.jpg
-project: The Variance
+topic: The Variance
 client: Mr. Jaganathan
 year: 2017
 date:

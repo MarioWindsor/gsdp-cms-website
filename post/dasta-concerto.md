@@ -2,7 +2,7 @@
 tags: post
 title: Dasta Concerto - A Jaali Apartment in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_99D2E3EE99530FD09217DA510BF1C34161BA50F0F4181B98359505CF9B4621A1_1729321769550_North-East-Elevation.jpg
-project: Dasta Concerto
+topic: Dasta Concerto
 client: Dasta
 year: 2099
 date: 

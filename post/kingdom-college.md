@@ -2,7 +2,7 @@
 tags: post
 title: Kingdom College - Educational Facility in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_84DBA84C52E021504975E2D5977AB4C63993CE27FF092B08ADBF6F058FBA6628_1729261553383_1.0.jpg
-project: Kingdom College
+topic: Kingdom College
 client: Kingdom College
 year: 2018
 date:

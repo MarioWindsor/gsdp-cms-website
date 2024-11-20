@@ -2,7 +2,7 @@
 tags: post
 title: Senguttavan Residence  - A Versatile Home in Tamil Nadu
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_B63965FF9E5209A6B33B84745847AFAFFCEABE5CB3F828FCA5CC456766077C72_1729248183962_0004.jpg
-project: Senguttavan Residence
+topic: Senguttavan Residence
 client: Senguttavan
 year: 2015
 date:
@@ -19,6 +19,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ult
 ## A Versatile Home in Tamil Nadu
 
 ![](https://paper-attachments.dropboxusercontent.com/s_B63965FF9E5209A6B33B84745847AFAFFCEABE5CB3F828FCA5CC456766077C72_1729248192897_0001.jpg)
+
 ![](https://paper-attachments.dropboxusercontent.com/s_B63965FF9E5209A6B33B84745847AFAFFCEABE5CB3F828FCA5CC456766077C72_1729248192963_0003.jpg)
 
 

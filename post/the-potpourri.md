@@ -2,7 +2,7 @@
 tags: post
 title: The Potpourri - Coconut Groove Themed Restaurant
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_CAE6F1362C0C99224C6C7B76D906EFEEDE9BDC70ADE9541299F381AB0AE5BF1F_1729262440120_1213+THEME+RESAURANT-DEFAULT-DEFAULT-004.jpg
-project: The Potpourri
+topic: The Potpourri
 client: Parashivamurthy
 year: 2012
 date:

@@ -1,7 +1,7 @@
 ---
 tags: post
 title: Belagavi Home - A Contemporary & Vernacular Home in Belagavi
-project: Belagavi Home
+topic: Belagavi Home
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249515959_Mohta_04.jpg
 client: Kaushik Mohta
 year: 2022
@@ -19,6 +19,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ult
 ## A Contemporary & Vernacular Home in Belagavi
 
 ![](https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249480640_Mohta_01.jpg)
+
 ![](https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249480811_Mohta_02.jpg)
 
 
@@ -27,6 +28,7 @@ The Belagavi city has a tropical wet and dry climate, this home is an interpreta
 ![](https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249489656_Mohta_03.jpg)
 
 ![](https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249496593_Mohta_05+1.jpg)
+
 ![](https://paper-attachments.dropboxusercontent.com/s_55493AC5DFEA224FE46236966C9FFE3323D932A7426536EC84974F7A86B777FB_1729249496815_Mohta_05.jpg)
 
 

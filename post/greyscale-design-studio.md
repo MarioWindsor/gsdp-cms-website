@@ -2,7 +2,7 @@
 tags: post
 title: Greyscale Design Studio - Office Redo
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_B20B6E217961EFBA108AC54F86E7517B2E27D77CB516E681FB4A67AD7819E175_1729255250473__DSC2928.jpg
-project: Greyscale Design Studio
+topic: Greyscale Design Studio
 client: Greyscale Design Studio
 year: 2014
 date:
@@ -19,14 +19,19 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ult
 ## Office Redo
 
 ![](https://paper-attachments.dropboxusercontent.com/s_B20B6E217961EFBA108AC54F86E7517B2E27D77CB516E681FB4A67AD7819E175_1729255176877__DSC2734.jpg)
+
 ![](https://paper-attachments.dropboxusercontent.com/s_B20B6E217961EFBA108AC54F86E7517B2E27D77CB516E681FB4A67AD7819E175_1729255178471__DSC2792.jpg)
+
 ![](https://paper-attachments.dropboxusercontent.com/s_B20B6E217961EFBA108AC54F86E7517B2E27D77CB516E681FB4A67AD7819E175_1729255180739__DSC2907.jpg)
 
 ![](https://paper-attachments.dropboxusercontent.com/s_B20B6E217961EFBA108AC54F86E7517B2E27D77CB516E681FB4A67AD7819E175_1729255191584_B3HJELN.JPG)
+
 ![](https://paper-attachments.dropboxusercontent.com/s_B20B6E217961EFBA108AC54F86E7517B2E27D77CB516E681FB4A67AD7819E175_1729255191597_gdrIJ6xdS8i86gLOKAvw5urUGS0CuYDTlqZVb0_oO-QWHRg1YPm6cN6dFXzHXXuHvJyD232iE7maAWtLF_ScrIKaARkTApu49IKF6yMaS8LDKdMPQJc_vDpFFMUQ-GqQw.jpg)
+
 ![](https://paper-attachments.dropboxusercontent.com/s_B20B6E217961EFBA108AC54F86E7517B2E27D77CB516E681FB4A67AD7819E175_1729255191671_IMG_20130807_190906.jpg)
 
 ![](https://paper-attachments.dropboxusercontent.com/s_B20B6E217961EFBA108AC54F86E7517B2E27D77CB516E681FB4A67AD7819E175_1729255206897_DSC08120.JPG)
+
 ![](https://paper-attachments.dropboxusercontent.com/s_B20B6E217961EFBA108AC54F86E7517B2E27D77CB516E681FB4A67AD7819E175_1729255206394_IMG_4802.jpg)
 
 ![](https://paper-attachments.dropboxusercontent.com/s_B20B6E217961EFBA108AC54F86E7517B2E27D77CB516E681FB4A67AD7819E175_1729255216896__DSC2790.jpg)

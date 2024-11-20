@@ -18,11 +18,20 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "article" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "hidden" }
+      - { label: "Category", name: "category", widget: "select", options: ["Apartments", "Commercial", "Hospitality", "Institutional", "Interiors", "Renovation", "Residential" ], default: ["Residential"] }
+      # - { label: "Category", name: "category", widget: "string" }
+      - { label: "Topic", name: "topic", widget: "string" }
+      - { label: "Year", name: "year", widget: "number", value_type: "int", step: 1 }
+      - { label: "City", name: "city", widget: "string" }
+      - { label: "Location", name: "site", widget: "string" }
+      - { label: "Site Area (in SQFT)", name: "site_area", widget: "number", value_type: "int", step: 1 }
+      - { label: "Built-up Area (in SQFT)", name: "built_up_area", widget: "number", value_type: "int", step: 1 }
+      - { label: "Status", name: "status", widget: "select", options: ["Proposed", "Completed", "Ongoing", "Unbuilt" ], default: ["Residential"] }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
   # Service Collection
   - name: "service" # Used in routes, e.g., /admin/collections/blog

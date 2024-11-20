@@ -2,7 +2,7 @@
 tags: post
 title: Rhythm - A Contemporary Commercial Build in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_50E194CC2DADED5F8EF195E17E3AE70B73E329D771E81C9993D0A8C6694677F0_1729320870331_Greyscale-VikCommJC-V1-Ver02-Sep+17th.jpg
-project: Rhythm
+topic: Rhythm
 client: VSPL
 year: 2011
 date:

@@ -2,7 +2,7 @@
 tags: post
 title: Vishwakutumb Commercial - A Commercial Build in Bengaluru
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_DC4FB0B9607DB9D32A7EBE677499BBA00B73E71EEEDF9680B08CE52E1820C8D0_1729321099940_IMG_8664.jpg
-project: Vishwakutumb Commercial
+topic: Vishwakutumb Commercial
 client: Manoj Jain
 year: 2019
 date:

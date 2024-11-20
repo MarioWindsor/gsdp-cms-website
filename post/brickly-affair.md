@@ -2,7 +2,7 @@
 tags: post
 title: Brickly Affair - An Open Plan, Multiple Height Home in Bangalore
 thumbnail: https://paper-attachments.dropboxusercontent.com/s_5EAF91A48C2FF13DCA080F637C9DDD04B4757EC6FF4D541AE4D1E6DB46FE34CC_1729164696166_SIDE+FACADE.jpg
-project: Brickly Affair
+topic: Brickly Affair
 client: Srinidhi Vishwanathan
 year: 2018
 date: 
@@ -66,7 +66,9 @@ The varying volumes, textures and the play of light lends a distinct quality to 
 
 
 ![](https://paper-attachments.dropboxusercontent.com/s_5EAF91A48C2FF13DCA080F637C9DDD04B4757EC6FF4D541AE4D1E6DB46FE34CC_1729164867102_BRICKLY+AFFAIR+FIRST+FLOOR+PLAN.jpg)
+
 ![](https://paper-attachments.dropboxusercontent.com/s_5EAF91A48C2FF13DCA080F637C9DDD04B4757EC6FF4D541AE4D1E6DB46FE34CC_1729164866823_BRICKLY+AFFAIR+GROUND+FLOOR+PLAN.jpg)
+
 ![](https://paper-attachments.dropboxusercontent.com/s_5EAF91A48C2FF13DCA080F637C9DDD04B4757EC6FF4D541AE4D1E6DB46FE34CC_1729164867407_BRICKLY+AFFAIR+SECOND+FLOOR+PLAN.jpg)
 
 ![](https://paper-attachments.dropboxusercontent.com/s_5EAF91A48C2FF13DCA080F637C9DDD04B4757EC6FF4D541AE4D1E6DB46FE34CC_1729164720326_FACADE+02.jpg)
