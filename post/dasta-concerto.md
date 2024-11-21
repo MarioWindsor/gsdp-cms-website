@@ -1,19 +1,22 @@
 ---
-tags: post
 title: Dasta Concerto - A Jaali Apartment in Bengaluru
-thumbnail: https://paper-attachments.dropboxusercontent.com/s_99D2E3EE99530FD09217DA510BF1C34161BA50F0F4181B98359505CF9B4621A1_1729321769550_North-East-Elevation.jpg
-topic: Dasta Concerto
-client: Dasta
-year: 2099
-date: 
+date: 2024-11-21T13:23:00.000Z
+tags: post
 category: Apartments
-site: Sarjapur Road, Bengaluru
+topic: Dasta Concerto
+year: 2016
 city: Bengaluru
-site_area: 1.25 
+site: Sarjapur Road, Bengaluru
+site_area: 1.25
+client: Dasta
 built_up_area: 170000
 status: Completed
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum, sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem libero in magna. Integer scelerisque odio et convallis faucibus.
-
+thumbnail: https://paper-attachments.dropboxusercontent.com/s_99D2E3EE99530FD09217DA510BF1C34161BA50F0F4181B98359505CF9B4621A1_1729321769550_North-East-Elevation.jpg
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+  ultricies interdum tortor, sit amet gravida ipsum fermentum ut. Aenean
+  sagittis metus justo, at vestibulum elit malesuada a. Suspendisse dictum,
+  sapien eu tincidunt convallis, elit urna rhoncus leo, ac fermentum lorem
+  libero in magna. Integer scelerisque odio et convallis faucibus.
 ---
 ## A Jaali Apartment in Bengaluru
 
