@@ -33,7 +33,7 @@
 			</div>
 			<div class="columns small-12 medium-6 large-4 large-offset-4 text-light">
 				<!-- Form -->
-				<div class="form space-150-left-right space-150-top-bottom radius-50" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); background: rgba(143, 0, 255, 0.666);">
+				<div class="form space-150-left-right space-150-top-bottom radius-50" style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); background: rgba(122, 18, 212, 0.75);">
 					<form action="" method="post">
 						<div class="h5">Sign-up for a FREE<br>Online Consultation!</div>
 						<label class="form-field block space-25-top" for="fullName">
@@ -64,94 +64,98 @@
 
 
 
-<!-- Portfolio Section -->
-<section id="portfolio-section" class="portfolio-section fill-black space-200-top space-100-bottom">
-	<div class="row">
-		<div class="container">
-			<div class="columns small-12">
-				<div class="p strong space-25-bottom text-center text-uppercase opacity-50">Residential Projects</div>
-				<div class="title h3 text-center font-h space-100-bottom">Home's crafted for Homeowners</div>
-			</div>
-		</div>
-	</div>
-	<div class="carousel fill-black">
-		<div class="carousel-list">
-		{% capture reyears %}{% for reyear in collections.post | sort: "year"  %},{{ reyear.data.year }}{% endfor %}{% endcapture %}
-		<!-- assign reyears to an array by spliting sting at ','commas and only adding the unique ones -->
-		{% for yea in reyears %}{% assign itemsreYear = yea | split: ',' | uniq | sort_natural | reverse %}{% endfor %}
-		<!-- loop to output uniqe reyears -->
-		{% for itemreYear in itemsreYear %}
-			{% for post in collections.post %}
-				{% if itemreYear contains post.data.year %}
-					{% if post.data.category == "Residential" %}
-			<a class="carousel-list-item space-50" href="{{ post.url }}" target="_blank">
-				<div class="card fill-black space-100 radius-50 img-cover" style="background-image: url('{{ post.data.thumbnail }}');">
-					<div class="title">
-						<div class="h6 strong no-wrap">{{ post.data.topic }}</div>
-						<div class="p strong">{{ post.data.year }}</div>
-					</div>
-					<span class="arrow material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
-				</div>
-			</a>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		{% endfor %}
-		</div>
+<div class="fill-violet-dark-gradient bg-fixed">
+
+	<!-- Portfolio Section -->
+	<section id="portfolio-section" class="portfolio-section space-200-top space-100-bottom">
 		<div class="row">
 			<div class="container">
-				<div class="columns small-6">
-					<div class="scroll-button button scroll-left" data-dir="left" tabindex="-1"><span class="text-violet material-symbols-rounded inline-middle" style="font-size: var(--h1); line-height: 0;">arrow_left</span></div>
-				</div>
-				<div class="columns small-6 text-right">
-					<div class="scroll-button button scroll-right" data-dir="right" tabindex="-1"><span class="text-violet material-symbols-rounded inline-middle" style="font-size: var(--h1); line-height: 0;">arrow_right</span></div>
+				<div class="columns small-12">
+					<div class="p strong space-25-bottom text-center text-uppercase opacity-50">Residential Projects</div>
+					<div class="title h3 text-center font-h space-100-bottom">Home's crafted for Homeowners</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!-- END: Portfolio Section -->
-
-
-
-
-<!-- Human Centric Section -->
-<section id="human-centric-section" class="human-centric-section fill-black">
-	<div class="human-centric row">
-		<div class="container clearfix">
-			<div class="isometric columns small-12 medium-6 large-5 large-offset-1 space-200-bottom">
-				<img class="block" src="media/isometric-3d-house.png">
+		<div class="carousel">
+			<div class="carousel-list">
+			{% capture reyears %}{% for reyear in collections.post | sort: "year"  %},{{ reyear.data.year }}{% endfor %}{% endcapture %}
+			<!-- assign reyears to an array by spliting sting at ','commas and only adding the unique ones -->
+			{% for yea in reyears %}{% assign itemsreYear = yea | split: ',' | uniq | sort_natural | reverse %}{% endfor %}
+			<!-- loop to output uniqe reyears -->
+			{% for itemreYear in itemsreYear %}
+				{% for post in collections.post %}
+					{% if itemreYear contains post.data.year %}
+						{% if post.data.category == "Residential" %}
+				<a class="carousel-list-item space-50" href="{{ post.url }}" target="_blank">
+					<div class="card space-100 radius-50 img-cover" style="background-image: url('{{ post.data.thumbnail }}');">
+						<div class="title">
+							<div class="h6 strong no-wrap">{{ post.data.topic }}</div>
+							<div class="p strong">{{ post.data.year }}</div>
+						</div>
+						<span class="arrow material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;">arrow_right</span>
+					</div>
+				</a>
+						{% endif %}
+					{% endif %}
+				{% endfor %}
+			{% endfor %}
 			</div>
-			<div class="columns small-12 medium-6 large-4 large-offset-1">
-				<div class="h2 font-h strong">Human-Centric Architecture</div>
-				<div class="h4 font-h space-25-bottom opacity-50">Next-Level Homes Designed Around You :</div>
-				<div class="p space-25-bottom opacity-50">Through our core principles we create spaces you can live with long-term by...</div>
-				<div class="h6"><span class="h5 strong font-h text-violet">1.&nbsp;</span> Listening to your Needs <br><span class="h5 strong font-h text-violet">2.</span> Thoughtful Design <br><span class="h5 strong font-h text-violet">3.</span> Careful Construction.</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END: Human Centric Section -->
-
-
-
-
-<!-- Handbook Section -->
-<section id="handbook-section" class="handbook-section fill-black">
-	<div class="handbook row">
-		<div class="container">
-			<div class="book columns small-12 medium-6 large-3 large-offset-1 inline-middle">
-				<img class="block" src="media/download-ebook.png">
-			</div>
-			<div class="columns small-10 medium-4 medium-offset-2 large-3 large-offset-1 inline-middle space-50-top-bottom">
-				<div class="h4 font-h text-white space-50-bottom"><span class="strong">Human-Centric Architecture :</span> <span class="no-wrap opacity-50">Get the FREE e-book</span></div>
-				<div class="button fill-violet-gradient text-white strong block
-				">Download Now</div>
+			<div class="row">
+				<div class="container">
+					<div class="columns small-6">
+						<div class="scroll-button button scroll-left" data-dir="left" tabindex="-1"><span class="text-violet material-symbols-rounded inline-middle" style="font-size: var(--h1); line-height: 0;">arrow_left</span></div>
+					</div>
+					<div class="columns small-6 text-right">
+						<div class="scroll-button button scroll-right" data-dir="right" tabindex="-1"><span class="text-violet material-symbols-rounded inline-middle" style="font-size: var(--h1); line-height: 0;">arrow_right</span></div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!-- END: Handbook Section -->
+	</section>
+	<!-- END: Portfolio Section -->
+
+
+
+
+	<!-- Human Centric Section -->
+	<section id="human-centric-section" class="human-centric-section">
+		<div class="human-centric row">
+			<div class="container clearfix">
+				<div class="isometric columns small-12 medium-6 large-5 large-offset-1 space-200-bottom">
+					<img class="block" src="media/isometric-3d-house.png">
+				</div>
+				<div class="columns small-12 medium-6 large-4 large-offset-1">
+					<div class="h2 font-h strong">Human-Centric Architecture</div>
+					<div class="h4 font-h space-25-bottom opacity-50">Next-Level Homes Designed Around You :</div>
+					<div class="p space-25-bottom opacity-50">Through our core principles we create spaces you can live with long-term by...</div>
+					<div class="h6"><span class="h5 strong font-h text-violet">1.&nbsp;</span> Listening to your Needs <br><span class="h5 strong font-h text-violet">2.</span> Thoughtful Design <br><span class="h5 strong font-h text-violet">3.</span> Careful Construction.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END: Human Centric Section -->
+
+
+
+
+	<!-- Handbook Section -->
+	<section id="handbook-section" class="handbook-section">
+		<div class="handbook row">
+			<div class="container">
+				<div class="book columns small-12 medium-6 large-3 large-offset-1 inline-middle">
+					<img class="block" src="media/download-ebook.png">
+				</div>
+				<div class="columns small-10 medium-4 medium-offset-2 large-3 large-offset-1 inline-middle space-50-top-bottom">
+					<div class="h4 font-h text-white space-50-bottom"><span class="strong">Human-Centric Architecture :</span> <span class="no-wrap opacity-50">Get the FREE e-book</span></div>
+					<div class="button fill-violet-gradient text-white strong block
+					">Download Now</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END: Handbook Section -->
+
+</div>
 
 
 
@@ -176,310 +180,311 @@
 <!-- END: Why Us Section -->
 
 
+<div class="fill-violet-dark-gradient bg-fixed">
 
-
-<!-- Process Section -->
-<section id="process-section" class="process-section fill-black">
-	<div class="row position-relative">
-		<div class="container space-250-top-bottom">
-			<div class="process columns small-12 medium-12 large-7">
-				<div class="row">
-					<div class="columns small-12 space-25 space-100-bottom">
-						<div class="h2 font-h strong text-violet">Easy — 5 Step</div>
-						<div class="h1 font-h strong opacity-25 text-uppercase" style="transform-origin: top left; transform: scale(1.5);">Process</div>
-					</div>
-				</div>
-				<div class="step step-1 row">
-					<div class="step-title columns small-12 space-25 space-200-top">
-						<div class="h6 strong font-h text-violet text-uppercase inline text-white">Step 1 :</div><br>
-						<div class="h3 font-h space-25-top">Consultation</div>
-					</div>
-					<div class="step-thumbnail columns small-12 medium-5 space-25 space-50-top">
-						<div class="thumbnail block radius-50 box-shadow-violet img-cover" style="background-image: url('media/consultation.jpg');"></div>
-					</div>
-					<div class="step-content columns small-12 medium-6 medium-offset-1 space-25 space-50-top">
-						<div class="p space-50-bottom">Tell us your dream and we'll get to work making it a reality. We will discuss your vision, explore design options, and provide expert guidance on the entire home-building process.</div>
-						<div class="h5 font-h">Site Visit :</div>
-						<div class="p">After your free consultation, we come on a personalized site visit to assess your property. This is where we take in the unique features of your space and the vibe of the surrounding neighborhood. This isn’t just a visit; it’s the beginning of crafting something special.</div>
-					</div>
-					<div class="step-stats columns small-12 space-25 opacity-50">
-						<div class="row">
-							<div class="columns small-6 medium-4 space-50-top">
-								<div class="h1 font-h strong text-violet">3</div>
-								<div class="h3 font-h">Industry <br>Experts</div>
-							</div>
-							<div class="columns small-6 medium-4 space-50-top">
-								<div class="h1 font-h strong text-violet">75+</div>
-								<div class="h3 font-h">Happy <br>Clients</div>
-							</div>
-							<div class="columns small-6 medium-4 space-50-top">
-								<div class="h1 font-h strong text-violet">50+</div>
-								<div class="h3 font-h">Homes <br>Built</div>
-							</div>
+	<!-- Process Section -->
+	<section id="process-section" class="process-section">
+		<div class="row position-relative">
+			<div class="container space-250-top-bottom">
+				<div class="process columns small-12 medium-12 large-7">
+					<div class="row">
+						<div class="columns small-12 space-25 space-100-bottom">
+							<div class="h2 font-h strong text-violet">Easy — 5 Step</div>
+							<div class="h1 font-h strong opacity-25 text-uppercase" style="transform-origin: top left; transform: scale(1.5);">Process</div>
 						</div>
 					</div>
-				</div>
-				<div class="step step-2 row">
-					<div class="step-title columns small-12 space-25 space-200-top">
-						<div class="h6 strong font-h text-violet text-uppercase inline text-white">Step 2 :</div><br>
-						<div class="h3 font-h space-25-top">Conceptual Designs</div>
-					</div>
-					<div class="step-thumbnail columns small-12 medium-5 large-12 space-25 space-50-top">
-						<div class="thumbnail block radius-50 box-shadow-violet img-cover" style="background-image: url('media/architect-drawing.jpg');"></div>
-					</div>
-					<div class="step-content columns small-12 medium-6 medium-offset-1 large-12 large-offset-0 space-25 space-50-top">
-						<div class="p space-50-bottom">Where ideas take shape, this is where initial sketches and floor plans come together, reflecting your ideas and aspirations. We will present conceptual designs that capture the essence of what you want.</div>
-						<div class="accordion">
-							<div class="tab fill-white radius-50">
-								<input type="radio" name="accordion_1" class="visuallyhidden" id="needs_analysis" checked="checked">
-								<label for="needs_analysis" class="tab-head label block space-50 cursor-pointer">
-									<span class="h5 strong font-h text-violet">Needs Analysis</span>
-									<span class="icon text-violet material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;"> keyboard_arrow_down </span>
-								</label>
-								<div class="tab-content">
-									<div class="p space-50">We will dig deep into what makes your lifestyle shine.  Exploring your tastes, preferences, and dreams for your ideal space. Every detail matters as we get to know what you truly desire.</div>
+					<div class="step step-1 row">
+						<div class="step-title columns small-12 space-25 space-200-top">
+							<div class="h6 strong font-h text-violet text-uppercase inline">Step 1 :</div><br>
+							<div class="h3 font-h space-25-top">Consultation</div>
+						</div>
+						<div class="step-thumbnail columns small-12 medium-5 space-25 space-50-top">
+							<div class="thumbnail block radius-50 box-shadow-violet img-cover" style="background-image: url('media/consultation.jpg');"></div>
+						</div>
+						<div class="step-content columns small-12 medium-6 medium-offset-1 space-25 space-50-top">
+							<div class="p space-50-bottom">Tell us your dream and we'll get to work making it a reality. We will discuss your vision, explore design options, and provide expert guidance on the entire home-building process.</div>
+							<div class="h5 font-h">Site Visit :</div>
+							<div class="p">After your free consultation, we come on a personalized site visit to assess your property. This is where we take in the unique features of your space and the vibe of the surrounding neighborhood. This isn’t just a visit; it’s the beginning of crafting something special.</div>
+						</div>
+						<div class="step-stats columns small-12 space-25 opacity-50">
+							<div class="row">
+								<div class="columns small-6 medium-4 space-50-top">
+									<div class="h1 font-h strong text-violet">3</div>
+									<div class="h3 font-h">Industry <br>Experts</div>
 								</div>
-							</div>
-							<div class="tab fill-white radius-50">
-								<input type="radio" name="accordion_1" class="visuallyhidden" id="design_brief">
-								<label for="design_brief" class="tab-head label block space-50 cursor-pointer">
-									<span class="h5 strong font-h text-violet">Design Brief</span>
-									<span class="icon text-violet material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;"> keyboard_arrow_down </span>
-								</label>
-								<div class="tab-content">
-									<div class="p space-50">We create a design brief that captures the essence of your project. This isn’t just a list; it’s a roadmap that outlines your goals, the scope of work, and any challenges we might face along the way.</div>
+								<div class="columns small-6 medium-4 space-50-top">
+									<div class="h1 font-h strong text-violet">75+</div>
+									<div class="h3 font-h">Happy <br>Clients</div>
 								</div>
-							</div>
-							<div class="tab fill-white radius-50">
-								<input type="radio" name="accordion_1" class="visuallyhidden" id="feedback_and_iterations">
-								<label for="feedback_and_iterations" class="tab-head label block space-50 cursor-pointer">
-									<span class="h5 strong font-h text-violet">Feedback and Iterations</span>
-									<span class="icon text-violet material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;"> keyboard_arrow_down </span>
-								</label>
-								<div class="tab-content">
-									<div class="p space-50">Collaborating for Perfection, your input is invaluable. We will work closely with you, refining the design through your insights and preferences, ensuring every detail resonates with your vision.</div>
-								</div>
-							</div>
-							<div class="tab fill-white radius-50">
-								<input type="radio" name="accordion_1" class="visuallyhidden" id="design_approval">
-								<label for="design_approval" class="tab-head label block space-50 cursor-pointer">
-									<span class="h5 strong font-h text-violet">Design Approval</span>
-									<span class="icon text-violet material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;"> keyboard_arrow_down </span>
-								</label>
-								<div class="tab-content">
-									<div class="p space-50">Bringing it all together, we present the final design concept, walking you through our choices and the reasoning behind each element. Every detail is crafted to resonate with your goals. Once you’re thrilled with the design, we’ll secure your approval.</div>
+								<div class="columns small-6 medium-4 space-50-top">
+									<div class="h1 font-h strong text-violet">50+</div>
+									<div class="h3 font-h">Homes <br>Built</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="step step-3 row">
-					<div class="step-title columns small-12 space-25 space-200-top">
-						<div class="h6 strong font-h text-violet text-uppercase inline text-white">Step 3 :</div><br>
-						<div class="h3 font-hspace-25-top">Materials & Permits</div>
-					</div>
-					<div class="step-thumbnail columns small-12 medium-5 space-25 space-50-top">
-						<div class="thumbnail block radius-50 box-shadow-violet img-cover" style="background-image: url('media/materials.jpg');"></div>
-					</div>
-					<div class="step-content columns small-12 medium-6 medium-offset-1 space-25 space-50-top">
-						<div class="h6strong space-min-bottom">Material Selection :</div>
-						<div class="p opacity-75 space-50-bottom">We help you select finishes, and color schemes that will bring your space to life. Together, we will choose elements that reflect your style and enhance your home.</div>
-						<div class="h6strong space-min-bottom">Permits & Approvals :</div>
-						<div class="p opacity-75">We will assist in preparing and submitting all necessary documentation to local authorities,  manage all communication with regulatory bodies and sure your project adheres to building codes and zoning regulations.</div>
-					</div>
-				</div>
-				<div class="step step-4 row">
-					<div class="step-title columns small-12 space-25 space-200-top">
-						<div class="h6 strong font-h text-violet text-uppercase inline text-white">Step 4 :</div><br>
-						<div class="h3 font-h space-25-top">Construction Phase</div>
-					</div>
-					<div class="step-thumbnail columns small-12 medium-5 large-12 space-25 space-50-top">
-						<div class="thumbnail block radius-50 box-shadow-violet img-cover" style="background-image: url('media/construction.jpg');"></div>
-					</div>
-					<div class="step-content columns small-12 medium-6 medium-offset-1 large-12 large-offset-0 space-25 space-50-top">
-						<div class="p space-100-bottom">Where ideas take shape, this is where initial sketches and floor plans come together, reflecting your ideas and aspirations. We will present conceptual designs that capture the essence of what you want.</div>
-						<div class="row space-100-bottom">
-							<div class="columns small-3 large-2 space-25 opacity-50"><img src="media/icon-safety-helmet.svg" class="block"></div>
-							<div class="columns small-9 large-8 space-50-left">
-								<div class="h6 strong space-25-bottom">Contractor Management</div>
-								<div class="label opacity-75">Coordinating with contractors to maintain project timeline and budget. We will also keeping you informed about project progress, addressing any concerns or changes.</div>
+					<div class="step step-2 row">
+						<div class="step-title columns small-12 space-25 space-200-top">
+							<div class="h6 strong font-h text-violet text-uppercase inline">Step 2 :</div><br>
+							<div class="h3 font-h space-25-top">Conceptual Designs</div>
+						</div>
+						<div class="step-thumbnail columns small-12 medium-5 large-12 space-25 space-50-top">
+							<div class="thumbnail block radius-50 box-shadow-violet img-cover" style="background-image: url('media/architect-drawing.jpg');"></div>
+						</div>
+						<div class="step-content columns small-12 medium-6 medium-offset-1 large-12 large-offset-0 space-25 space-50-top">
+							<div class="p space-50-bottom">Where ideas take shape, this is where initial sketches and floor plans come together, reflecting your ideas and aspirations. We will present conceptual designs that capture the essence of what you want.</div>
+							<div class="accordion">
+								<div class="tab fill-white radius-50">
+									<input type="radio" name="accordion_1" class="visuallyhidden" id="needs_analysis" checked="checked">
+									<label for="needs_analysis" class="tab-head label block space-50 cursor-pointer">
+										<span class="h5 strong font-h text-violet">Needs Analysis</span>
+										<span class="icon text-violet material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;"> keyboard_arrow_down </span>
+									</label>
+									<div class="tab-content">
+										<div class="p space-50">We will dig deep into what makes your lifestyle shine.  Exploring your tastes, preferences, and dreams for your ideal space. Every detail matters as we get to know what you truly desire.</div>
+									</div>
+								</div>
+								<div class="tab fill-white radius-50">
+									<input type="radio" name="accordion_1" class="visuallyhidden" id="design_brief">
+									<label for="design_brief" class="tab-head label block space-50 cursor-pointer">
+										<span class="h5 strong font-h text-violet">Design Brief</span>
+										<span class="icon text-violet material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;"> keyboard_arrow_down </span>
+									</label>
+									<div class="tab-content">
+										<div class="p space-50">We create a design brief that captures the essence of your project. This isn’t just a list; it’s a roadmap that outlines your goals, the scope of work, and any challenges we might face along the way.</div>
+									</div>
+								</div>
+								<div class="tab fill-white radius-50">
+									<input type="radio" name="accordion_1" class="visuallyhidden" id="feedback_and_iterations">
+									<label for="feedback_and_iterations" class="tab-head label block space-50 cursor-pointer">
+										<span class="h5 strong font-h text-violet">Feedback and Iterations</span>
+										<span class="icon text-violet material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;"> keyboard_arrow_down </span>
+									</label>
+									<div class="tab-content">
+										<div class="p space-50">Collaborating for Perfection, your input is invaluable. We will work closely with you, refining the design through your insights and preferences, ensuring every detail resonates with your vision.</div>
+									</div>
+								</div>
+								<div class="tab fill-white radius-50">
+									<input type="radio" name="accordion_1" class="visuallyhidden" id="design_approval">
+									<label for="design_approval" class="tab-head label block space-50 cursor-pointer">
+										<span class="h5 strong font-h text-violet">Design Approval</span>
+										<span class="icon text-violet material-symbols-rounded inline-middle" style="font-size: var(--h3); line-height: 0;"> keyboard_arrow_down </span>
+									</label>
+									<div class="tab-content">
+										<div class="p space-50">Bringing it all together, we present the final design concept, walking you through our choices and the reasoning behind each element. Every detail is crafted to resonate with your goals. Once you’re thrilled with the design, we’ll secure your approval.</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="columns small-3 large-2 space-25 opacity-50"><img src="media/icon-document.svg" class="block"></div>
-							<div class="columns small-9 large-8 space-50-left">
-								<div class="h6 strong space-25-bottom">Final Inspection</div>
-								<div class="label opacity-75">Post construction, we will conduct a thorough final inspection to ensure that every aspect of your home meets the design specifications and quality standards.</div>
+					</div>
+					<div class="step step-3 row">
+						<div class="step-title columns small-12 space-25 space-200-top">
+							<div class="h6 strong font-h text-violet text-uppercase inline">Step 3 :</div><br>
+							<div class="h3 font-hspace-25-top">Materials & Permits</div>
+						</div>
+						<div class="step-thumbnail columns small-12 medium-5 space-25 space-50-top">
+							<div class="thumbnail block radius-50 box-shadow-violet img-cover" style="background-image: url('media/materials.jpg');"></div>
+						</div>
+						<div class="step-content columns small-12 medium-6 medium-offset-1 space-25 space-50-top">
+							<div class="h6strong space-min-bottom">Material Selection :</div>
+							<div class="p opacity-75 space-50-bottom">We help you select finishes, and color schemes that will bring your space to life. Together, we will choose elements that reflect your style and enhance your home.</div>
+							<div class="h6strong space-min-bottom">Permits & Approvals :</div>
+							<div class="p opacity-75">We will assist in preparing and submitting all necessary documentation to local authorities,  manage all communication with regulatory bodies and sure your project adheres to building codes and zoning regulations.</div>
+						</div>
+					</div>
+					<div class="step step-4 row">
+						<div class="step-title columns small-12 space-25 space-200-top">
+							<div class="h6 strong font-h text-violet text-uppercase inline">Step 4 :</div><br>
+							<div class="h3 font-h space-25-top">Construction Phase</div>
+						</div>
+						<div class="step-thumbnail columns small-12 medium-5 large-12 space-25 space-50-top">
+							<div class="thumbnail block radius-50 box-shadow-violet img-cover" style="background-image: url('media/construction.jpg');"></div>
+						</div>
+						<div class="step-content columns small-12 medium-6 medium-offset-1 large-12 large-offset-0 space-25 space-50-top">
+							<div class="p space-100-bottom">Where ideas take shape, this is where initial sketches and floor plans come together, reflecting your ideas and aspirations. We will present conceptual designs that capture the essence of what you want.</div>
+							<div class="row space-100-bottom">
+								<div class="columns small-3 large-2 space-25 opacity-50"><img src="media/icon-safety-helmet.svg" class="block"></div>
+								<div class="columns small-9 large-8 space-50-left">
+									<div class="h6 strong space-25-bottom">Contractor Management</div>
+									<div class="label opacity-75">Coordinating with contractors to maintain project timeline and budget. We will also keeping you informed about project progress, addressing any concerns or changes.</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="columns small-3 large-2 space-25 opacity-50"><img src="media/icon-document.svg" class="block"></div>
+								<div class="columns small-9 large-8 space-50-left">
+									<div class="h6 strong space-25-bottom">Final Inspection</div>
+									<div class="label opacity-75">Post construction, we will conduct a thorough final inspection to ensure that every aspect of your home meets the design specifications and quality standards.</div>
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="step step-5 row">
+						<div class="step-title columns small-12 space-25 space-200-top">
+							<div class="h6 strong font-h text-violet text-uppercase inline">Step 5 :</div><br>
+							<div class="h3 font-h space-25-top">Handover</div>
+						</div>
+						<div class="step-thumbnail columns small-12 medium-5 space-25 space-50-top">
+							<div class="thumbnail block radius-50 box-shadow-violet img-cover" style="background-image: url('media/handover.jpg');"></div>
+						</div>
+						<div class="step-content columns small-12 medium-6 medium-offset-1 space-25 space-50-top">
+							<div class="p space-50-bottom">Once everything is in order, we officially hand over the completed project to you. This includes all documentation and instructions, so you can enjoy your home with confidence. </div>
+							<div class="h6 text-violet strong space-min-bottom">Aftercare Support :</div>
+							<div class="p opacity-75">Our commitment doesn’t end at handover. We offer ongoing support for any post-construction issues or modifications, ensuring your home continues to meet your needs.</div>
+						</div>
+					</div>
 				</div>
-				<div class="step step-5 row">
-					<div class="step-title columns small-12 space-25 space-200-top">
-						<div class="h6 strong font-h text-uppercase inline text-white">Step 5 :</div><br>
-						<div class="h3 font-h text-violet space-25-top">Handover</div>
-					</div>
-					<div class="step-thumbnail columns small-12 medium-5 space-25 space-50-top">
-						<div class="thumbnail block radius-50 box-shadow-violet img-cover" style="background-image: url('media/handover.jpg');"></div>
-					</div>
-					<div class="step-content columns small-12 medium-6 medium-offset-1 space-25 space-50-top">
-						<div class="p space-50-bottom">Once everything is in order, we officially hand over the completed project to you. This includes all documentation and instructions, so you can enjoy your home with confidence. </div>
-						<div class="h6 text-violet strong space-min-bottom">Aftercare Support :</div>
-						<div class="p opacity-75">Our commitment doesn’t end at handover. We offer ongoing support for any post-construction issues or modifications, ensuring your home continues to meet your needs.</div>
+				<div class="process-cta columns small-12 medium-12 large-4 large-offset-1 position-sticky" style="top: var(--space-200);">
+					<div class="row">
+						<div class="columns small-12 medium-5 large-12">
+							<div class="h3 font-h strong space-100-bottom">This is the First Step to your Future Home</div>
+						</div>
+						<div class="columns small-12 medium-6 medium-offset-1 large-12 large-offset-0">
+							<!-- Form -->
+							<div class="form space-150-left-right space-150-top-bottom radius-50" style="backdrop-filter: blur(10px) brightness(120%); -webkit-backdrop-filter: blur(10px) brightness(120%); background: rgba(122, 18, 212, 0.75);">
+								<form action="" method="post">
+									<!-- <div class="h6 strong space-25-bottom">Register now!</div> -->
+									<label class="form-field block" for="fullName">
+										<span class="label strong inline space-min-bottom">Full Name</span>
+										<input class="input-field block" type="text" name="fullName">
+									</label>
+									<label class="form-field block space-25-top" for="email">
+										<span class="label strong inline space-min-bottom">Email ID</span>
+										<input class="input-field block" type="text" name="email">
+									</label>
+									<label class="form-field block space-25-top" for="phone">
+										<span class="label strong inline space-min-bottom">Phone Number <span class="w-400">(Request a Call-Back)</span></span>
+										<input class="input-field block" type="text" name="phone">
+									</label>
+									<label class="form-field block space-25-top" for="phone">
+										<span class="label strong inline space-min-bottom invisible">Submit</span>
+										<button class="button block strong fill-white text-left" type="submit">Register Now</button>
+									</label>
+								</form>
+							</div>
+							<!-- END: Form -->
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="process-cta columns small-12 medium-12 large-4 large-offset-1 position-sticky" style="top: var(--space-200);">
-				<div class="row">
-					<div class="columns small-12 medium-5 large-12">
-						<div class="h3 font-h strong space-100-bottom">This is the First Step to your Future Home</div>
-					</div>
-					<div class="columns small-12 medium-6 medium-offset-1 large-12 large-offset-0">
-						<!-- Form -->
-						<div class="form space-150-left-right space-150-top-bottom radius-50" style="backdrop-filter: blur(10px) brightness(150%); -webkit-backdrop-filter: blur(10px) brightness(150%); background: rgba(143, 0, 255, 0.5);">
-							<form action="" method="post">
-								<!-- <div class="h6 strong space-25-bottom">Register now!</div> -->
-								<label class="form-field block" for="fullName">
-									<span class="label strong inline space-min-bottom">Full Name</span>
-									<input class="input-field block" type="text" name="fullName">
-								</label>
-								<label class="form-field block space-25-top" for="email">
-									<span class="label strong inline space-min-bottom">Email ID</span>
-									<input class="input-field block" type="text" name="email">
-								</label>
-								<label class="form-field block space-25-top" for="phone">
-									<span class="label strong inline space-min-bottom">Phone Number <span class="w-400">(Request a Call-Back)</span></span>
-									<input class="input-field block" type="text" name="phone">
-								</label>
-								<label class="form-field block space-25-top" for="phone">
-									<span class="label strong inline space-min-bottom invisible">Submit</span>
-									<button class="button block strong fill-white text-left" type="submit">Register Now</button>
-								</label>
-							</form>
-						</div>
-						<!-- END: Form -->
-					</div>
-				</div>
-			</div>
 		</div>
-	</div>
-</section>
-<!-- END: Process Section -->
+	</section>
+	<!-- END: Process Section -->
 
 
 
 
-<!-- Testimonial Section -->
-<section id="testimonial-section" class="testimonial-section fill-black space-200-top space-100-bottom">
-	<div class="row">
-		<div class="container">
-			<div class="columns small-12">
-				<div class="p strong space-25-bottom text-center text-uppercase opacity-50">Testimonials</div>
-				<div class="title h3 text-center font-h space-100-bottom">Hear it from our Satisfied Clients</div>
-			</div>
-		</div>
-	</div>
-	<div class="carousel fill-black">
-		<div class="carousel-list">
-			<a class="carousel-list-item space-50" href="#" target="_blank">
-				<div class="card fill-white space-100 radius-50 box-shadow-violet" style="width: calc(var(--space-100)*10);">
-					<div class="title space-25-bottom">
-						<div class="h5 strong no-wrap space-min-bottom">John Smith</div>
-						<div class="label text-neutral-4">18 Days ago.</div>
-					</div>
-					<div class="stars space-50-bottom">
-						<div class="h6 text-yellow">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
-					</div>
-					<div class="review">
-						<div class="p">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magni quo suscipit voluptates recusandae quos voluptatum libero sapiente perspiciatis hic aliquid error dolore voluptatem exercitationem veritatis voluptas, excepturi, mollitia dolorum!</div>
-					</div>
-				</div>
-			</a>
-			<a class="carousel-list-item space-50" href="#" target="_blank">
-				<div class="card fill-white space-100 radius-50 box-shadow-violet" style="width: calc(var(--space-100)*10);">
-					<div class="title space-25-bottom">
-						<div class="h5 strong no-wrap space-min-bottom">John Smith</div>
-						<div class="label text-neutral-4">18 Days ago.</div>
-					</div>
-					<div class="stars space-50-bottom">
-						<div class="h6 text-yellow">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
-					</div>
-					<div class="review">
-						<div class="p">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magni quo suscipit voluptates recusandae quos voluptatum libero sapiente perspiciatis hic aliquid error dolore voluptatem exercitationem veritatis voluptas, excepturi, mollitia dolorum!</div>
-					</div>
-				</div>
-			</a>
-			<a class="carousel-list-item space-50" href="#" target="_blank">
-				<div class="card fill-white space-100 radius-50 box-shadow-violet" style="width: calc(var(--space-100)*10);">
-					<div class="title space-25-bottom">
-						<div class="h5 strong no-wrap space-min-bottom">John Smith</div>
-						<div class="label text-neutral-4">18 Days ago.</div>
-					</div>
-					<div class="stars space-50-bottom">
-						<div class="h6 text-yellow">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
-					</div>
-					<div class="review">
-						<div class="p">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magni quo suscipit voluptates recusandae quos voluptatum libero sapiente perspiciatis hic aliquid error dolore voluptatem exercitationem veritatis voluptas, excepturi, mollitia dolorum!</div>
-					</div>
-				</div>
-			</a>
-			<a class="carousel-list-item space-50" href="#" target="_blank">
-				<div class="card fill-white space-100 radius-50 box-shadow-violet" style="width: calc(var(--space-100)*10);">
-					<div class="title space-25-bottom">
-						<div class="h5 strong no-wrap space-min-bottom">John Smith</div>
-						<div class="label text-neutral-4">18 Days ago.</div>
-					</div>
-					<div class="stars space-50-bottom">
-						<div class="h6 text-yellow">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
-					</div>
-					<div class="review">
-						<div class="p">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magni quo suscipit voluptates recusandae quos voluptatum libero sapiente perspiciatis hic aliquid error dolore voluptatem exercitationem veritatis voluptas, excepturi, mollitia dolorum!</div>
-					</div>
-				</div>
-			</a>
-			<a class="carousel-list-item space-50" href="#" target="_blank">
-				<div class="card fill-white space-100 radius-50 box-shadow-violet" style="width: calc(var(--space-100)*10);">
-					<div class="title space-25-bottom">
-						<div class="h5 strong no-wrap space-min-bottom">John Smith</div>
-						<div class="label text-neutral-4">18 Days ago.</div>
-					</div>
-					<div class="stars space-50-bottom">
-						<div class="h6 text-yellow">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
-					</div>
-					<div class="review">
-						<div class="p">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magni quo suscipit voluptates recusandae quos voluptatum libero sapiente perspiciatis hic aliquid error dolore voluptatem exercitationem veritatis voluptas, excepturi, mollitia dolorum!</div>
-					</div>
-				</div>
-			</a>
-			<a class="carousel-list-item space-50" href="#" target="_blank">
-				<div class="card fill-white space-100 radius-50 box-shadow-violet" style="width: calc(var(--space-100)*10);">
-					<div class="title space-25-bottom">
-						<div class="h5 strong no-wrap space-min-bottom">John Smith</div>
-						<div class="label text-neutral-4">18 Days ago.</div>
-					</div>
-					<div class="stars space-50-bottom">
-						<div class="h6 text-yellow">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
-					</div>
-					<div class="review">
-						<div class="p">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magni quo suscipit voluptates recusandae quos voluptatum libero sapiente perspiciatis hic aliquid error dolore voluptatem exercitationem veritatis voluptas, excepturi, mollitia dolorum!</div>
-					</div>
-				</div>
-			</a>
-		</div>
+	<!-- Testimonial Section -->
+	<section id="testimonial-section" class="testimonial-section space-200-top space-100-bottom">
 		<div class="row">
 			<div class="container">
-				<div class="columns small-6">
-					<div class="scroll-button button scroll-left" data-dir="left" tabindex="-1"><span class="text-violet material-symbols-rounded inline-middle" style="font-size: var(--h1); line-height: 0;">arrow_left</span></div>
-				</div>
-				<div class="columns small-6 text-right">
-					<div class="scroll-button button scroll-right" data-dir="right" tabindex="-1"><span class="text-violet material-symbols-rounded inline-middle" style="font-size: var(--h1); line-height: 0;">arrow_right</span></div>
+				<div class="columns small-12">
+					<div class="p strong space-25-bottom text-center text-uppercase opacity-50">Testimonials</div>
+					<div class="title h3 text-center font-h space-100-bottom">Hear it from our Satisfied Clients</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!-- END: Testimonial Section -->
+		<div class="carousel">
+			<div class="carousel-list">
+				<a class="carousel-list-item space-50" href="#" target="_blank">
+					<div class="card fill-white space-100 radius-50 box-shadow-violet" style="width: calc(var(--space-100)*10);">
+						<div class="title space-25-bottom">
+							<div class="h5 strong no-wrap space-min-bottom">John Smith</div>
+							<div class="label text-neutral-4">18 Days ago.</div>
+						</div>
+						<div class="stars space-50-bottom">
+							<div class="h6 text-yellow">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
+						</div>
+						<div class="review">
+							<div class="p">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magni quo suscipit voluptates recusandae quos voluptatum libero sapiente perspiciatis hic aliquid error dolore voluptatem exercitationem veritatis voluptas, excepturi, mollitia dolorum!</div>
+						</div>
+					</div>
+				</a>
+				<a class="carousel-list-item space-50" href="#" target="_blank">
+					<div class="card fill-white space-100 radius-50 box-shadow-violet" style="width: calc(var(--space-100)*10);">
+						<div class="title space-25-bottom">
+							<div class="h5 strong no-wrap space-min-bottom">John Smith</div>
+							<div class="label text-neutral-4">18 Days ago.</div>
+						</div>
+						<div class="stars space-50-bottom">
+							<div class="h6 text-yellow">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
+						</div>
+						<div class="review">
+							<div class="p">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magni quo suscipit voluptates recusandae quos voluptatum libero sapiente perspiciatis hic aliquid error dolore voluptatem exercitationem veritatis voluptas, excepturi, mollitia dolorum!</div>
+						</div>
+					</div>
+				</a>
+				<a class="carousel-list-item space-50" href="#" target="_blank">
+					<div class="card fill-white space-100 radius-50 box-shadow-violet" style="width: calc(var(--space-100)*10);">
+						<div class="title space-25-bottom">
+							<div class="h5 strong no-wrap space-min-bottom">John Smith</div>
+							<div class="label text-neutral-4">18 Days ago.</div>
+						</div>
+						<div class="stars space-50-bottom">
+							<div class="h6 text-yellow">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
+						</div>
+						<div class="review">
+							<div class="p">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magni quo suscipit voluptates recusandae quos voluptatum libero sapiente perspiciatis hic aliquid error dolore voluptatem exercitationem veritatis voluptas, excepturi, mollitia dolorum!</div>
+						</div>
+					</div>
+				</a>
+				<a class="carousel-list-item space-50" href="#" target="_blank">
+					<div class="card fill-white space-100 radius-50 box-shadow-violet" style="width: calc(var(--space-100)*10);">
+						<div class="title space-25-bottom">
+							<div class="h5 strong no-wrap space-min-bottom">John Smith</div>
+							<div class="label text-neutral-4">18 Days ago.</div>
+						</div>
+						<div class="stars space-50-bottom">
+							<div class="h6 text-yellow">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
+						</div>
+						<div class="review">
+							<div class="p">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magni quo suscipit voluptates recusandae quos voluptatum libero sapiente perspiciatis hic aliquid error dolore voluptatem exercitationem veritatis voluptas, excepturi, mollitia dolorum!</div>
+						</div>
+					</div>
+				</a>
+				<a class="carousel-list-item space-50" href="#" target="_blank">
+					<div class="card fill-white space-100 radius-50 box-shadow-violet" style="width: calc(var(--space-100)*10);">
+						<div class="title space-25-bottom">
+							<div class="h5 strong no-wrap space-min-bottom">John Smith</div>
+							<div class="label text-neutral-4">18 Days ago.</div>
+						</div>
+						<div class="stars space-50-bottom">
+							<div class="h6 text-yellow">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
+						</div>
+						<div class="review">
+							<div class="p">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magni quo suscipit voluptates recusandae quos voluptatum libero sapiente perspiciatis hic aliquid error dolore voluptatem exercitationem veritatis voluptas, excepturi, mollitia dolorum!</div>
+						</div>
+					</div>
+				</a>
+				<a class="carousel-list-item space-50" href="#" target="_blank">
+					<div class="card fill-white space-100 radius-50 box-shadow-violet" style="width: calc(var(--space-100)*10);">
+						<div class="title space-25-bottom">
+							<div class="h5 strong no-wrap space-min-bottom">John Smith</div>
+							<div class="label text-neutral-4">18 Days ago.</div>
+						</div>
+						<div class="stars space-50-bottom">
+							<div class="h6 text-yellow">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
+						</div>
+						<div class="review">
+							<div class="p">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ducimus magni quo suscipit voluptates recusandae quos voluptatum libero sapiente perspiciatis hic aliquid error dolore voluptatem exercitationem veritatis voluptas, excepturi, mollitia dolorum!</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="row">
+				<div class="container">
+					<div class="columns small-6">
+						<div class="scroll-button button scroll-left" data-dir="left" tabindex="-1"><span class="text-violet material-symbols-rounded inline-middle" style="font-size: var(--h1); line-height: 0;">arrow_left</span></div>
+					</div>
+					<div class="columns small-6 text-right">
+						<div class="scroll-button button scroll-right" data-dir="right" tabindex="-1"><span class="text-violet material-symbols-rounded inline-middle" style="font-size: var(--h1); line-height: 0;">arrow_right</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END: Testimonial Section -->
 
+</div>
 
 
 

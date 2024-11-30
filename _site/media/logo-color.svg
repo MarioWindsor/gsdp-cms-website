@@ -3,7 +3,8 @@
   <defs>
     <style>
       .b {
-        fill: #8600ff;
+        <!-- fill: #8600ff; -->
+        fill: #7A12D4;
       }
     </style>
   </defs>
